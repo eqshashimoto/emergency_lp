@@ -1,0 +1,1398 @@
+/*======================
+		セレモアLP
+========================*/
+/* 共通 */
+
+* {
+	margin: 0;
+	padding: 0;
+  font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+a, a:hover {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+select::-ms-expand {
+	display: none;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+img {
+	width: 100%;
+	display: block;
+}
+.wrapper {
+	background-color: #f6f6f6;
+}
+.inner {
+	width: 580px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	-moz-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	overflow: hidden;
+	padding: 0 0 100px;
+}
+.inner_sub {
+	width: 580px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	-moz-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	overflow: hidden;
+	padding: 0;
+}
+.inner2 {
+	width: 1500px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	-moz-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	overflow: hidden;
+	padding: 0 0 100px;
+}
+.inner2_sub {
+	width: 1500px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	-moz-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+	overflow: hidden;
+	padding: 0;
+}
+
+.rrt {
+	position: relative;
+	animation: poyopoyo 2s ease-out infinite;
+	opacity: 1;
+}
+
+.rrt2 {
+	position: relative;
+	top: 3px;
+}
+
+@media screen and (max-width:580px) {
+	.rrt2 {
+		top: 2px;
+	}
+}
+
+/* @keyframes poyopoyo {
+	0%, 40%, 60%, 80% {
+		transform: scale(1.0);
+	}
+	50%, 70% {
+		transform: scale(0.95);
+	}
+} */
+
+@keyframes poyopoyo {
+	0%, 100% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(0.95);
+	}
+}
+
+.phone, .phone-w {
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	margin: auto;
+}
+
+#pc, #pc2, #pc3, #pc4 {
+	display: block;
+}
+#pc_section_sougi, #pc_section_sikijou, #pc_section_corona {
+	display: block;
+}
+
+#app, #app2, #app3, #app4 {
+	display: none;
+}
+#app_section_sougi, #app_section_sikijou, #app_section_corona {
+	display: none;
+}
+
+@media screen and ( min-width:581px ) {
+	.sp {
+		display: none !important;
+	}
+}
+@media screen and ( max-width:580px ) {
+	.pc {
+		display: none !important;
+	}
+	#pc, #pc2, #pc3, #pc4 {
+		display: none;
+	}
+	#pc_section_sougi, #pc_section_sikijou, #pc_section_corona {
+		display: none;
+	}
+	
+	#app, #app2, #app3, #app4 {
+		display: block;
+	}
+	#app_section_sougi, #app_section_sikijou, #app_section_corona {
+		display: block;
+	}
+	
+	.inner {
+		width: 100%;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		padding: 0 0 75px;
+	}
+	.inner_sub {
+		width: 100%;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		padding: 0;
+	}
+}
+@media screen and ( max-width:1500px ) {
+	.inner2 {
+		width: 100%;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		padding: 0 0 75px;
+	}
+	.inner2_sub {
+		width: 100%;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		padding: 0;
+	}
+}
+
+.flex {
+	display: -webkit-box;
+	display: flex;
+	display: flexbox;
+	display: -ms-flexbox;
+}
+
+/* ヘッダー */
+#header {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+	font-size: 2vw;
+	height: 3.5em;
+}
+@media screen and (min-width: 1500px) {
+	#header {
+		font-size: 30px;
+	}
+}
+#header .content {
+	height: inherit;
+	max-width: 1500px;
+	margin: auto;
+	justify-content: space-evenly;
+}
+#header .flex > div,
+#header .flex .col {
+	display: inherit;
+	height: inherit;
+}
+#header .flex .img {
+	display: inherit;
+	height: inherit;
+	padding: .75em 1em;
+	box-sizing: border-box;
+}
+#header .flex .img img {
+	height: 100%;
+	width: auto;
+}
+#header .flex .left-col .img {
+	padding: .5em;
+}
+#header .flex .mid-col {
+	position: relative;
+	right: 7%;
+}
+#header .flex .right-col {
+	position: relative;
+	left: 2.2%;
+}
+#header .flex .right-col .img {
+	padding: .75em .25em;
+}
+@media screen and (max-width: 580px) {
+	#header {
+		font-size: 4vw;
+	}
+	#header .content {
+		justify-content: space-between;
+	}
+	#header .flex .img {
+		padding: .5em .75em;
+	}
+	#header .flex .mid-col {
+		right: 0%;
+	}
+	#header .flex .right-col {
+		left: 0%;
+	}
+	#header .flex .right-col .img {
+		padding: 0em;
+	}
+}
+
+#fv_bg .pc {
+	position: relative;
+	width: 110%;
+	right: 5%;
+}
+
+#pc_section_contact {
+	position: absolute;
+	top: 33%;
+	left: 3%;
+	width: 43%;
+	padding: 0 5%;
+}
+
+@media screen and (min-width: 1100px) {
+	#pc_section_contact {
+		top: 43%;
+	}
+}
+
+#sp_section_contact {
+	padding: 1rem 5% 3rem;
+	background-color: #F5F3DC;
+}
+
+#pc_section_contact .sup-txt {
+	font-size: 1.9em;
+	letter-spacing: 1.2;
+	text-align: center;
+	color: #CC1C24;
+	text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff,
+	0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
+}
+
+#sp_section_contact .sup-txt {
+	font-size: 2.2em;
+	letter-spacing: 1.2;
+	text-align: center;
+	color: #CC1C24;
+}
+
+
+#sp_section_contact .sup-txt {
+	font-size: 5.5rem;
+}
+
+#sp_section_contact > div,
+#pc_section_contact > div {
+	width: 100%;
+	padding: 1% 0%;
+}
+
+#sp_section_contact .urgent div,
+#pc_section_contact .urgent div {
+	padding: 0 1%;
+}
+
+#sp_top_area br {
+	display: none;
+}
+#sp_top_area br {
+	display: none;
+}
+/* #firstview { */
+	/* background-image: url('../images/fv-bg-pc.png'); */
+/* } */
+/* @media screen and (max-width: 580px) {
+	#firstview {
+		background-image: url('../images/fv-bg-sp.png');
+	}
+} */
+
+#pc_section_contact2,
+#pc_section_contact3,
+#pc_section_contact4,
+#sp_section_contact2,
+#sp_section_contact3 {
+	position: absolute;
+	bottom: 3%;
+	width: 90%;
+	padding: 0 5%;
+}
+
+#sp_section_contact4,
+#sp_section_contact5 {
+	position: absolute;
+	bottom: 2%;
+	width: 90%;
+	padding: 0 5%;
+}
+
+#pc_section_contact5,
+#pc_section_contact6 {
+	width: 70%;
+
+	padding: 2.5% 15% 5%;
+	background-color: #F5F3DC;
+
+	margin-top: 0px;
+
+}
+
+/* #pc_section_contact5 .margin_top_16px {
+
+} */
+
+/* #pc_section_contact6 {
+	width: 90%;
+	margin: auto;
+	padding: 3rem;
+} */
+
+#sp_section_contact6 {
+	/* position: relative;
+	bottom: 0.5%; */
+	width: 90%;
+	padding: 0 5%;
+}
+
+#pc_section_contact2 .sup-txt,
+#pc_section_contact3 .sup-txt,
+#pc_section_contact4 .sup-txt,
+#pc_section_contact5 .sup-txt,
+#pc_section_contact6 .sup-txt,
+#sp_section_contact2 .sup-txt,
+#sp_section_contact3 .sup-txt,
+#sp_section_contact4 .sup-txt,
+#sp_section_contact5 .sup-txt,
+#sp_section_contact6 .sup-txt {
+	font-size: 1.8em;
+	letter-spacing: 1.2;
+	text-align: center;
+	color: #CC1C24;
+	text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff,
+	0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
+}
+
+#pc_section_contact5 .sup-txt,
+#pc_section_contact6 .sup-txt {
+	font-size: min(4rem, 45px);
+	letter-spacing: 2.8;
+} 
+
+#sp_section_contact2 .sup-txt,
+#sp_section_contact3 .sup-txt,
+#sp_section_contact4 .sup-txt,
+#sp_section_contact5 .sup-txt,
+#sp_section_contact6 .sup-txt {
+	font-size: 5.5em;
+}
+
+#pc_section_contact5 .sup-txt,
+#sp_section_contact5 .sup-txt {
+	text-shadow: none;
+}
+
+#sp_section_contact2 > div,
+#sp_section_contact3 > div,
+#sp_section_contact4 > div,
+#sp_section_contact5 > div,
+#sp_section_contact6 > div,
+#pc_section_contact2 > div,
+#pc_section_contact3 > div,
+#pc_section_contact4 > div,
+#pc_section_contact5 > div,
+#pc_section_contact6 > div {
+	width: 100%;
+	padding: 1% 0%;
+}
+
+#sp_section_contact2 .urgent div,
+#sp_section_contact3 .urgent div,
+#sp_section_contact4 .urgent div,
+#pc_section_contact2 .urgent div,
+#pc_section_contact3 .urgent div,
+#pc_section_contact4 .urgent div,
+#pc_section_contact5 .urgent div,
+#pc_section_contact6 .urgent div {
+	padding: 0 1%;
+}
+
+#sp_section_contact5 .urgent div,
+#sp_section_contact6 .urgent div {
+	padding: 3% 1%;
+}
+
+/*お問い合わせボタン*/
+.cvbtn {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	height: 0;
+}
+.cvbtn img{
+	position: absolute;
+}
+.section_0 {
+	position: relative;
+}
+.cvbtn_sec0_1 img{
+  width: 77%;
+  right: 3%;
+  top: 1%;
+	position: absolute;
+}
+.cvbtn_sec0_2 img {
+  width: 46%;
+  left: 3%;
+  top: 45.5%;
+  position: absolute;
+}
+.cvbtn_sec0_3 img {
+  width: 47%;
+  right: 2.5%;
+  top: 42.1%;
+  position: absolute;
+}
+.cvbtn_sec0_4 img {
+  width: 47%;
+  left: 2.3%;
+  top: 38.8%;
+  position: absolute;
+}
+.cvbtn_sec0_5 img {
+  width: 47%;
+  right: 2.3%;
+  top: 38.8%;
+  position: absolute;
+}
+.cvbtn_sec0_6 img {
+  width: 47%;
+  left: 2.3%;
+  top: 67.6%;
+  position: absolute;
+}
+.cvbtn_sec0_7 img {
+  width: 47%;
+  right: 2.3%;
+  top: 67.6%;
+  position: absolute;
+}
+.cvbtn._sec1 {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/section_1_3.png);
+	padding-top: 44%;
+	margin-top: -2px;
+}
+.cvbtn._sec1 img{
+	top: 0%;
+	width: 88%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.cvbtn._sec5 {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/section_5_2.png);
+	padding-top: 46.7%;
+}
+.cvbtn._sec5 img{
+	top: 0%;
+	width: 88%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.cvbtn._sec6 {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/section_6_4.png);
+	padding-top: 25.3%;
+}
+.cvbtn._sec6 img{
+	top: 0%
+}
+.cvbtn._sec6_2 {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/section_6_4.png);
+	padding-top: 25.3%;
+}
+.cvbtn._sec6_2 img{
+	top: 5%;
+	right: 5%;
+	width: 90%
+}
+.cvbtn._sec8 {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/section_8_2.png);
+	padding-top: 62.6%;
+}
+.cvbtn._sec8 img.btn2{
+	top: -5%;
+	width: 94%;
+	right: 0;
+	left: 0;
+	margin: 10px auto 0;
+}
+.cvbtn._sec8 img.btn1{
+	top: 55%;
+	width: 94%;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+/*お客様の声*/
+.user-voice {
+	background-color: #F4F4F4;
+	width: 100%;
+}
+.user-voice-list {
+	width: 90%;
+    margin: 35px auto 35px;
+    -webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.36);
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 749px) {
+	.user-voice-list {
+		padding: 15px;
+	}
+}
+.user-voice-upper {
+	display: flex;
+	align-items: center;
+}
+.user-voice-image {
+	position: relative;
+    background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/user-voice/woman.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26.1%;
+    height: 0;
+    padding-top: 28%;
+    margin-right: 3.9%;
+}
+.user-voice-image.man {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/user-voice/man.png);
+}
+@media screen and (max-width: 749px) {
+	.user-voice-image {
+		width: 33.1%;
+		padding-top: 34%;
+	}
+}
+.user-feature {
+	position: absolute;
+    bottom: 2%;
+    left: 0;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 749px) {
+	.user-feature {
+		bottom: 1%;
+    	font-size: 15px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.user-feature {
+    	font-size: 11px;
+	}
+}
+.user-voice-title {
+	width: 70%;
+	font-weight: bold;
+    font-size: 34px;
+}
+@media screen and (max-width: 749px) {
+	.user-voice-title {
+    	font-size: 25px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.user-voice-title {
+    	font-size: 19px;
+	}
+}
+.user-voice-discription {
+	font-size: 28px;
+    margin-top: 15px;
+}
+@media screen and (max-width: 749px) {
+	.user-voice-discription{
+    	font-size: 18px;
+   		margin-top: 10px;
+	}
+}
+.user-voice-discription span{
+	font-weight: bold;
+	color: #ff0000;
+}
+
+/*重要ポイント*/
+.key-point-list {
+	background-color: #fff;
+	padding: 20px 0;
+}
+.key-point-item {
+	width: 90%;
+	-webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.36);
+	-moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.36);
+	box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.36);
+	background-color: #fff;
+	margin: 20px auto 40px;
+	position: relative;
+}
+@media screen and ( max-width:580px ) {
+	.key-point-item {
+		/*width: 90%;*/
+		margin: 20px auto 30px;
+	}
+}
+.key-point-item:first-child {
+	margin-top: 0;
+}
+.key-point-item:last-child {
+	margin-bottom: 0;
+}
+.key-point-header {
+	padding: 20px 20px 0;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+@media screen and ( max-width:580px ) {
+	.key-point-header {
+		margin-bottom: 10px;
+	}
+}
+.key-point-num {
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 120px;
+	position: absolute;
+	top: -4px;
+}
+.key-point-item:nth-child(1) .key-point-num {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/key-point/num-bg1.png);	
+}
+.key-point-item:nth-child(2) .key-point-num {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/key-point/num-bg2.png);	
+}
+.key-point-item:nth-child(3) .key-point-num {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/key-point/num-bg3.png);	
+}
+@media screen and ( max-width:580px ) {
+	.key-point-num {
+		width: 50px;
+		height: 60px;
+		top: -2px;
+	}
+}
+.key-point-ttl {
+	font-size: 34px;
+	margin-left: 110px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+@media screen and ( max-width:580px ) {
+	.key-point-ttl {
+		font-size: 24px;
+		margin-left: 65px;
+	}
+}
+.key-point-body {
+	padding: 10px 20px 20px;
+	font-size: 28px;
+	line-height: 1.6;
+}
+@media screen and ( max-width:580px ) {
+	.key-point-body {
+		font-size: 18px;
+	}
+}
+.key-point-body figure {
+	float: left;
+	margin: 0 15px 0 0;
+	width: 30%;
+}
+@media screen and ( max-width:580px ) {
+	.key-point-body figure {
+		width: 50%;
+		margin: 0 15px 10px 0;
+	}
+}
+.key-point-body figure img {
+	max-width: 100%;
+}
+.key-point-item .column {
+	border: 4px solid #FFED6E;
+	background-color: #FFFACA;
+	margin: 20px 0 10px;
+}
+.key-point-item .column-header {
+	background-color: #FFED6E;	
+	padding: 20px 30px;
+}
+@media screen and ( max-width:580px ) {
+	.key-point-item .column-header {
+		padding: 20px 10px;
+	}
+}
+.key-point-item .column-ttl {
+	position: relative;
+	padding-left: 110px;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+@media screen and ( max-width:580px ) {
+	.key-point-item .column-ttl {
+		padding-left: 60px;
+		font-size: 24px;
+	}
+}
+.key-point-item .column-ttl::before {
+	position: absolute;
+	content: "";
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/key-point/bikkuri.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 100px;
+	height: 100px;
+	margin-right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+@media screen and ( max-width:580px ) {
+	.key-point-item .column-ttl::before {
+		width: 50px;
+		height: 50px;
+	}
+}
+.key-point-item .column-body {
+	padding: 20px 30px;
+}
+@media screen and ( max-width:580px ) {
+	.key-point-item .column-body {
+		padding: 20px 10px;
+	}
+}
+.key-point-item .column-body span {
+	color: #840000;
+	font-weight: bold;
+}
+
+/*6つの理由*/
+.reason-list {
+	background-color: #fff;
+	padding: 20px 0;
+}
+.reason-item {
+	width: 90%;
+	-webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.36);
+	-moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.36);
+	box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.36);
+	background-color: #fff;
+	margin: 20px auto 40px;
+}
+@media screen and ( max-width:580px ) {
+	.reason-item {
+		margin: 10px auto 30px;
+	}
+}
+.reason-item:first-child {
+	margin-top: 20px;
+}
+@media screen and ( max-width:580px ) {
+	.reason-item:first-child {
+		margin-top: 0;
+	}
+}
+.reason-header {
+	padding: 30px 30px 0;
+	display: flex;
+	align-items: center;
+}
+@media screen and ( max-width:580px ) {
+	.reason-header {
+		padding: 20px 20px 0;
+	}
+}
+.reason-num {
+	background-size: contain;
+	background-repeat: no-repeat;
+	min-width: 100px;
+	min-height: 100px;
+	background-position: center;
+}
+@media screen and ( max-width:580px ) {
+	.reason-num {
+		min-width: 64px;
+		min-height: 64px;
+	}
+}
+.reason-item:nth-child(1) .reason-num {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/num-bg1.png);	
+}
+.reason-item:nth-child(2) .reason-num {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/num-bg2.png);	
+}
+.reason-item:nth-child(3) .reason-num {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/num-bg3.png);	
+}
+.reason-item:nth-child(4) .reason-num {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/num-bg4.png);	
+}
+.reason-item:nth-child(5) .reason-num {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/num-bg5.png);	
+}
+.reason-item:nth-child(6) .reason-num {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/num-bg6.png);	
+}
+.reason-ttl {
+	font-size: 32px;
+	margin-left: 10px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+@media screen and ( max-width:580px ) {
+	.reason-ttl {
+		font-size: 24px;
+	}
+}
+.reason-ttl span {
+	color: #d94e4e;
+}
+.reason-body {
+	padding: 10px 30px 30px;
+	font-size: 28px;
+	line-height: 1.6;
+}
+@media screen and ( max-width:580px ) {
+	.reason-body {
+		padding: 10px 20px 20px;
+		font-size: 18px;
+	}
+}
+.reason-body span {
+	color: #ff0000;
+	font-weight: bold;
+}
+.reason-body figure {
+	width: 90%;
+	margin: 20px auto 30px;
+}
+@media screen and ( max-width:580px ) {
+	.reason-body figure {
+		margin: 10px auto 20px;
+	}
+}
+.reason-body figure.full {
+	width: 100%;
+}
+@media screen and ( max-width:580px ) {
+	.reason-body figure figcaption {
+		font-size: 16px;
+	}
+}
+.reason-body span.ceremopian {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/ceremopian.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 40px;
+	width: 240px;
+	display: inline-block;
+	text-indent: -9999px;
+	position: relative;
+}
+@media screen and ( max-width:580px ) {
+	.reason-body span.ceremopian {
+		height: 26px;
+    	width: 197px;
+    	bottom: 2px;
+	}
+}
+.reason-body .bold {
+	font-weight: bold;
+	font-weight: 20px;
+}
+.reason-body span.ceremore {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/ceremore.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 40px;
+	width: 220px;
+	display: inline-block;
+	text-indent: -9999px;
+	position: relative;
+}
+@media screen and ( max-width:580px ) {
+	.reason-body span.ceremore {
+		height: 27px;
+    	width: 145px;
+    	bottom: 2px;
+	}
+}
+.reason-body .htc-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	list-style: none;
+	margin: 0 auto;
+}
+@media screen and ( max-width:580px ) {
+	.reason-body .htc-list {
+		width: 100%;		
+    	max-width: 270px;
+	}
+}
+.reason-body .htc-list li {
+	position: relative;
+	padding-left: 35px;
+	margin: 0 20px;
+}
+@media screen and ( max-width:580px ) {
+	.reason-body .htc-list li {
+		padding-left: 25px;
+		margin: 0 5px;
+	}
+}
+.reason-body .htc-list li:before,
+.qlist li:before {
+	position: absolute;
+	content: "";
+	display: block;
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/icon_check.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+@media screen and ( max-width:580px ) {
+	.reason-body .htc-list li:before {
+		width: 20px;
+		height: 20px;
+	}
+}
+.qlist li {
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+	position: relative;
+}
+.qlist li:before {
+	position: relative;
+	min-width: 50px;
+	min-height: 50px;
+	margin: 0;
+	margin-right: 20px;
+}
+@media screen and ( max-width:580px ) {
+	.qlist li:before {
+		min-width: 30px;
+		min-height: 30px;
+		margin-right: 10px;
+	}
+}
+.qitem-num {
+	background-color: #00B481;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 1.8;
+	margin-right: 20px;
+}
+@media screen and ( max-width:580px ) {
+	.qitem-num {
+		width: 30px;
+		height: 30px;
+		min-width: 30px;
+		min-height: 30px;
+		margin-right: 10px;
+	}
+}
+.qitem-thumb {
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 200px;
+	height: 100px;
+	margin-right: 10px;
+}
+@media screen and ( max-width:580px ) {
+	.qitem-thumb {
+		width: 80px;
+		height: 50px;
+	}
+}
+.qlist li:nth-child(1) .qitem-thumb {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/qitem1.png);	
+}
+.qlist li:nth-child(2) .qitem-thumb {
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/qitem2.png);	
+}
+.qlist li:nth-child(4) .qitem-thumb {
+	height: 200px;
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/reason/qitem3.png);	
+}
+@media screen and ( max-width:580px ) {
+	.qlist li:nth-child(4) .qitem-thumb {
+		height: 80px;
+	}
+}
+.qitem-ttl {
+	font-size: 30px; 
+}
+@media screen and ( max-width:580px ) {
+	.qitem-ttl {
+		font-size: 18px;
+    	width: calc(100% - 120px);
+	}
+	.qlist li:nth-child(3) .qitem-ttl {
+		width: calc(100% - 40px);
+	}
+	.qlist li:nth-child(5) .qitem-ttl {
+		width: calc(100% - 40px);
+	}
+}
+@media screen and ( max-width:580px ) {
+	.reason-body .supplement{
+		font-size: 15px;
+	}
+}
+
+/*セレパクプラン*/
+.cerepak_select {
+    width: 100%;
+    padding: 5px 60px 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+@media screen and (max-width: 499px) {
+	.cerepak_select {
+		padding: 5px 30px 25px;
+	}
+}
+.cerepak_select .cerepak_select_box {
+	position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0px 0 40px;
+}
+.cerepak_select .cerepak_select_box:after {
+	position: absolute;
+    right: 15px;
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/cerepak_select_arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;    
+    pointer-events: none;
+}
+.cerepak_select select{
+	width: 100%;
+  height: 75px;
+  font-size: 27px;
+  border: 1px solid #f3f3f3;
+  border-radius: 15px;
+  background: linear-gradient(180deg, rgba(252,252,252,1) 0%, rgba(212,212,212,1) 100%);
+  padding: 0 60px;
+}
+@media screen and (max-width: 580px) {
+	.cerepak_select select {
+		font-size: 24px;
+    padding: 0 60px 0 24px;
+	}
+}
+@media screen and (max-width: 499px) {
+	.cerepak_select select {
+		font-size: 20px;
+		border-radius: 6px;
+    padding: 0 60px 0 14px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.cerepak_select select {
+		font-size: 18px;
+	}
+}
+.cerepak_select .cerepak_plan {
+	-webkit-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+    box-shadow: 0px 0px 32px -7px rgba(0,0,0,0.44);
+    border-radius: 15px;
+}
+@media screen and (max-width: 499px) {
+	.cerepak_select .cerepak_plan {
+		font-size: 18px;
+		border-radius: 6px;
+	}
+}
+.cerepak_select .cerepak_discount {
+	color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #de669c;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    padding: 10px 0 5px;
+}
+@media screen and (max-width: 499px) {
+	.cerepak_select .cerepak_discount {
+		font-size: 18px;
+		border-radius: 6px 6px 0 0;
+	}
+}
+.cerepak_select .cerepak_discount > div:first-child {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cerepak_select .cerepak_discount > div:first-child img {
+	width: 42%;
+}
+.cerepak_select .cerepak_discount > div:first-child p {
+	margin-left: 8px;
+}
+.cerepak_select .cerepak_option {
+	background-color: #e1fff5;
+    border-radius: 0 0 15px 15px;
+    padding: 35px 35px;
+}
+@media screen and (max-width: 499px) {
+	.cerepak_select .cerepak_option {
+		border-radius: 6px 6px 0 0;
+		padding: 20px;
+	}
+}
+.cerepak_select .cerepak_saidan {
+	background-color: #fff;
+    border: 1px solid #00AE80;
+    padding: 20px 20px 10px;
+}
+.cerepak_select .cerepak_saidan p {
+	text-align: center;	
+    font-size: 30px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 599px) {
+	.cerepak_select .cerepak_saidan p {
+		font-size: 20px;
+	}
+}
+.cerepak_plan .extra_cost {
+	padding: 0 0;
+    border-top: 2px solid #00AE80;
+    margin-top: 15px;
+}
+.cerepak_plan .extra_cost p {
+	font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+@media screen and (max-width: 580px) {
+	.cerepak_plan .extra_cost p {
+		font-size: 20px;
+	}
+}
+.cerepak_plan .extra_cost ul {
+	display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+@media screen and (max-width: 580px) {
+	.cerepak_plan .extra_cost ul {
+		font-size: 18px;
+	}
+}
+.cerepak_plan .extra_cost ul li{
+	margin: 0 30px 6px 0;
+}
+.cerepak_plan .extra_cost ul li:before{
+	position: relative;
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url(https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/cerepak_select_chk.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.footer_links {
+	font-size: 2rem; 
+	text-align: center; 
+	background-color: white; 
+	padding: 2rem 0 4rem;
+}
+.footer_links a {
+	color: #008366;
+	text-decoration: underline;
+}
+#app .footer_links,
+#app4 .footer_links {
+	font-size: 4rem; 
+	padding: 4rem 0;
+}
+
+/*フッター固定*/
+.footer_btns {
+	position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 580px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.83);
+}
+@media screen and ( max-width:580px ) {
+	.footer_btns {
+		height: 90px;
+	}
+}
+@media screen and ( max-width:440px ) {
+	.footer_btns {
+		height: 70px;
+	}
+}
+.footer_btns.show {
+	display: flex;
+}
+.footer_btns img {
+	height: 85px;
+	margin: 5px;
+    width: auto;
+}
+@media screen and ( max-width:580px ) {
+	.footer_btns img {
+		height: 63px;
+		margin: 5px;
+	}
+}
+@media screen and ( max-width:440px ) {
+	.footer_btns img {
+		height: 50px;
+	}
+}
+
+.footer_btns2 {
+	position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.83);
+}
+
+.footer_btns2.show {
+	display: flex;
+}
+.footer_btns2 img {
+	height: 65px;
+	margin: 5px;
+    width: auto;
+}
+
+#pc_tel_n1,
+#sp_tel_n1,
+#pc_tel_n2,
+#sp_tel_n2,
+#pc_tel_n3,
+#sp_tel_n3,
+#pc_tel_n4,
+#sp_tel_n4,
+#pc_tel_n5,
+#sp_tel_n5,
+#pc_tel_n6,
+#sp_tel_n6,
+#pc_tel_8,
+#sp_tel_8,
+#app_tel_8 {
+	display: block;
+}
+
+#pc_tel_n1 .phone-w,
+#sp_tel_n1 .phone-w,
+#pc_tel_8 .phone-w,
+#sp_tel_8 .phone-w,
+#app_tel_8 .phone-w {
+	top: 0;
+	bottom: 0;
+}
+#pc_tel_n1 .phone-w {
+	left: 23%;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+}
+#sp_tel_n1 .phone-w {
+	left: 7%;
+	font-size: 12rem;
+}
+#pc_tel_8 .phone-w {
+    font-size: 24px;
+    left: 14%;
+    padding-top: 17px;
+}
+#app_tel_8 .phone-w,
+#sp_tel_8 .phone-w {
+    font-size: 4rem;
+    left: 8%;
+    padding-top: 2rem;
+}
+
+#pc_tel_n1 img,
+#sp_tel_n1 img,
+#pc_tel_8 img,
+#sp_tel_8 img,
+#app_tel_8 img {
+	display: inline;
+}

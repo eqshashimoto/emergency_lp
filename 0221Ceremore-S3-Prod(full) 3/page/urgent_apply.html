@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>葬儀・葬式なら葬儀会社セレモア</title>
+	<meta name="description"
+		content="東京都立川市の葬儀会社セレモアグループの葬儀・お葬式のコーポレートサイトでは、葬儀の費用についての情報や事前見積り、24時間ご相談窓口など各種サービスの情報を提供しております。">
+	<meta name="keywords" content="セレモア">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<script src="https://s.eqswi.com/arise/common/pop.js"></script>
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-W4TPGLB');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-K392VBF');</script>
+	<!-- End Google Tag Manager -->
+
+	<link rel="shortcut icon" href="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/favicon.ico">
+	<link rel="stylesheet" href="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/common/default.css">
+	<link rel="stylesheet" href="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/common/common.css?3">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+	<script type="text/javascript"
+		src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/common/common_inq.js"></script>
+
+	<style>
+		.disable {
+			pointer-events: none;
+			opacity: .75;
+		}
+		p.field_error {
+			display: none;
+			color: #f00;
+			text-align: center;
+		}
+
+		.p90 {
+			width: 90%;
+		}
+		.p60 {
+			width: 60%;
+		}
+
+		.submit-btn-yasuragi input {
+			border: none;
+			text-indent: -9999px;
+			background: url(/material/images/btn_submit.png) no-repeat center center;
+		}
+
+		.submit-btn-yasuragi input:hover {
+			background: url(/material/images/btn_submit_on.png) no-repeat center center;
+		}
+
+		.submit-btn #submit-check {
+			background-color: #f95c5c;
+			background-image: none;
+			border: none;
+			color: white;
+			box-shadow: 0 4px 0 #bb0000;
+		}
+
+		.table-style td {
+			font-size: 1.2rem;
+		}
+
+		#left-column-top2 {
+			display: flex;
+			margin: 5%;
+			border: 7px solid #1b9883;
+			border-radius: 8px;
+		}
+
+		#left-column-top2 div {
+			font-size: 3vw;
+		}
+
+		#left-image {
+			width: 35%;
+		}
+
+		#right-image {
+			width: 65%;
+		}
+
+		@media screen and (min-width:800px) {
+			#left-column-top2 {
+				width: 800px;
+				margin: 40px auto;
+			}
+
+			#left-column-top2 div {
+				font-size: 25px;
+			}
+
+			#left-image {
+				width: 27%;
+			}
+
+			#right-image {
+				width: 73%;
+			}
+		}
+
+		@media screen and (max-width:560px) {
+			#left-column-top2 div {
+				font-size: 4vw;
+				line-height: 5vw;
+			}
+		}
+
+		#top_mes {
+			text-align: center;
+			background-color: #f78f8f;
+			margin: 15px 2%;
+			padding: 5px 0;
+			border-radius: 25px;
+			font-size: 14px;
+			color: #fff;
+		}
+
+		#doui_div {
+			font-size: 16px;
+		}
+
+		@media screen and (min-width:800px) {
+			#doui_div {
+				font-size: 1.4rem;
+			}
+		}
+
+		.hissu_box {
+			position: absolute;
+			top: 12px;
+			left: 8px;
+			padding: 1px 13px;
+			border-radius: 6px;
+			background-color: #ff3333;
+			color: #fff;
+			font-size: 14px;
+		}
+
+		.ninni_box {
+			position: absolute;
+			top: 12px;
+			left: 8px;
+			padding: 1px 13px;
+			border-radius: 6px;
+			background-color: #999999;
+			color: #fff;
+			font-size: 14px;
+		}
+		.unused {
+			display: none;
+		}
+		.unused, .unused * {
+			pointer-events: none;
+			user-select: none;
+		}
+		input[data-triggerd="true"]:checked~.subcontent.unused {
+			display: block;
+		}
+		input[data-triggerd="true"]:checked~.subcontent.unused,
+		input[data-triggerd="true"]:checked~.subcontent.unused * {
+			pointer-events: auto;
+			user-select: auto;
+		}
+	</style>
+
+	<script src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/common/check_sougi_202210.js?3" type="text/javascript"></script>
+	<script src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/common/jquery.autoKana.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171598508-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171598508-1');
+</script>
+-->
+</head>
+
+<body id="urgent_apply" class="urgent_apply">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4TPGLB" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K392VBF" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div id="wrapper">
+		<div id="header-inc"></div>
+		<a href="tel:0120430430" id="arise_tel" style="display:none;"></a>
+
+		<div id="contents-body">
+			<div id="contents" class="clearfix">
+
+				<div id="left-column" style="padding-top:1px;">
+
+					<div id="left-column-top">
+						<div>
+							<img id="apply_top_shiryou"
+								src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/images/urgent_apply-fv-img.png"
+								style="width:100%;">
+						</div>
+					</div>
+					<div id="top_tel">
+						<div class="image-container">
+							<a href="tel:0120430430"><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/images/tel-top-img.png" /></a>
+						</div>
+						<script>
+							if (location.search.indexOf('sbi_cp') != -1) {
+								document.getElementById('apply_top_shiryou').src = 'https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/images/sougi_shiryou4.png?2';
+								document.getElementById('top_tel').setAttribute('style', "display: none;");
+							}
+						</script>
+					</div>
+					<div id="left-column-table">
+						<div class="block">
+
+							<div class="form-block">
+								<div id="top_mes">お問合せ内容をご選択ください</div>
+								<form method="POST" action="/regist/urgent_check" id="contact-form">
+									<input type="hidden" name="form" value="flc_admission">
+									<section class="contact_type">
+										<div class="content">
+											<label for="estimate" id="switch-estimate">
+												<input type="radio" name="contacttype" class="contactinput radio"
+													id="estimate" value="お見積り依頼" />
+												<span>お見積り依頼</span>
+											</label>
+											<label for="document" id="switch-document">
+												<input type="radio" name="contacttype" class="contactinput radio"
+													id="document" value="資料請求" />
+												<span>資料請求</span>
+											</label>
+											<label for="inquiry" id="switch-inquiry">
+												<input type="radio" name="contacttype" class="contactinput radio"
+													id="inquiry" value="お問い合わせ" checked="checked" />
+												<span>お問い合わせ</span>
+											</label>
+										</div>
+									</section>
+									
+									<div id="form_mes">以下情報をご入力ください</div>
+
+									<table width="100%" class="table-style" style="border-bottom:1px solid #777777;">
+										<!-- <tr class="contact-type">
+											<th width="180" class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>
+												お問い合わせ内容
+											</th>
+											<td class="content">
+												<label for="inquiry">
+													<input type="radio" name="contacttype" class="contactinput radio"
+														id="inquiry" value="資料請求・お問い合わせ" checked="checked" />
+													資料請求・お問い合わせ
+												</label>&emsp;<br class="disp_sp" />
+												<label for="estimate">
+													<input type="radio" name="contacttype" class="contactinput radio"
+														id="estimate" value="お見積り依頼">
+													お見積り依頼
+												</label>
+											</td>
+										</tr> -->
+
+										<tr>
+											<th width="180" class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>お名前</th>
+											<td>
+												<input name="name1" type="text" maxlength="10"
+													class="w150 name1requirement validate requirement"
+													placeholder="例：山田　太郎" id="firstname" style="width:90%;">
+											</td>
+										</tr>
+
+										<tr>
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>ふりがな</th>
+											<td>
+												<input name="kana1" type="text" maxlength="10"
+													class="w150 kana1requirement validate requirement"
+													placeholder="例：やまだ　たろう" id="firstname-furigana" style="width:90%;">
+											</td>
+										</tr>
+
+										<tr>
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>電話番号</th>
+											<td>
+												<input name="tel" type="tel"
+													class="w200 telrequirement validate requirement"
+													placeholder="例：03-3556-1111" style="width:90%;">
+											</td>
+										</tr>
+
+										<tr>
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>メールアドレス</th>
+											<td>
+												<input name="mail" type="email"
+													class="w200 emailrequirement validate mail requirement"
+													placeholder="例：info@ceremore.co.jp" style="width:90%;">
+											</td>
+										</tr>
+
+										<tr class="swtrqr">
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>郵便番号</th>
+											<td class="tb">
+												<input name="zip" type="text" size="10" maxlength="10"
+													class="ziprequirement validate requirement _pamphlet"
+													onKeyUp="AjaxZip3.zip2addr(this,'','pre','city');"> <span
+													class="exg">（例：1020094）</span><br><a
+													href="javascript:void(window.open('http://www.post.japanpost.jp/zipcode/', '', 'width=1280,height=400'));"
+													style="font-size:14px; text-decoration:underline;">郵便番号を調べる</a><br><span
+													class="exg">※郵便番号を入力すると住所が一部自動で入ります。</span>
+											</td>
+										</tr>
+
+										<tr class="swtrqr">
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>都道府県</th>
+											<td><select name='pre'
+													class="prerequirement validate requirement _pamphlet">
+													<option value='' selected="selected">選択してください</option>
+													<option value='北海道'>北海道</option>
+													<option value='青森県'>青森県</option>
+													<option value='岩手県'>岩手県</option>
+													<option value='宮城県'>宮城県</option>
+													<option value='秋田県'>秋田県</option>
+													<option value='山形県'>山形県</option>
+													<option value='福島県'>福島県</option>
+													<option value='茨城県'>茨城県</option>
+													<option value='栃木県'>栃木県</option>
+													<option value='群馬県'>群馬県</option>
+													<option value='埼玉県'>埼玉県</option>
+													<option value='千葉県'>千葉県</option>
+													<option value='東京都'>東京都</option>
+													<option value='神奈川県'>神奈川県</option>
+													<option value='新潟県'>新潟県</option>
+													<option value='富山県'>富山県</option>
+													<option value='石川県'>石川県</option>
+													<option value='福井県'>福井県</option>
+													<option value='山梨県'>山梨県</option>
+													<option value='長野県'>長野県</option>
+													<option value='岐阜県'>岐阜県</option>
+													<option value='静岡県'>静岡県</option>
+													<option value='愛知県'>愛知県</option>
+													<option value='三重県'>三重県</option>
+													<option value='滋賀県'>滋賀県</option>
+													<option value='京都府'>京都府</option>
+													<option value='大阪府'>大阪府</option>
+													<option value='兵庫県'>兵庫県</option>
+													<option value='奈良県'>奈良県</option>
+													<option value='和歌山県'>和歌山県</option>
+													<option value='鳥取県'>鳥取県</option>
+													<option value='島根県'>島根県</option>
+													<option value='岡山県'>岡山県</option>
+													<option value='広島県'>広島県</option>
+													<option value='山口県'>山口県</option>
+													<option value='徳島県'>徳島県</option>
+													<option value='香川県'>香川県</option>
+													<option value='愛媛県'>愛媛県</option>
+													<option value='高知県'>高知県</option>
+													<option value='福岡県'>福岡県</option>
+													<option value='佐賀県'>佐賀県</option>
+													<option value='長崎県'>長崎県</option>
+													<option value='熊本県'>熊本県</option>
+													<option value='大分県'>大分県</option>
+													<option value='宮崎県'>宮崎県</option>
+													<option value='鹿児島県'>鹿児島県</option>
+													<option value='沖縄県'>沖縄県</option>
+												</select></td>
+										</tr>
+
+										<tr class="swtrqr">
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>市区町村番地</th>
+											<td>
+												<input name="city" type="text" maxlength="300"
+													class="w400 cityrequirement validate requirement _pamphlet"
+													style="width:90%;">
+												<br><span class="exg">※番地までご入力ください。</span>
+											</td>
+										</tr>
+
+										<tr>
+											<th class="opt" style="background-image: none;"><span
+													class="ninni_box">任意</span>アパート・ビル・マンション</th>
+											<td>
+												<input name="apart" type="text" maxlength="200" class="w400"
+													style="width:90%;">
+											</td>
+										</tr>
+
+										<tr id="denomination" class="only-estimate unused">
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>宗教形式</th>
+											<td>
+												<label><input class="validate requirement" type="checkbox" name="denomination" value="仏教">&nbsp;仏教</label>&emsp;<br class="disp_sp" />
+												<label><input class="validate requirement" type="checkbox" name="denomination" value="神道">&nbsp;神道</label>&emsp;<br class="disp_sp" />
+												<label><input class="validate requirement" type="checkbox" name="denomination" value="キリスト教">&nbsp;キリスト教</label>&emsp;<br class="disp_sp" />
+												<label><input class="validate requirement" type="checkbox" name="denomination" value="無宗教">&nbsp;無宗教</label>&emsp;<br />
+												<label><input class="validate requirement" type="checkbox" name="denomination" value="その他">&nbsp;その他</label>&emsp;<br class="disp_sp" />
+												<input name="denomination-other" type="text" class="p60" value="">
+											</td>
+										</tr>
+
+										<tr id="formation" class="only-estimate unused">
+											<th class="rqr" style="background-image: none;">
+												<span class="hissu_box">必須</span>
+												葬儀形態
+											</th>
+											<td class="content">
+												<label for="formation01">
+													<input type="radio" name="formation" class="radio validate requirement formationrequirement"
+														id="formation01" value="家族葬" />
+														家族葬</label>&emsp;<br class="disp_sp" />
+												<label for="formation02">
+													<input type="radio" name="formation" class="radio validate requirement formationrequirement"
+														id="formation02" value="一般葬" />
+														一般葬</label>&emsp;<br class="disp_sp" />
+												<label for="formation03">
+													<input type="radio" name="formation" class="radio validate requirement formationrequirement"
+														id="formation03" value="一日葬" />
+														一日葬</label>&emsp;<br class="disp_sp" />
+												<label for="formation04">
+													<input type="radio" name="formation" class="radio validate requirement formationrequirement"
+														id="formation04" value="火葬" />
+														火葬</label>&emsp;<br />
+												<label for="formation05">
+													<input type="radio" name="formation" class="radio validate requirement formationrequirement"
+														id="formation05" value="その他" />
+														その他</label>&emsp;<br class="disp_sp" />
+												<input name="formation-other" type="text" class="p60" value="">
+											</td>
+										</tr>
+
+										<tr id="scale" class="only-estimate unused">
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>想定人数</th>
+											<td>
+												<p style="padding-bottom: 8px;">
+													ご家族ご親族&emsp;
+													<input name="scale01" type="number" maxlength="10"
+														class="validate requirement"
+														placeholder="0" >&emsp;名
+												</p>
+												<p>
+													一般参列者&emsp;
+													<input name="scale02" type="number" maxlength="10"
+														class="validate requirement"
+														placeholder="0" >&emsp;名
+												</p>
+											</td>
+										</tr>
+
+										<tr id="area" class="only-estimate unused">
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>葬儀をお考えの地域</th>
+											<td>
+												<input name="area" type="text" maxlength="10"
+													class="arearequirement validate requirement"
+													placeholder="例：東京都新宿区" style="width:90%;">
+											</td>
+										</tr>
+										
+										<tr id="hall" class="only-estimate unused">
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>
+												ご希望の葬儀場
+											</th>
+											<td class="content">
+												<label for="hall01">
+													<input type="checkbox" name="hall" class="radio validate requirement hallrequirement"
+														id="hall01" value="セレモア直営斎場" />
+													セレモア直営斎場
+												</label>&emsp;<br />
+												<label for="hall03">
+													<input type="checkbox" name="hall" class="radio validate requirement hallrequirement"
+														id="hall03" value="寺院" />
+													寺院
+												</label>&emsp;<br />
+												<label for="hall04">
+													<input type="checkbox" name="hall" class="radio validate requirement hallrequirement"
+														id="hall04" value="貸ホール" />
+													貸式場
+												</label>&emsp;<br />
+												<label for="hall05">
+													<input type="checkbox" name="hall" class="radio validate requirement hallrequirement"
+														id="hall05" value="公営斎場" />
+													公営斎場
+												</label>&emsp;<br />
+												<label for="hall02">
+													<input type="checkbox" name="hall" class="radio validate requirement hallrequirement"
+														id="hall02" value="自宅" />
+														自宅
+												</label>&emsp;<br />
+												<label for="hall06">
+													<input type="checkbox" name="hall" class="radio validate requirement hallrequirement"
+														id="hall06" value="その他" />
+													その他
+												</label>
+												<div class="subcontent">
+													具体的にご希望の葬儀場がある場合は、以下にご記入ください。<br />
+													<input name="hall-other" type="text" class="p60" value="" placeholder="例：白峯殿">
+												</div>
+											</td>
+										</tr>
+										
+										<tr id="member" class="only-estimate unused">
+											<th width="180" class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>
+													セレモアグループの会員ですか
+											</th>
+											<td class="content">
+												<label for="member-n">
+													<input type="radio" name="member-yn" class="radio validate requirement memberrequirement"
+														id="member-n" value="会員ではない" />
+													会員ではない
+												</label>&emsp;<br />
+												<input type="radio" name="member-yn" class="radio validate requirement memberrequirement"
+												id="member-y" value="会員である" data-triggerd=true />
+												<label for="member-y">
+													会員である
+												</label>
+												<div class="subcontent unused" data-trigger="member-yn">
+													<label for="member01">
+														<input type="radio" name="member" class="radio validate requirement memberrequirement"
+															id="member01" value="ファミリーライフクラブ" />
+														ファミリーライフクラブ
+													</label>&emsp;<br />
+													<label for="member02">
+														<input type="radio" name="member" class="radio validate requirement memberrequirement"
+															id="member02" value="セレパククラブ" />
+														セレパククラブ
+													</label>&emsp;<br />
+													<label for="member03">
+														<input type="radio" name="member" class="radio validate requirement memberrequirement"
+															id="member03" value="ロイヤルハピネス" />
+														ロイヤルハピネス
+													</label>&emsp;<br />
+													<!-- <label for="member04">
+														<input type="radio" name="member" class="radio validate requirement memberrequirement"
+															id="member04" value="会員ではない" />
+														会員ではない
+													</label>&emsp;<br /> -->
+													<label for="member05">
+														<input type="radio" name="member" class="radio validate requirement memberrequirement"
+															id="member05" value="その他" />
+														その他
+													</label>&emsp;<br class="disp_sp" />
+													<input name="member-other" type="text" class="p60" value="">
+												</div>
+											</td>
+										</tr>
+
+										<tr class="only-estimate unused">
+											<th class="opt" style="background-image: none;"><span
+													class="ninni_box">任意</span>所属されている契約団体</th>
+											<td>
+												<input name="belong" type="text" maxlength="10"
+													class="w150" placeholder="" style="width:90%;">
+												<div class="caption">セレモアは2,500団体の官公庁・企業・団体と、社員・ご家族・ご親族様が特別割引でご利用いただける契約を結んでおります。</div>
+											</td>
+										</tr>
+
+										<tr class="only-estimate unused">
+											<th class="opt" style="background-image: none;"><span
+													class="ninni_box">任意</span>ご要望、ご相談事項</th>
+											<td>
+												<textarea name="request" class="w400" style="width:90%;"></textarea>
+											</td>
+										</tr>
+
+										<!-- <tr class="only-estimate unused">
+											<th class="opt" style="background-image: none;"><span
+													class="ninni_box">任意</span>資料の郵送</th>
+											<td>
+												<input name="post" type="checkbox" maxlength="10" value="希望する">&emsp;希望する
+											</td>
+										</tr> -->
+
+										<!-- 入会動機 start -->
+										<tr class="only-inquiry">
+											<th width="180" class="opt" style="background-image: none;"><span
+													class="ninni_box">任意</span>セレモアをどちらでお知りになりましたか？（複数選択可）</th>
+											<td>
+												<label><input type="checkbox" name="know00" value="インターネット広告・ホームページ"
+														checked="checked">&nbsp;インターネット広告・ホームページ</label><br>
+												<div style="height:7px;"></div>
+												<label><input type="checkbox" name="know01"
+														value="勤務先・所属団体など">&nbsp;勤務先・所属団体・菩提寺・霊園・町会自治会・老人施設</label><br>
+												<div style="height:7px;"></div>
+												<input name="know01_txt" type="text" class="w400" value=""
+													placeholder="例：株式会社セレモア" style="width:90%;"><br>
+												<div style="height:7px;"></div>
+												<label><input type="checkbox" name="know02"
+														value="以前に葬儀で利用">&nbsp;以前に葬儀で利用</label><br>
+												<div style="height:7px;"></div>
+												<label><input type="checkbox" name="know03"
+														value="仏壇店舗を利用">&nbsp;仏壇店舗を利用</label><br>
+												<div style="height:7px;"></div>
+												<label><input type="checkbox" name="know04"
+														value="近所">&nbsp;近所</label><br>
+												<div style="height:7px;"></div>
+												<label><input type="checkbox" name="know05"
+														value="広告物">&nbsp;広告物</label>&nbsp;
+												<input name="know05_txt" type="text" class="w200" value=""
+													placeholder="例：広告チラシ"><br>
+												<div style="height:7px;"></div>
+												<!-- <label><input type="checkbox" name="know06"
+														value="ホームページ">&nbsp;ホームページ</label><br> -->
+												<div style="height:7px;"></div>
+												<label><input type="checkbox" name="know07"
+														value="会員制度">&nbsp;会員制度</label>
+												<input name="know07_txt" type="text" class="w200" value="" placeholder="例：ファミリーライフクラブ">
+												<div style="height:7px;"></div>
+												<label><input type="checkbox" name="know08"
+														value="その他">&nbsp;その他</label>&nbsp;
+												<input name="know08_txt" type="text" class="w100" value="">
+											</td>
+										</tr>
+										<!-- 入会動機 end -->
+
+										<tr class="only-inquiry">
+											<th class="opt" style="background-image: none;"><span
+													class="ninni_box">任意</span>セレモアからお送りする封筒の種類</th>
+											<td>
+												<span
+													style="font-weight:bold; font-size:1.0rem;">葬儀社とわからない無地の封筒を希望しますか？</span>
+												<br>
+												<span
+													style="font-size:0.9rem;">※特にご希望の無い場合、弊社のロゴ入り封筒でお見積り等一式を郵送いたします。無地の封筒をご希望の場合、「はい」をお選びください。</span>
+												<br>
+												<label for="shamei_ari" class="widthFix"><input name="shamei"
+														type="radio" value="無地の封筒" id="shamei_ari"> はい</label>
+												&emsp;<label for="shamei_nashi" class="widthFix"><input name="shamei"
+														type="radio" value="セレモアのロゴ入り封筒" id="shamei_nashi"
+														checked="checked"> いいえ</label>
+											</td>
+										</tr>
+
+										<tr class="only-inquiry">
+											<th class="rqr" style="background-image: none;"><span
+													class="hissu_box">必須</span>お電話での連絡</th>
+											<td>
+												<!-- <span style="font-weight:bold; font-size:1.0rem;">セレモアからのお電話でのご連絡を希望しない方は選択してください。</span><br> -->
+												<!-- <label><input type="checkbox" name="tel_renraku" value="お電話での連絡を希望しない">&nbsp;お電話での連絡を希望しない</label>&nbsp; -->
+												<label for="tel_yes" class="widthFix"><input name="tel_renraku"
+														type="radio" value="お電話での連絡を希望する" id="tel_yes"
+														checked="checked"> 希望する</label>
+												&emsp;<label for="tel_no" class="widthFix"><input name="tel_renraku"
+														type="radio" value="お電話での連絡を希望しない" id="tel_no"> 希望しない</label>
+											</td>
+										</tr>
+
+										<tr class="only-inquiry">
+											<th class="opt" style="background-image: none;"><span
+													class="ninni_box">任意</span>ご質問やお問い合わせ内容をご記入ください</th>
+											<td>
+												<textarea id="inq" name="inq" class="w400 if _inquiry"
+													style="width:90%;"></textarea>
+											</td>
+											<script>
+												if (location.search.indexOf('cerepak') != -1) {
+													document.getElementById('inq').value = 'セレパククラブの資料請求';
+												} else if (location.search.indexOf('sbi_cp') != -1) {
+													document.getElementById('inq').value = 'SBIいきいき少短セレパククラブの資料請求';
+												}
+											</script>
+										</tr>
+
+									</table>
+									<br>
+									<div style="padding-left:10px;">
+										<p><strong>個人情報保護方針</strong></p>
+										<p></p>
+									</div>
+									<div id="scroll2"
+										style="height: 200px; overflow: auto; padding: 16px; border: 1px solid #ccc; background: #fffff7; border-radius: 6px; margin:0 5px;">
+										<dl>
+											<dt><strong>1. 基本方針</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												株式会社セレモア（以下、「弊社」といいます）は、お客様の個人情報の重要性を認識し、個人情報の適切な管理を行うことが、弊社の事業活動の基本であると共に、弊社の社会的責務であると考えており、責任を持って個人情報を保護する為、以下の取り組みを行っております。
+											</dd>
+
+											<dt><strong>2. 個人情報の定義</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												本プライバシーポリシーにおける「個人情報」とは、弊社が取り扱う業務（葬祭関連業務、ご遺体搬送業務、法事・法要、生花・花輪承り業務、仏壇・仏具販売業務、会員制運営業務等、以下、「弊社取り扱い業務」といいます）を通じてお客様からお預かりさせていただく、氏名、住所、電話番号、生年月日、メールアドレス等、お客様個人を識別できる情報を意味します。
+											</dd>
+
+											<dt><strong>3. 安全管理措置</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												弊社は、お客様よりお預かりさせていただいた個人情報を適切にまた厳正に運用するため、個人情報を厳重に保管・管理し、第三者の不正なアクセスによる個人情報の漏洩・流用・改ざん及び紛失等を防止するセキュリティ対策を講じています。
+											</dd>
+
+											<dt><strong>4. 組織体制</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												弊社は、個人情報の取扱いに関する規程に基づき、各部署に個人情報管理責任者を任命し、弊社内における個人情報保護を遵守するための組織体制を整備しております。
+											</dd>
+
+											<dt><strong>5. 利用目的</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												弊社は、弊社取り扱い業務におけるサービス及び商品の提供、アドバイザーとしてのご案内、社内業務処理等を行うために利用いたします。また、弊社は、業務を円滑に進めるため、業務の一部を委託し、委託先に対して必要な範囲で個人情報を提供することがありますが、この場合、弊社は業務委託先との間で取り扱いに関する契約の締結をはじめ適切な監督を行います。
+											</dd>
+
+											<dt><strong>6. 第三者への非公開</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												弊社は、お客様の個人情報を第三者に対して開示もしくは提供いたしません。ただし、次のいずれかの場合は開示もしくは提供することがあります。
+												<ol>
+													<li>お客様の同意がある場合。</li>
+													<li>弊社取り扱い業務に関連し、アドバイザー業務の一環としてお客様の個人情報を記載した書面を業務提携している企業（デパート、ギフト専門店、墓地・墓石専門店等、以下「提携企業」といいます）に送付して提供する場合。
+													</li>
+													<li>なお、お客様が提携企業からのご案内を希望されない場合は、弊社にご連絡いただければ速やかに提供を停止いたします。</li>
+													<li>統計的なデータなど本人を識別できない状態で開示・提供する場合。</li>
+													<li>法令に定めのある場合。</li>
+												</ol>
+											</dd>
+
+											<dt><strong>7. 共同利用</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												弊社がお預かりさせていただいている個人情報は、弊社のグループ会社が関連する事業のサービス・商品の提供及び情報提供のために共同利用させていただく場合がございます。この場合、弊社が責任をもって個人情報を管理いたします。
+											</dd>
+
+											<dt><strong>8.正確性の確保</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												お客様の個人情報は、正確かつ最新の状態を保つよう、適正な措置を講じております。
+											</dd>
+
+											<dt><strong>9.個人情報の開示・訂正・削除</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												弊社がお預かりするお客様の個人情報に関して、照会、訂正、削除等をご希望される場合には、速やかに対応させていただきます。
+											</dd>
+
+											<dt><strong>10.関係法令、ガイドライン等の遵守</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												弊社が保有する個人情報に関して適用される法令、ガイドライン及び規範等を遵守するとともに、本プライバシーポリシーにおける取り組みを適宜見直し、改善に努めます。
+											</dd>
+
+											<dt><strong>11.個人情報に関するお問い合わせ窓口</strong></dt>
+											<dd style="margin-bottom: 10px;">
+												個人情報に関するお問い合わせは、下記窓口までお願い申し上げます。
+												<br>株式会社セレモア　個人情報管理担当
+												<br>フリーダイヤル　0120-430-430
+											</dd>
+										</dl>
+									</div>
+									<br>
+									<div id="doui_div" style="text-align:center; font-weight:bold;">
+										<label><input id="check_doui2" type="checkbox" name="doui"
+												value="1">&nbsp;個人情報保護方針に同意する</label>
+										<span id="checkbox_msg2"></span>
+									</div>
+									<br>
+									<div class="submit-btn">
+										<!-- <input id="submit-flag" type="checkbox" name="dummy" class="unused"/> -->
+										<input id="submit-check" type="submit" onclick="return check_form()"
+											value="確認する" style="-webkit-appearance: none;" class="disable">
+									</div>
+									<script type="text/javascript">
+										const cd = document.querySelector('#check_doui2');
+										const sc = document.querySelector('#submit-check');
+										cd.addEventListener('change', function () {
+											if (cd.checked) {
+												sc.classList.remove('disable');
+											} else {
+												sc.classList.add('disable');
+											}
+										});
+										window.addEventListener('load', function() {
+											// cd.checked = false;
+											
+											if(cd.checked) {
+												sc.classList.remove('disable');
+											} else {
+												sc.classList.add('disable');
+											}
+										});
+									</script>
+
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /#contents-body -->
+
+		<div id="footer-inc"></div>
+
+
+	</div>
+	<!-- /#wrapper -->
+
+	<script type="text/javascript">
+		(function () {
+			var tagjs = document.createElement("script");
+			var s = document.getElementsByTagName("script")[0];
+			tagjs.async = true;
+			tagjs.src = "//s.yjtag.jp/tag.js#site=21ZQK0E";
+			s.parentNode.insertBefore(tagjs, s);
+		}());
+	</script>
+	<script type="text/javascript">
+		(function() {
+			//// ページロード時にフォームを切り替える
+			window.addEventListener('DOMContentLoaded', function(event) {
+				document.body.id =  location.pathname.split('/').slice(-1)[0];
+				history.replaceState('', '', document.body.id);
+				switch_form();
+			});
+			
+			//// 問い合わせ内容選択時にフォームを切り替える
+			var contact_type = document.querySelectorAll("[name='contacttype']");
+			for(var i=0, type=contact_type[i]; i<contact_type.length; type=contact_type[++i]) {
+				type.addEventListener('change', function(event) {
+					history.replaceState('', '', 'urgent_apply-'+this.id);
+					document.body.id = 'urgent_apply-'+this.id;
+					switch_form();
+				});
+			}
+
+			//// 追加選択肢の表示を切り替える
+			var subcontents = document.querySelectorAll(".subcontent.unused");
+			for(var i=0, item=subcontents[i]; i<subcontents.length; item=subcontents[++i]) {
+				var trigger = item.dataset.trigger;
+				var id = "subcontent-"+i;
+				item.id = id;
+				if(trigger) {
+					var trigger_switch = document.querySelectorAll("[name='"+trigger+"']");
+					for(var ii=0, trigger_item=trigger_switch[ii]; ii<trigger_switch.length; trigger_item=trigger_switch[++ii]) {
+						trigger_item.addEventListener('change', function(event) {
+							// emerge_control("#"+id, this.dataset.triggerd);
+							if(!this.dataset.triggerd) {
+								var ts = document.querySelectorAll("#"+id+" input");
+								for(var iii=0, input=ts[0]; iii<ts.length; input=ts[++iii]) {
+									input.checked = false;
+								}
+							}
+						});
+					}
+				} 
+			}
+			// window.addEventListener('load', function(event) {
+			// 	var triggers = document.querySelectorAll("[data-triggerd=true]:checked");
+			// 	for(var i=0, trigger=triggers[0]; i<triggers.length; trigger=triggers[++i]) {
+			// 		document.querySelector(`[data-trigger="${trigger.name}"`).classList.remove('unused');
+			// 	}
+			// });
+		}) ();
+	</script>
+	<script type="text/javascript">
+		// 必須・任意の切り替え
+		function validate_control(targets, isOpt) {
+			var ts = document.querySelectorAll(targets);
+			for(var i=0, t=ts[i]; i<ts.length; t=ts[++i]) {
+				var th = t.querySelector('th');
+				var inputs = t.querySelectorAll('input');
+				var selects = t.querySelectorAll('select');
+				var box = th.querySelector('span');
+				if(isOpt) {
+					th.classList.remove('rqr');
+					th.classList.add('opt');
+					for(var ii=0, inn=inputs[0]; ii<inputs.length; inn<inputs[++ii]) {
+						inn.classList.remove('validate');
+					}
+					for(var ii=0, inn=selects[0]; ii<selects.length; inn<selects[++ii]) {
+						inn.classList.remove('validate');
+					}
+					box.classList.remove('hissu_box');
+					box.classList.add('ninni_box');
+					box.innerHTML = '任意';
+					$(targets+' .error_msg').remove();
+				} else {
+					th.classList.add('rqr');
+					th.classList.remove('opt');
+					for(var ii=0, inn=inputs[0]; ii<inputs.length; inn<inputs[++ii]) {
+						inn.classList.add('validate');
+					}
+					for(var ii=0, inn=selects[0]; ii<selects.length; inn<selects[++ii]) {
+						inn.classList.add('validate');
+					}
+					box.classList.add('hissu_box');
+					box.classList.remove('ninni_box');
+					box.innerHTML = '必須';
+				}
+			}
+		}
+
+		// 質問項目の表示・非表示の切り替え
+		function emerge_control(targets, to_use) {
+			var ts = document.querySelectorAll(targets);
+			for(var i = 0, t=ts[i]; i<ts.length; t=ts[++i]) {
+				// var th = t.querySelector('th');
+				var inputs = t.querySelectorAll('input');
+				var selects = t.querySelectorAll('select');
+				// var box = th.querySelector('span');
+				if(to_use) {
+					t.classList.remove('unused');
+					$(targets+' .error_msg').remove();
+					for(var ii=0, inn=inputs[0]; ii<inputs.length; inn<inputs[++ii]) {
+						inn.classList.add('validate');
+					}
+					for(var ii=0, inn=selects[0]; ii<selects.length; inn<selects[++ii]) {
+						inn.classList.add('validate');
+					}
+				} else {
+					t.classList.add('unused');
+					for(var ii=0, inn=inputs[0]; ii<inputs.length; inn<inputs[++ii]) {
+						inn.classList.remove('validate');
+					}
+					for(var ii=0, inn=selects[0]; ii<selects.length; inn<selects[++ii]) {
+						inn.classList.remove('validate');
+					}
+				}
+			}
+		}
+
+		// var ts = document.querySelectorAll('.contact-type input');
+		// for(var i = 0, t = ts[i]; i < ts.length; t = ts[++i]) {
+		// 	t.addEventListener('change', function (e) {
+		// 		validate_control('.swtrqr', e.target.value == "お見積り依頼");
+		// 	})
+		// }
+
+		// 問い合わせ内容別のフォーム切り替え
+		function switch_form() {
+			var id = document.body.id;
+			document.querySelector('#'+id.split('-')[1]).checked = true;
+			if(id.indexOf('estimate') != -1) {
+				validate_control('.swtrqr', true);
+				emerge_control('.only-estimate', true);
+				emerge_control('.only-inquiry', false);
+			} else {
+				validate_control('.swtrqr', false);
+				emerge_control('.only-estimate', false);
+				emerge_control('.only-inquiry', true);
+			}
+		} // https://qiita.com/kerupani129/items/64ce1e80eb8efb4c2b21
+
+		
+		// switch_form(location.pathname.split('/').slice(-1)[0].split('\-').slice(-1)[0]);
+
+		// if ((location.search.split(/[?&=]/) || []).indexOf('estimate') != -1) {
+		// 	document.querySelector('#estimate').checked = true;
+		// 	validate_control('.swtrqr', true);
+		// 	emerge_control('.only-estimate', true);
+		// 	emerge_control('.only-inquiry', false);
+		// } else {
+		// 	document.querySelector('#inquiry').checked = true;
+		// 	validate_control('.swtrqr', false);
+		// 	emerge_control('.only-estimate', false);
+		// 	emerge_control('.only-inquiry', true);
+		// }
+
+	</script>
+	<noscript>
+		<iframe src="//b.yjtag.jp/iframe?c=21ZQK0E" width="1" height="1" frameborder="0" scrolling="no" marginheight="0"
+			marginwidth="0"></iframe>
+	</noscript>
+</body>
+
+</html>

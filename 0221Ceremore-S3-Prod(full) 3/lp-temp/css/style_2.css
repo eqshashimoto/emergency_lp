@@ -1,0 +1,321 @@
+@charset "UTF-8";
+* {
+  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  display: block;
+  font-size: 1rem;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: normal;
+}
+
+h3 {
+  display: block;
+  font-size: 1rem;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: normal;
+}
+
+p {
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+}
+
+.justify_content_center {
+  justify-content: center;
+}
+
+.justify_content_space_between {
+  justify-content: space-between;
+}
+
+.text_align_center {
+  text-align: center;
+}
+
+.middle_text_br {
+  white-space: nowrap;
+}
+
+.shadow {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+.wrapper .flex {
+  display: flex;
+}
+.wrapper .green_box {
+  background-color: #008c61;
+  padding: 0.5rem 0rem;
+  width: 100% vw;
+  vertical-align: middle;
+}
+.wrapper .green_box .text_img {
+  width: 55%;
+  max-width: 450px;
+}
+.wrapper .green_box .font_heading {
+  font-size: clamp(1.3rem, 5.2vw, 3rem);
+  color: #f6f6f6;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  vertical-align: 0%;
+  display: inline-block;
+}
+.wrapper .green_box .font_heading_2 {
+  font-size: clamp(1.1rem, 5vw, 2.5rem);
+  display: inline-block;
+}
+.wrapper .wrapper_box {
+  padding: 1rem;
+}
+.wrapper .wrapper_box .wrapper_text {
+  padding-bottom: 1rem;
+}
+@media (min-width: 520px) {
+  .wrapper .wrapper_box .wrapper_text {
+    padding: 2rem 3rem;
+  }
+}
+.wrapper .wrapper_box .wrapper_text .text_img_2 {
+  width: 30%;
+  max-width: 15rem;
+  vertical-align: middle;
+  padding-right: clamp(0.5rem, 2vw, 1rem);
+}
+.wrapper .wrapper_box .wrapper_text .text_1 {
+  font-size: clamp(1rem, 4vw, 2rem);
+  line-height: 2em;
+}
+.wrapper .flex_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1rem;
+}
+@media screen and (max-width: 700px) {
+  .wrapper .flex_card {
+    /*　画面サイズが700pxより小さいとここを読み込む　*/
+    display: none;
+  }
+}
+.wrapper .family_color_border {
+  border: thin solid #A94377;
+}
+.wrapper .one_day_color_border {
+  border: thin solid #69A068;
+}
+.wrapper .general_color_border {
+  border: thin solid #437F8F;
+}
+@media screen and (min-width: 700px) {
+  .wrapper .wrapper_sp_card {
+    /*　画面サイズが700pxからはここを読み込む　*/
+    display: none;
+  }
+}
+.wrapper .card {
+  width: 100%;
+  margin-right: auto;
+  margin-right: auto;
+  max-width: 320px;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.wrapper .card .card_heading_box {
+  border-radius: 8px 8px 0px 0px;
+}
+.wrapper .card .card_heading_box .card_heading {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: #f6f6f6;
+}
+.wrapper .card .card_heading_box .sp_card_heading {
+  font-size: clamp(0.8rem, 3.6vw, 1.4rem);
+  padding: 0.5rem;
+}
+.wrapper .card .family_color_background {
+  background-color: #A94377;
+}
+.wrapper .card .one_day_color_background {
+  background-color: #69A068;
+}
+.wrapper .card .general_color_background {
+  background-color: #437F8F;
+}
+.wrapper .card .family_color {
+  color: #A94377;
+}
+.wrapper .card .one_day_color {
+  color: #69A068;
+}
+.wrapper .card .general_color {
+  color: #437F8F;
+}
+.wrapper .card .card_content {
+  padding: 1rem;
+}
+.wrapper .card .card_content .sp_card_img {
+  width: 35%;
+  display: inline-block;
+}
+.wrapper .card .card_content .flex_container {
+  align-items: flex-start;
+}
+.wrapper .card .card_content .flex_box {
+  width: calc(65% - 0.5rem);
+  padding-left: clamp(0.5rem, 2.4vw, 1rem);
+}
+.wrapper .card .card_content .flex_box .sp_emphasis_word {
+  font-size: clamp(1.8rem, 7.9vw, 3rem);
+  font-weight: bolder;
+  width: 100%;
+  line-height: clamp(1.8rem, 7.9vw, 3rem);
+  margin-bottom: -0.2rem;
+}
+.wrapper .card .card_content .flex_box .sp_explanation {
+  font-size: clamp(0.6rem, 2.7vw, 1rem);
+  padding: 0.1rem 0rem;
+  width: 100%;
+  margin: 0.5rem 0rem;
+}
+.wrapper .card .card_content .flex_box .sp_price {
+  font-size: clamp(1.9rem, 8.43vw, 3rem);
+  margin-top: -0.3rem;
+}
+.wrapper .card .card_content .flex_box .sp_yen {
+  font-size: clamp(0.8rem, 3.5vw, 1.3rem);
+  font-weight: bold;
+}
+.wrapper .card .card_content .flex_box .sp_tax_included {
+  margin-top: -0.3rem;
+  font-size: clamp(1.3rem, 5.75vw, 2.2rem);
+}
+.wrapper .card .card_content .flex_box .font_weight_normal {
+  font-weight: normal;
+}
+.wrapper .card .card_content .emphasis_word {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.wrapper .card .card_content .card_img {
+  width: 100%;
+  display: inline-block;
+}
+.wrapper .card .card_content .explanation {
+  background-color: #C75954;
+  display: inline-block;
+  color: #f6f6f6;
+  padding: 0.25rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  margin: 0.25rem 0rem;
+  width: calc(100% - 2rem);
+}
+.wrapper .card .card_content .price {
+  font-size: 3rem;
+  color: #C75954;
+  font-weight: bolder;
+}
+.wrapper .card .card_content .yen {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.wrapper .card .card_content .tax_included {
+  margin-top: -1rem;
+  font-size: 2rem;
+}
+.wrapper .card .card_content .font_weight_normal {
+  font-weight: normal;
+}
+.wrapper .card .card_content .explanation_2 {
+  border: medium solid #C75954;
+  display: inline-block;
+  color: #C75954;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  font-weight: bolder;
+  width: 225px;
+}
+.wrapper .card .card_content .sp_explanation_2 {
+  border: medium solid #C75954;
+  font-size: 1.3rem;
+  width: auto;
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+.wrapper .card .sp_card_content {
+  padding-left: clamp(0.5rem, 2.4vw, 1rem);
+}
+.wrapper .card .card_bottom_box {
+  border-radius: 0px 0px 8px 8px;
+}
+.wrapper .card .card_bottom_box .card_bottom {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: #f6f6f6;
+  position: relative;
+}
+.wrapper .card .card_bottom_box .card_bottom::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../images/motchan/button_detail.png");
+  background-size: contain;
+}
+.wrapper .card .card_bottom_box .sp_card_bottom {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+.wrapper .card .card_bottom_box .sp_card_bottom::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 5%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../images/motchan/button_detail.png");
+  background-size: contain;
+}
+.wrapper .sp_card {
+  max-width: 500px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style_2.css.map */

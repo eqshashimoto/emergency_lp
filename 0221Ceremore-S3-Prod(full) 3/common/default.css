@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+/*---------------------------------------------
+	Browser Default Initialization
+  ---------------------------------------------*/
+
+body, dl, dt, dd, ul, ul li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td,
+section, nav, article, aside, hgroup, header, address,
+figure, figcaption {
+	margin: 0;
+	padding: 0;
+}
+address, caption, cite, code, dfn, em, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	vertical-align:top;
+}
+q:before ,q:after {
+	content: '';
+}
+object, embed {
+	vertical-align: top;
+}
+hr, legend {
+	display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+img, abbr, acronym, fieldset {
+	border: 0;
+}
+img {
+	vertical-align: bottom;
+	-ms-interpolation-mode: bicubic;
+}
+ul li {
+	list-style-type: none;
+}
+ol {
+	padding-left:22px;
+}
+ol li {
+	padding-bottom:5px;
+}
+input[type="checkbox"],
+[type="radio"] {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	-moz-transform-origin: right center;
+	-moz-transform: scale( 1.5 , 1.5 );
+}
+
+/*---------------------------------------------
+	body
+  ---------------------------------------------*/
+
+body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #333;
+	font-size: 15px;
+	line-height:1.6;
+	text-align: left;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: 100%;
+}
+
+/*---------------------------------------------
+	Anchor
+  ---------------------------------------------*/
+
+a {
+	outline: none;
+}
+a:link {
+	text-decoration: none;
+	color: #333;
+}
+a:visited {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+	color: #999;
+}
+a:active {
+	text-decoration: none;
+	color: #999;
+}
+
+/*******************************
+　clearfix
+*******************************/
+
+.clearfix:after {
+	clear:both;
+	display:block;
+	height:0px;
+	content:"";
+	visibility:hidden;
+}
+.clearfix {
+	min-height:1px;
+	clear:both;
+}
+*html .clearfix {
+	height:1px;
+}
+
+
+/*---------------------------------------------
+	Other
+  ---------------------------------------------*/
+
+.center { text-align:center; }
+.left { text-align:left !important; }
+.right { text-align:right !important; }
+
+.small { font-size:85% !important; line-height:140% !important; }
+.large { font-size:125% !important; }
+.red { color:#CC0000; }
+.gray { color:#AAAAAA; }
+.blue { color:#2c8691; }
+.green { color:#006e42; }
+
+.mincho {
+	margin-bottom:10px;
+	font-size:18px;
+	line-height:1.3;
+	font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+.fs10 { font-size:10px; }
+.fs11 { font-size:11px; }
+.fs12 { font-size:12px; }
+.fs14 { font-size:14px; }
+.fs15 { font-size:15px; }
+.fs16 { font-size:16px; }
+.fs18 { font-size:18px; }
+.fs20 { font-size:20px; }
+.fs22 { font-size:22px; }
+.fs24 { font-size:24px; }
+
+.mb0 { margin-bottom:0 !important; }
+.mb5 { margin-bottom:5px !important; }
+.mb8 { margin-bottom:8px !important; }
+.mb10 { margin-bottom:10px !important; }
+.mb20 { margin-bottom:20px !important; }
+.mt5 { margin-top:5px !important; }
+.mt10 { margin-top:10px !important; }
+.mt15 { margin-top:15px !important; }
+.mt35 { margin-top:35px !important; }
+.mt40 { margin-top:40px !important; }
+.mt45 { margin-top:45px !important; }
+.mt-100{ margin-top:-100px !important; }
+.mr5 { margin-right:5px !important; }
+.mr10 { margin-right:10px !important; }
+.mr15 { margin-right:15px !important; }
+.ml5 { margin-left:5px !important; }
+.ml10 { margin-left:10px !important; }
+.ml15 { margin-left:15px !important; }
+
+.pb0 { padding-bottom:0 !important; }
+.pb1 { padding-bottom:1px !important; }
+.pb5 { padding-bottom:5px !important; }
+.pb10 { padding-bottom:10px !important; }
+.pb15 { padding-bottom:15px !important; }
+
+.pt20{padding-top:20px !important;}
+
+
+.photo-l {
+	float:left;
+	margin:0 20px 5px 0;
+}
+.photo-r {
+	float:right;
+	margin:0 0 5px 20px;
+}
+
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+.middle {
+	vertical-align:middle !important;
+}
+
+.lh20 {	line-height:20px;}
+.lh30 {	line-height:30px;}
+.lh32 {	line-height:32px;}
+.lh34 {	line-height:34px;}
