@@ -1056,7 +1056,7 @@ img {
 .wrapper_pc_top_area {
 	position: absolute;
 	left: 8%;
-	top:18%;
+	top:20%;
 	width:100%;
 }
 
@@ -3201,3 +3201,25 @@ img {
 .footer_button_right {
 	width:33%;
 }
+
+/* 以下20230821 */
+.sougizyou_img {
+	margin-top: 2em;
+}
+
+.wrapper_sougizyou_img {
+	width:100%;
+	object-fit: fill;
+	margin-top: 2em;
+}
+
+.sougizyou_img_sp_1 {
+	object-position: 0 0;
+	width:100%;
+}
+
+.sougizyou_img_sp_2 {
+	width:100%;
+	object-position: 0 100%;
+}
+/* 以上20230821 */

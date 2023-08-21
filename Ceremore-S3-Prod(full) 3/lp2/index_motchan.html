@@ -20,1427 +20,23 @@
 	<script src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/js/swiper.js?43" charset="UTF-8"></script>
 	<!-- <script src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/common/lottie.min.js"></script> -->
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W4TPGLB');</script>
-<!-- End Google Tag Manager -->
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K392VBF');</script>
-<!-- End Google Tag Manager -->
-
-<style>
-html {
-	font-size: 1vw;
-	margin:0;
-	padding:0;
-}
-
-@media screen and (min-width:1500px) {
-	html {
-		font-size: 15.3px;
-	}
-}
-
-body {
-	margin:0;
-	padding:0;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #FAFAFA;
-  padding: 2px 0;
-}
-::-webkit-scrollbar-thumb {
-  background: #C1C1C1;
-  border-radius: 5px;
-}
-
-.hide {
-	display: none;
-}
-
-.popup_block {
-	display:none;
-	position:fixed;
-	top:0;
-	bottom:0;
-	left:0;
-	z-index:100;
-	width:580px;
-	overflow-y:auto;
-	background-color:#000000aa;
-}
-
-.popup_block2 {
-	display:none;
-	position:fixed;
-	top:0;
-	bottom:0;
-	left:0;
-	z-index:100;
-	width:100%;
-	overflow-y:auto;
-	background-color:#000000aa;
-}
-
-@media screen and (max-width:580px) {
-	.popup_block {
-		width:100%;
-	}
-}
-
-@media screen and (max-width:1300px) {
-	.popup_block2 {
-		width:100%;
-	}
-}
-
-.popup_image_wrapper {
-	position:relative;
-	width:95%;
-	margin:0 auto;
-}
-
-.popup_image_wrapper2 {
-	position:relative;
-	width:320px;
-	margin:0 auto;
-}
-
-@media screen and (max-width:640px) {
-	.popup_image_wrapper2 {
-		width:50%;
-	}
-}
-
-#section_1_button a {
-	position:absolute;
-	display:block;
-	width:38%;
-	height:19%;
-	bottom:10%;
-	right:3%;
-}
-
-#section_5_ichinichi a {
-	position: absolute;
-    display: block;
-    width: 100%;
-    height: 17%;
-    bottom: 53.4%;
-}
-
-#section3_5_ichinichi a {
-	position: absolute;
-    display: block;
-    width: 25%;
-    height: 2.7%;
-    bottom: 24.9%;
-    right: 11%;
-}
-
-#close_ichinichi {
-	position:absolute;
-	width:20%;
-	height: 4%;
-    top: 0%;
-	right:0%;
-}
-
-#close3_ichinichi {
-	position:absolute;
-	width:20%;
-	height: 5%;
-    top: 1%;
-	right:1%;
-}
-
-#section_5_kazoku1 a {
-	position: absolute;
-    display: block;
-    width: 100%;
-    height: 17%;
-    bottom: 71.5%;
-    right: 0;
-}
-
-#section3_5_kazoku1 a {
-	position: absolute;
-    display: block;
-    width: 25%;
-    height: 2.7%;
-    bottom: 37.7%;
-    right: 11%;
-}
-
-#close_kazoku1 {
-	position:absolute;
-	width:20%;
-	height: 4%;
-    top: 0%;
-	right:0%;
-}
-
-#close3_kazoku1 {
-	position:absolute;
-	width:20%;
-	height: 5%;
-    top: 1%;
-	right:1%;
-}
-
-#section_5_kazoku2 a {
-	position: absolute;
-    display: block;
-    width: 100%;
-    height: 16%;
-    bottom: 36%;
-}
-
-#section3_5_kazoku2 a {
-	position: absolute;
-    display: block;
-    width: 25%;
-    height: 2.7%;
-    bottom: 12%;
-    right: 11%;
-}
-
-#close_kazoku2 {
-	position:absolute;
-	width:20%;
-	height: 3%;
-    top: 0%;
-	right:0%;
-}
-
-#close3_kazoku2 {
-	position:absolute;
-	width:20%;
-	height: 5%;
-    top: 1%;
-	right:1%;
-}
-
-#section_5_ippan a {
-	position:absolute;
-	display:block;
-	width:50%;
-	height:22%;
-	bottom:42%;
-	right:0;
-}
-
-#close_ippan {
-	position:absolute;
-	width:20%;
-	height:10%;
-	top:7%;
-	right:1%;
-}
-
-#section_5_form a {
-	position:absolute;
-	display:block;
-	width:100%;
-	height:4%;
-	bottom:2%;
-}
-
-#section_5_call a {
-	position:absolute;
-	display:block;
-	width:100%;
-	height:4%;
-	bottom:7%;
-}
-
-#call_0203 {
-	position:absolute;
-	display:block;
-	width:100%;
-	height: 5%;
-    bottom: 6%;
-}
-
-#link_0203 {
-	position:absolute;
-	display:block;
-	width:100%;
-	height: 4%;
-    bottom: 1%;
-}
-
-#section_6_call a {
-	position:absolute;
-	display:block;
-	width:100%;
-	height:17%;
-	bottom:2%;
-}
-
-.popup_block .popup_image {
-	position:static;
-	width:100%;
-}
-
-#pc_section_1_button a {
-	position:absolute;
-	display:block;
-	width:35%;
-	height:18%;
-	bottom:10%;
-	right:2%;
-}
-
-#pc_section_6_form a {
-	position:absolute;
-	display:block;
-	width:60%;
-	height:7%;
-	bottom:2%;
-	left:20%;
-}
-
-#pc_section_6_call a {
-	position:absolute;
-	display:block;
-	width:54%;
-	height:7%;
-	bottom:9%;
-	right:23%;
-}
-
-#pc_section_7_call a {
-	position:absolute;
-	display:block;
-	width:40%;
-	height:11%;
-	bottom:15%;
-	right:6%;
-}
-
-#pc_section_5_ichinichi a {
-	position: absolute;
-    display: block;
-    width: 32%;
-	height: 33%;
-    top: 13%;
-    left: 34%;
-    z-index: 3;
-}
-
-#pc3_section_5_ichinichi a {
-	position: absolute;
-    display: block;
-    width: 24%;
-    height: 30%;
-    top: 53%;
-    left: 38%;
-    z-index: 3;
-}
-
-#close_pc_ichinichi, #close_pc3_ichinichi {
-    position: absolute;
-    width: 10%;
-    height: 2.5%;
-    top: 0%;
-    right: 0%;
-}
-
-#pc_section_5_kazoku1 a {
-	position: absolute;
-    display: block;
-    width: 32%;
-	height: 33%;
-    top: 13%;
-    left: 1%;
-    z-index: 3;
-}
-
-#pc3_section_5_kazoku1 a {
-	position: absolute;
-    display: block;
-    width: 24%;
-    height: 30%;
-    top: 53%;
-    left: 13%;
-    z-index: 3;
-}
-
-#close_pc_kazoku1, #close_pc3_kazoku1 {
-    position: absolute;
-    width: 10%;
-    height: 2.5%;
-    top: 0%;
-    right: 0%;
-}
-
-#pc_section_5_kazoku2 a {
-	position: absolute;
-    display: block;
-    width: 32%;
-	height: 33%;
-    top: 13%;
-    left: 67%;
-    z-index: 3;
-}
-
-#pc3_section_5_kazoku2 a {
-	position: absolute;
-    display: block;
-    width: 24%;
-    height: 30%;
-    top: 53%;
-    left: 63%;
-    z-index: 3;
-}
-
-#pc3_section_5_sikijou_ichiran {
-	background-color: #fff;
-	display: flex;
-	justify-content: center;
-	padding: 20px 0;
-}
-
-#pc3_section_5_sikijou_ichiran a {
-    font-size: 2.7rem;
-    font-weight: bold;
-    color: #FFFFFF;
-	background-color: #CD671E;
-	width: 30%;
-	padding: 10px 15px;
-	box-shadow: 0px 4px #2D0B06;
-	border-radius: 8px;
-}
-
-#pc3_section_5_sikijou_ichiran a img {
-	margin: auto 0 auto auto;
-}
-
-#pc_sikijou_list_box {
-	/* background-color: #f0eee5; */
-    padding: 10px 10px;
-    width: calc(100% - 20px);
-    border-radius: 10px;
-}
-
-
-/* 橋本変更 */
-#app_sikijou_list_box {
-    /* margin: 10px auto; */
-    padding: 20px 5px;
-    width: calc(100% - 10px);
-    border-radius: 10px;
-}
-
-#pc_sikijou_list_title {
-	font-size: clamp(25px, 4.5vw, 48px);
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#app_sikijou_list_title {
-	font-size: 6rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-#pc_sikijou_list_box .swiper-slide {
-	background-color: white;
-	padding-bottom: 25px;
-    border-radius: 18px;
-    box-sizing: border-box;
-	box-shadow: 1px 1px rgb(231, 231, 231);
-}
-
-#app_sikijou_list_box .swiper-slide {
-	background-color: white;
-	padding-bottom: 10px;
-    border-radius: 7px;
-	border: 0.5px solid #d1d1d1;
-	box-sizing: border-box;
-	box-shadow: 1px 1px rgb(231, 231, 231);
-}
-
-
-#pc_sikijou_list_box .swiper-slide img {
-	border-radius: 18px 18px 0 0;
-}
-
-#app_sikijou_list_box .swiper-slide img {
-	border-radius: 7px 7px 0 0;
-}
-
-#pc_sikijou_list_box .pc_sikijou_station {
-	text-align: center;
-    font-size: 2.2rem;
-    padding: 10px 0 0;
-}
-
-#app_sikijou_list_box .app_sikijou_station {
-	text-align: center;
-    font-size: 3.7rem;
-    padding: 10px 0 0;
-}
-
-#pc_sikijou_list_box .pc_sikijou_name {
-	text-align: center;
-    font-size: 2.57rem;
-    font-weight: bold;
-}
-
-#app_sikijou_list_box .app_sikijou_name {
-	text-align: center;
-    font-size: 3.7rem;
-    font-weight: bold;
-}
-
-#pc_sikijou_list_box .pc_sikijou_type {
-	text-align: center;
-    width: 70%;
-    margin: 5px auto;
-    padding: 3px 0;
-    font-size: 2.8rem;
-    color: white;
-    border-radius: 5px;
-}
-
-#app_sikijou_list_box .app_sikijou_type {
-	text-align: center;
-    width: 70%;
-    margin: 5px auto;
-    padding: 3px 0;
-    font-size: 4.2rem;
-    color: white;
-    border-radius: 5px;
-}
-
-#pc_sikijou_list_box .pc_sikijou_ichinichi {
-	background-color: #4A9550;
-}
-
-#pc_sikijou_list_box .pc_sikijou_ippan {
-	background-color: #216E7F;
-}
-
-#pc_sikijou_list_box .pc_sikijou_kazoku {
-	background-color: #A62364;
-}
-
-#app_sikijou_list_box .app_sikijou_ichinichi {
-	background-color: #4A9550;
-}
-
-#app_sikijou_list_box .app_sikijou_ippan {
-	background-color: #216E7F;
-}
-
-#app_sikijou_list_box .app_sikijou_kazoku {
-	background-color: #A62364;
-}
-
-#pc_sikijou_list_box .swiper-pagination {
-	bottom: 0;
-}
-
-#app_sikijou_list_box .swiper-pagination {
-	bottom: 0;
-}
-
-#pc_sikijou_list_box .swiper-pagination-bullet-active {
-	background-color: #CD671E;
-}
-
-#app_sikijou_list_box .swiper-pagination-bullet-active {
-	background-color: #CD671E;
-}
-
-#app3_section_5_sikijou_ichiran {
-	background-color: #fff;
-	display: flex;
-	justify-content: center;
-	padding: 0 0 20px 0;
-}
-
-#app3_section_5_sikijou_ichiran a {
-	padding: 10px 20px;
-    background-color: #CD671E;
-    font-size: 4.0rem;
-    font-weight: bold;
-    color: #FFFFFF;
-	width: 30%;
-	box-shadow: 0px 4px #2D0B06;
-	border-radius: 8px;
-}
-
-
-
-#app3_section_5_sikijou_ichiran a img {
-	/* width:clamp(20px, 5.0vw, 40px);
-	height:clamp(20px, 5.0vw, 40px); */
-
-	margin-left: auto;
-}
-
-#close_pc_kazoku2, #close_pc3_kazoku2 {
-    position: absolute;
-    width: 10%;
-    height: 2.5%;
-    top: 0%;
-    right: 0%;
-}
-
-#pc3_sikijou_ichiran_parent {
-	position: relative;
-	width: 95%;
-	max-width: 500px;
-	height: 90%;
-	padding-top: 5%;
-}
-
-#app3_sikijou_ichiran_parent {
-	position: relative;
-	width: 95%;
-	height: 90%;
-	padding-top: 5%;
-}
-
-#pc3_sikijou_ichiran_close1 {
-	position: absolute;
-	z-index: 10;
-	width: 42px;
-    right: 0;
-    top: 26px;
-}
-
-#app3_sikijou_ichiran_close1 {
-	position: absolute;
-	z-index: 10;
-	width: 42px;
-    right: 0;
-    top: 26px;
-}
-
-#pc3_sikijou_ichiran_box {
-    height: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
-#app3_sikijou_ichiran_box {
-    height: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
-#pc3_sikijou_ichiran_body {
-    padding: 8px;
-    overflow-y: auto;
-    background-color: #ffffff;
-    border: 3px solid #22a573;
-    border-radius: 5px 5px 0 0;
-}
-
-#app3_sikijou_ichiran_body {
-    padding: 8px;
-    overflow-y: auto;
-    background-color: #ffffff;
-    border: 3px solid #22a573;
-    border-radius: 5px 5px 0 0;
-}
-
-.app3_sikijou_info_box {
-	display: flex;
-	padding: 2rem 0;
-	border-bottom: 1px solid #dedede;
-}
-
-.app3_sikijou_info_img {
-	width: 50%;
-    height: 23rem;
-    overflow: hidden;
-    border-radius: 2rem;
-    box-shadow: 0rem 0rem 2rem #ccc;
-}
-
-.app3_sikijou_info_img img {
-	position: relative;
-    top: -8rem;
-	border-bottom: 1px solid #d4d4d4;
-}
-
-.app3_sikijou_info_text {
-	width: 50%;
-}
-
-.app3_sikijou_info_station {
-	margin-left: 2rem;
-	margin-top: 1rem;
-	font-size: 3.1rem;
-    color: #848484;
-}
-
-.app3_sikijou_info_name {
-	text-align: center;
-	margin: 1rem 0;
-    font-size: 5rem;
-    font-weight: bold;
-    color: #292929;
-}
-
-.app3_sikijou_info_type {
-	width: 50%;
-    margin: 0 auto;
-    padding: 1rem;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 3.1rem;
-    color: white;
-}
-
-.app3_sikijou_info_text .app_sikijou_ichinichi {
-	background-color: #22a573;
-}
-
-.app3_sikijou_info_text .app_sikijou_ippan {
-	background-color: #278494;
-}
-
-.app3_sikijou_info_text .app_sikijou_kazoku {
-	background-color: #ba3a78;
-}
-
-#pc3_sikijou_ichiran_footer {
-    width: 100%;
-    background-color: #22a573;
-    border-radius: 0 0 5px 5px;
-}
-
-#app3_sikijou_ichiran_footer {
-    width: 100%;
-    background-color: #22a573;
-    border-radius: 0 0 5px 5px;
-}
-
-#pc3_sikijou_ichiran_close2 {
-	font-size: 24px;
-    font-weight: bold;
-    width: 140px;
-    margin: 12px auto;
-    padding: 3px 0;
-    text-align: center;
-    background-color: white;
-    border-radius: 5px;
-	cursor: pointer;
-}
-
-#app3_sikijou_ichiran_close2 {
-	font-size: 18px;
-    font-weight: bold;
-    width: 120px;
-    margin: 12px auto;
-    padding: 3px 0;
-    text-align: center;
-    background-color: white;
-    border-radius: 5px;
-}
-
-#pc_section_5_ippan a, #pc3_section_5_ippan a {
-	position:absolute;
-	display:block;
-	width:21%;
-	height:22%;
-	top:11%;
-	left:74%;
-	z-index: 3;
-}
-
-#close_pc_ippan, #close_pc3_ippan {
-	position:absolute;
-	width:20%;
-	height:10%;
-	top:7%;
-	right:1%;
-}
-
-#pc_top_area {
-	letter-spacing: 0.1em;
-	padding-left: 2rem;
-}
-
-
-#pc_top_area span {
-	font-size: 4rem;
-	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-	font-weight:bold;
-	color:#bd1313;
-	line-height:2rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  #pc_top_area span {
-    color:#bd1313;
-  }
-}
-
-#pc_top_area span::before {
-	left: 0;
-}
-
-#pc_top_area span::after {
-	right: 0;
-}
-
-#pc_top_area2 {
-	letter-spacing: 0.1em;
-	padding-left: 2rem;
-}
-
-
-#pc_top_area2 span {
-	font-size: 3.2rem;
-	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-	font-weight:bold;
-	color:#42210B;
-	line-height:4.5rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  #pc_top_area2 span {
-    color:#42210B;
-  }
-}
-
-#pc_blue_medal {
-	position:absolute;
-	top:39%;
-	left:5%;
-	width:42%;
-}
-
-#pc_section_n1_form a {
-    position: absolute;
-    display: block;
-    width: 16%;
-    height: 7%;
-    top: 2%;
-    right: 4%;
-}
-
-#pc_section_n1_call a {
-	position: absolute;
-    display: block;
-    width: 43%;
-    height: 10%;
-    bottom: 28.5%;
-    left: 8%;
-}
-
-#pc_section_n1_kazokuso a#pc_kazoku1_open {
-    position: absolute;
-    display: block;
-    width: 31%;
-    /* height: 16.5%; */
-    top: 7.5%;
-    right: 6%;
-}
-
-#pc_section_n1_kazokuso_ttl {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-#pc_section_n1_kazokuso_ttl span {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    font-size: 230%;
-    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    color: #42210B;
-}
-
-#pc_section_n1_ichinichiso a#pc_ichinichi_open {
-	position: absolute;
-    display: block;
-    width: 31%;
-    /* height: 15.5%; */
-    top: 28%;
-    right: 6%;
-}
-
-#pc_section_n1_ichinichiso_ttl {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-#pc_section_n1_ichinichiso_ttl span {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    font-size: 230%;
-    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    color: #42210B;
-}
-
-#pc_section_n1_ippanso a#pc_kazoku2_open {
-    position: absolute;
-    display: block;
-    width: 31%;
-    /* height: 16.5%; */
-    top: 48.5%;
-    right: 6%;
-}
-
-
-
-@media screen and (min-width:860px) {
-	#pc_section_n1_kazokuso a#pc_kazoku1_open {
-		top: 7.5%;
-	}
-	#pc_section_n1_ichinichiso a#pc_ichinichi_open {
-		top: 30%;
-	}
-	#pc_section_n1_ippanso a#pc_kazoku2_open {
-		top: 52%;
-	}
-}
-
-
-#pc_section_n1_ippanso_ttl {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-#pc_section_n1_ippanso_ttl span {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    font-size: 230%;
-    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    color: #42210B;
-}
-
-
-#pc_to_corona {
-	/* background-image: url("https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/pc/covid19_btn.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 46%;
-	height: auto; */
-	display: block;
-	margin: 0px auto;
-	max-width: 700px;
-	width: 70%;
-	/* padding-top: 8%;
-	margin: 10px auto; */
-}
-
-#pc_call_0420 {
-	position: absolute;
-    display: block;
-    width: 60%;
-    height: 6%;
-    bottom: 8%;
-    left: 20%;
-}
-
-#pc_link_0420 {
-	position: absolute;
-    display: block;
-    width: 60%;
-    height: 5%;
-    bottom: 2%;
-    left: 19%;
-}
-
-#sp_top_area {
-	position:absolute;
-	top: 2%;
-	/*width:100%;
-	text-align:center;*/
-	letter-spacing: 0.1em;
-}
-
-#sp_top_area span {
-	font-size:8.5rem;
-	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-	font-weight:bold;
-	color:#bd1313;
-	position: relative;
-	display: inline-block;
-	padding: 0 3rem;
-	line-height:10rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  #sp_top_area span {
-    color:#bd1313;
-  }
-}
-
-#sp_top_area span::before {
-	left: 0;
-}
-
-#sp_top_area span::after {
-	right: 0;
-}
-
-#sp_top_area2 {
-	position:absolute;
-	top: 8.5%;
-	width:70%;
-	letter-spacing: 0.1em;
-}
-
-/* 以下橋本修正 */
-#sp_top_area2 span {
-	font-size: 7rem;
-	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-	font-weight:bold;
-	color:#42210B;
-	position: relative;
-	display: inline-block;
-	padding: 0 3rem;
-	line-height:10rem;
-	margin-top: -6rem;
-
-}
-/* 以上橋本修正 */
-
-@media (prefers-color-scheme: dark) {
-  #sp_top_area2 span {
-    color:#42210B;
-  }
-}
-
-#sp_blue_medal {
-	position:absolute;
-	top:37%;
-	left:-5%;
-	width:78%;
-}
-
-#sp_orange_medal {
-	position: absolute;
-    top: 14%;
-    right: 3%;
-    width: 46%;
-}
-
-#sp_section_n1_form a {
-    position: absolute;
-    display: block;
-    width: 40%;
-    height: 6%;
-    top: 9%;
-    right: 3%;
-}
-
-#sp_section_n1_call a {
-    position: absolute;
-    display: block;
-    width: 87%;
-    height: 9%;
-    top: 70%;
-    left: 6%;
-}
-
-#sp_section_n1_form2 a {
-    position: absolute;
-    display: block;
-    width: 88%;
-    height: 7.5%;
-    top: 80.5%;
-    left: 6%;
-}
-
-#top_sougi_links {
-	text-align: center;
-	padding: 1% 0;
-	background: #fff;
-}
-
-#sp_section_n1_kazokuso,
-#sp_section_n1_ichinichiso,
-#sp_section_n1_ippanso {
-	display: inline-block;
-	width: 32%;
-}
-#sp_section_n1_kazokuso a#app_kazoku1_open {
-	/* position: absolute; */
-    display: block;
-    /* width: 30.5%; */
-    /* height: 18%; */
-    top: 47%;
-    left: 2%;
-}
-
-#sp_section_n1_kazokuso_ttl {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-#sp_section_n1_kazokuso_ttl span {
-	position: absolute;
-    left: 10%;
-    top: 47%;
-    font-size: 530%;
-    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    color: #42210B;
-}
-
-#sp_section_n1_ichinichiso a#app_ichinichi_open {
-	/* position: absolute; */
-    display: block;
-    /* width: 31%; */
-    /* height: 18%; */
-    top: 47%;
-    left: 34.5%;
-}
-
-#sp_section_n1_ichinichiso_ttl {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-#sp_section_n1_ichinichiso_ttl span {
-	position: absolute;
-    left: 10%;
-    top: 47%;
-    font-size: 530%;
-    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    color: #42210B;
-}
-
-#sp_section_n1_ippanso a#app_kazoku2_open {
-	/* position: absolute; */
-    display: block;
-    /* width: 30.5%; */
-    /* height: 18%; */
-    top: 47%;
-    left: 67.5%;
-}
-
-#sp_section_n1_ippanso_ttl {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-#sp_section_n1_ippanso_ttl span {
-	position: absolute;
-    left: 10%;
-    top: 47%;
-    font-size: 530%;
-    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    color: #42210B;
-}
-
-#pc_section_n1_form2 a {
-    position: absolute;
-    display: block;
-    width: 43%;
-    height: 11%;
-    bottom: 16.5%;
-    left: 8%;
-}
-
-#pc_corona_footer {
-	background-color: white;
-	padding: 10px 0;
-}
-
-#pc_corona_close_button {
-	background-color: #00b080;
-    margin: 0 auto;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    width: 40%;
-    padding: 7px 0;
-    border-radius: 7px;
-}
-
-#app_to_corona {
-	background-image: url("https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/covid19_btn_sp.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 90%;
-	height: auto;
-	display: block;
-	padding-top: 20%;
-	margin: 10px auto;
-}
-
-#app_corona_footer {
-	background-color: white;
-	padding: 10px 0;
-}
-
-#app_corona_close_button {
-	background-color: #00b080;
-    margin: 0 auto;
-    font-size: 4rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    width: 40%;
-    padding: 7px 0;
-    border-radius: 7px;
-}
-
-#pc_middle_area {
-	position:absolute;
-	top:23.8%;
-	right:0;
-	width:52%;
-	text-align:center;
-	font-size:1.9rem;
-	font-weight:bold;
-}
-
-#pc_middle_area_name {
-	font-size:3rem;
-	color:#00b180;
-}
-
-#pc_middle_area2 {
-	position:absolute;
-	top:67.3%;
-	right:5%;
-	width:43%;
-	padding:1rem 0;
-	text-align:center;
-	font-size:2.2rem;
-	font-weight:bold;
-	background-color: #fff;
-}
-
-#sp_middle_area {
-	position:absolute;
-	top:2.9%;
-	width:100%;
-	text-align:center;
-	font-size:4.2rem;
-	font-weight:bold;
-}
-
-#sp_middle_area_name {
-	font-size:7rem;
-	color:#00b180;
-}
-
-#sp_middle_area2 {
-	position:absolute;
-	top:69.3%;
-	width:100%;
-	padding:2rem 0;
-	text-align:center;
-	font-size:5.2rem;
-	font-weight:bold;
-	background-color: #fff;
-}
-
-#pc_n4_1 {
-	position: absolute;
-    display: block;
-    width: 66%;
-    height: 7%;
-    bottom: 2%;
-    left: 17%;
-}
-
-#app_n4_1 {
-	position: absolute;
-    display: block;
-    width: 94%;
-    height: 6%;
-    bottom: 1%;
-    left: 3%;
-}
-
-#pc_n6_1 {
-	position: absolute;
-    display: block;
-    width: 29%;
-    height: 2%;
-    bottom: 47%;
-    left: 66%;
-}
-
-#pc_n6_2 {
-	position: absolute;
-    display: block;
-    width: 28%;
-    height: 2%;
-    bottom: 31%;
-    left: 5%;
-}
-
-#pc_n6_3 {
-	position: absolute;
-    display: block;
-    width: 60%;
-    height: 5%;
-    bottom: 6%;
-    left: 20%;
-}
-
-#pc_n6_4 {
-	position: absolute;
-    display: block;
-    width: 57%;
-    height: 5%;
-    bottom: 1%;
-    left: 22%;
-}
-
-#app_n6_3 {
-	position: absolute;
-    display: block;
-    width: 100%;
-    height: 2%;
-    bottom: 2.7%;
-    left: 0;
-}
-
-#app_n6_4 {
-	position: absolute;
-    display: block;
-    width: 100%;
-    height: 2%;
-    bottom: 0.5%;
-    left: 0;
-}
-
-#pc_tel_dialog {
-	padding-top: 10%;
-}
-
-#pc_tel_dialog_close {
-	position: absolute;
-    width: 11%;
-    top: 3%;
-    right: 5px;
-}
-
-#pc_tel_dialog_button {
-	position: absolute;
-    width: 70%;
-    height: 8%;
-    left: 15%;
-    top: 50%;
-}
-
-#pc_tel_dialog_child {
-	position: relative;
-	width: 50%;
-	margin: 0 auto;
-}
-
-@media screen and ( max-width:580px ) {
-	#pc_tel_dialog {
-		padding-top: 20%;
-	}
-
-	#pc_tel_dialog_close {
-		width: 11%;
-		top: 4%;
-		right: 10px;
-	}
-
-	#pc_tel_dialog_button {
-		width: 70%;
-		height: 9%;
-		left: 15%;
-		top: 50%;
-	}
-
-	#pc_tel_dialog_child {
-		width: 100%;
-	}
-}
-
-@media screen and ( min-width:700px ) {
-	#pc_n6_1 {
-		bottom: 46.5%;
-	}
-
-	#pc_n6_2 {
-		bottom: 31%;
-	}
-}
-
-@media screen and ( min-width:1250px ) {
-	#pc_n6_1 {
-		bottom: 46%;
-	}
-
-	#pc_n6_2 {
-		bottom: 30.3%;
-	}
-}
-
-@media screen and ( min-width:1450px ) {
-	#pc_n6_1 {
-		bottom: 45.3%;
-	}
-
-	#pc_n6_2 {
-		bottom: 29.2%;
-	}
-}
-
-#app_tel_dialog_close {
-	position: absolute;
-    width: 11%;
-    top: 13%;
-    right: 10px;
-}
-
-#app_tel_dialog_button {
-	position: absolute;
-    width: 70%;
-    height: 9%;
-    left: 15%;
-    top: 45%;
-}
-
-</style>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-W4TPGLB');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-K392VBF');</script>
+	<!-- End Google Tag Manager -->
 </head>
+
 <body>	
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4TPGLB"
@@ -1450,6 +46,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K392VBF"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+
+<div class="inner2_sub">
 	<header id="header">
 		<div class="content flex">
 			<div class="left-col">
@@ -1492,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 	<div class="wrapper fv" id="pc">
-		<div class="inner2_sub">
+
 			<section id="firstview" style="position:relative;">
 				<div id="fv_bg" class="wrapper_pc_top_img">
 					<img class="pc" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-bg-pc.png?2" alt="" loading="eager">
@@ -1531,19 +130,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<!-- ここから下家族葬PC上部2/6 -->
 					<div id="pc_section_n1_kazokuso">
 						<a id="pc_kazoku1_open" href="javascript:void(0);" onclick="showPcKazoku1();">
-								<div class="pink_color_border border_1  overflow_hidden content_2_1 border_width_medium">
-									<div class="flex">
-										<div class="img_size ">
-											<img class="img_cut_diagoally overflow_hidden" src="../lp2-temp/images/motchan/kazoku_pc.jpg" alt="家族葬" loading="eager">
-										</div>
-										<div class="background_white">
-											<p class="pc_emphasis_word_2 mincho">家族葬</p>
-											<div class="price_wrapper_2">
-												<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
-											</div>
+							<div class="pink_color_border border_1  overflow_hidden content_2_1 border_width_medium">
+								<div class="flex">
+									<div class="img_size ">
+										<img class="img_cut_diagoally overflow_hidden" src="../lp2-temp/images/motchan/kazoku_pc.jpg" alt="家族葬" loading="eager">
+									</div>
+									<div class="background_white">
+										<p class="pc_emphasis_word_2 mincho">家族葬</p>
+										<div class="price_wrapper_2">
+											<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
 										</div>
 									</div>
 								</div>
+							</div>
 						</a>
 						<div class="popup_block2" id="pop_pc_kazoku1">
 							<div class="popup_image_wrapper2" style="height: 90%;margin: auto;overflow-y: auto;position: absolute;left: 0;right: 0;top: 0;bottom: 0;width:50%;max-width:500px;">
@@ -1736,268 +335,265 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<!-- 以上橋本修正　PCコロナ対策 -->
 
 			</section>
-		</div>
+
 	</div>
 
 			<!-- ここからSP版FV-->
 
 	<div class="wrapper fv" id="app">
-		<div class="inner2_sub">
-			<section style="position:relative;">
-				<div id="fv_bg">
-					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-bg-sp.png?2" alt="" loading="eager">
-				</div>
-				<div id="sp_top_area" class="hiden">
-				</div>
-				<div id="sp_top_area2" class="hiden">
-				</div>
+		<section style="position:relative;">
+			<div id="fv_bg">
+				<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-bg-sp.png?2" alt="" loading="eager">
+			</div>
+			<div id="sp_top_area" class="hiden">
+			</div>
+			<div id="sp_top_area2" class="hiden">
+			</div>
 
-				<!-- ここから下橋本修正 電話、資料請求など　SP版-->
-				<div id="sp_section_contact">
-					<div class="sup-txt"><span class="back_slash_2 padding_left">/</span>ただいまお電話繋がります/</div>
-					<div>
-						<a id="sp_tel_n1" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
-							<div class="tel_button text_align_center margin_top flex">
-								<div class="tel_icon ">
-									<img class="tel_icon_img" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/icon_tel.png" alt="電話" loading="eager">
-								</div>
-								<div class="flex_text">
-									<p class="response_time">24時間365日対応</p>
-									<p class="tel_button_text">電話をかける</p>
-								</div>
-								<img class="call_woman_img" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/em01021.png" alt="電話" loading="eager">
-							</div>
-						</a>
-						<a id="sp_estimate_n1" href="https://lp.ceremore.com/page/urgent_apply-estimate">
-							<div class="estimate_consul text_align_center">
-								<p class="">お見積依頼</p>
-							</div>
-						</a>
-						<a id="sp_link_n1" href="https://lp.ceremore.com/page/urgent_apply">
-							<div class="document_request_button text_align_center">
-								<p>資料請求・お問い合わせ</p>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- ここから上橋本修正 電話、資料請求などSP版 -->
-	
-				<!-- ここから橋本記載 上部の家族葬SP版-->
-
-				<div class="wrapper">
-					<div class="wrapper_text_2">
-
-						<a id="app_kazoku1_open" href="javascript:void(0);" onclick="showKazoku1();">
-							<div class=" border_1 content_1 overflow_hidden border_medeum">
-								<div class="flex">
-									<div class="family_img">
-										<img src="../lp2-temp/images/motchan/kazoku_sp.jpg" alt="家族葬" loading="eager">
-									</div>
-									<div class="flex_box_2 ">
-										<p class="sp_emphasis_word_2 text_bold text_align_center mincho">家族葬</p>
-										<div class="sp_explanation_3">ご家族や親しい友人を中心としたお葬儀プラン。比較的少人数で行われゆっくりと故人様とのお別れができます。</div>
-										<!-- <div class="sp_explanation_3">ご家族や親しい友人を中心とした少人数でのお葬儀プラン。参加者の安全を考慮したお葬儀をご提案します。</div> -->
-										<div class="price_wrapper_2">
-											<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-						<div class="popup_block" id="pop_kazoku1">
-							<div class="popup_image_wrapper" style="height: 90%; margin-top: 5%; overflow-y: auto;">
-								<div style="position: relative;">
-									<div id="close_kazoku1" onclick="closeKazoku1();"></div>
-									<img class="popup_image" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/popup-kazokuso-sp.png?44" alt="家族葬１" loading="lazy">
-									<div id="sp_section_contact2">
-										<div class="sup-txt">ただいまお電話繋がります</div>
-										<div>
-											<a id="sp_tel_n2" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
-												<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-tel-btn.png?2" alt="24時間365日対応" loading="lazy">
-												<!-- <span class="phone-w"></span> -->
-											</a>
-										</div>
-										<div class="urgent flex">
-											<div>
-												<a id="sp_estimate_n2" href="https://lp.ceremore.com/page/urgent_apply-estimate">
-													<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-estimate-btn.png?2" alt="" loading="lazy">
-												</a>
-											</div>
-											<div>
-												<a id="sp_urgent_n2" href="https://lp.ceremore.com/page/urgent_apply">
-													<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-inquiry-btn.png?2" alt="" loading="lazy">
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<script>
-							function showKazoku1() {
-								document.getElementById('pop_kazoku1').style.display = 'block';
-							}
-							function closeKazoku1() {
-								document.getElementById('pop_kazoku1').style.display = 'none';
-							}
-						</script>
-
-
-						<div class="flex gap_1">
-							<div class="wrapper_content">
-								<a id="app_ichinichi_open" href="javascript:void(0);" onclick="showIchinichi();">
-									<div class= "green_color_border border_1 content_2 overflow_hidden">
-										<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/saidan.png" alt="祭壇" loading="lazy">
-										<div class="text_align_center wrapper_info">
-											<p class="sp_emphasis_word_2 text_bold mincho">一日葬</p>
-											<div class="price_wrapper">
-												<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
-											</div>
-										</div>
-									</div>
-								</a>
-								<div class="popup_block" id="pop_ichinichi">
-									<div class="popup_image_wrapper" style="height: 90%; margin-top: 5%; overflow-y: auto;">
-										<div style="position: relative;">
-											<div id="close_ichinichi" onclick="closeIchinichi();"></div>
-											<img class="popup_image" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/popup-ichinichiso-sp.png?44" alt="一日葬" loading="lazy">
-											<div id="sp_section_contact3">
-												<div class="sup-txt">ただいまお電話繋がります</div>
-												<div>
-													<a id="sp_tel_n3" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
-														<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-tel-btn.png?2" alt="24時間365日対応" loading="lazy">
-														<!-- <span class="phone-w"></span> -->
-													</a>
-												</div>
-												<div class="urgent flex">
-													<div>
-														<a id="sp_estimate_n3" href="https://lp.ceremore.com/page/urgent_apply-estimate">
-															<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-estimate-btn.png?2" alt="" loading="lazy">
-														</a>
-													</div>
-													<div>
-														<a id="sp_urgent_n3" href="https://lp.ceremore.com/page/urgent_apply">
-															<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-inquiry-btn.png?2" alt="" loading="lazy">
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<script>
-									function showIchinichi() {
-										document.getElementById('pop_ichinichi').style.display = 'block';
-									}
-									function closeIchinichi() {
-										document.getElementById('pop_ichinichi').style.display = 'none';
-									}
-								</script>
-							</div>
-							<div class="wrapper_content">
-								<a id="app_kazoku2_open" href="javascript:void(0);" onclick="showKazoku2();">
-									<div class= "blue_color_border border_1 content_3 overflow_hidden">
-										<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/sanretu.jpg" alt="参列" loading="lazy">
-										<div class="text_align_center wrapper_info">
-											<p class="sp_emphasis_word_2 text_bold mincho">一般葬</p>
-											<div class="price_wrapper">
-												<img src="../lp2-temp/images/motchan/price_2.png" alt="金額" loading="lazy">
-											</div>
-										</div>
-									</div>
-								</a>
-								<div class="popup_block" id="pop_kazoku2">
-									<div class="popup_image_wrapper" style="height: 90%; margin-top: 5%; overflow-y: auto;">
-										<div style="position: relative;">
-											<div id="close_kazoku2" onclick="closeKazoku2();"></div>
-											<img class="popup_image" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/popup-ippanso-sp.png?44" alt="家族葬２" loading="lazy">
-											<div id="sp_section_contact4">
-												<div class="sup-txt">ただいまお電話繋がります</div>
-												<div>
-													<a id="sp_tel_n4" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
-														<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-tel-btn.png?2" alt="24時間365日対応" loading="lazy">
-														<!-- <span class="phone-w"></span> -->
-													</a>
-												</div>
-												<div class="urgent flex">
-													<div>
-														<a id="sp_estimate_n4" href="https://lp.ceremore.com/page/urgent_apply-estimate">
-															<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-estimate-btn.png?2" alt="" loading="lazy">
-														</a>
-													</div>
-													<div>
-														<a id="sp_urgent_n4" href="https://lp.ceremore.com/page/urgent_apply">
-															<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-inquiry-btn.png?2" alt="" loading="lazy">
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<script>
-									function showKazoku2() {
-										document.getElementById('pop_kazoku2').style.display = 'block';
-									}
-									function closeKazoku2() {
-										document.getElementById('pop_kazoku2').style.display = 'none';
-									}
-								</script>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<!-- 橋本記載終了 上部の家族葬SP版-->
-
-
-				<!-- ここから下橋本修正　SPコロナ -->
+			<!-- ここから下橋本修正 電話、資料請求など　SP版-->
+			<div id="sp_section_contact">
+				<div class="sup-txt"><span class="back_slash_2 padding_left">/</span>ただいまお電話繋がります/</div>
 				<div>
-					<a href="javascript:void(0);" onclick="showAppCorona();">
-						<div class="wrapper_text wrapper_heading">
-							<div class="sp_corona_button text_align_center">
-								<p>セレモアは万全のコロナ対策を行っております</p>
+					<a id="sp_tel_n1" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
+						<div class="tel_button text_align_center margin_top flex">
+							<div class="tel_icon ">
+								<img class="tel_icon_img" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/icon_tel.png" alt="電話" loading="eager">
+							</div>
+							<div class="flex_text">
+								<p class="response_time">24時間365日対応</p>
+								<p class="tel_button_text">電話をかける</p>
+							</div>
+							<img class="call_woman_img" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/em01021.png" alt="電話" loading="eager">
+						</div>
+					</a>
+					<a id="sp_estimate_n1" href="https://lp.ceremore.com/page/urgent_apply-estimate">
+						<div class="estimate_consul text_align_center">
+							<p class="">お見積依頼</p>
+						</div>
+					</a>
+					<a id="sp_link_n1" href="https://lp.ceremore.com/page/urgent_apply">
+						<div class="document_request_button text_align_center">
+							<p>資料請求・お問い合わせ</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<!-- ここから上橋本修正 電話、資料請求などSP版 -->
+
+			<!-- ここから橋本記載 上部の家族葬SP版-->
+
+			<div class="wrapper">
+				<div class="wrapper_text_2">
+
+					<a id="app_kazoku1_open" href="javascript:void(0);" onclick="showKazoku1();">
+						<div class=" border_1 content_1 overflow_hidden border_medeum">
+							<div class="flex">
+								<div class="family_img">
+									<img src="../lp2-temp/images/motchan/kazoku_sp.jpg" alt="家族葬" loading="eager">
+								</div>
+								<div class="flex_box_2 ">
+									<p class="sp_emphasis_word_2 text_bold text_align_center mincho">家族葬</p>
+									<div class="sp_explanation_3">ご家族や親しい友人を中心としたお葬儀プラン。比較的少人数で行われゆっくりと故人様とのお別れができます。</div>
+									<!-- <div class="sp_explanation_3">ご家族や親しい友人を中心とした少人数でのお葬儀プラン。参加者の安全を考慮したお葬儀をご提案します。</div> -->
+									<div class="price_wrapper_2">
+										<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
+									</div>
+								</div>
 							</div>
 						</div>
 					</a>
-					<div class="popup_block2" id="app_top_corona" style="display:none;">
-						<div class="popup_image_wrapper" style="padding:40px 0;">
-							<img id="app_close_corona" src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/close_button.png?44" alt="閉じる" onclick="closeAppCorona();" style="position: absolute; width: 60px; top: 15px; right: -5%; z-index: 2;" loading="lazy">
-							<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/pop_up_corona.png?44" alt="セレモアのコロナウイルス対策" loading="lazy">
-							<div id="app_corona_footer">
-								<div id="app_corona_close_button" onclick="closeAppCorona();">
-									閉じる
+					<div class="popup_block" id="pop_kazoku1">
+						<div class="popup_image_wrapper" style="height: 90%; margin-top: 5%; overflow-y: auto;">
+							<div style="position: relative;">
+								<div id="close_kazoku1" onclick="closeKazoku1();"></div>
+								<img class="popup_image" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/popup-kazokuso-sp.png?44" alt="家族葬１" loading="lazy">
+								<div id="sp_section_contact2">
+									<div class="sup-txt">ただいまお電話繋がります</div>
+									<div>
+										<a id="sp_tel_n2" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
+											<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-tel-btn.png?2" alt="24時間365日対応" loading="lazy">
+											<!-- <span class="phone-w"></span> -->
+										</a>
+									</div>
+									<div class="urgent flex">
+										<div>
+											<a id="sp_estimate_n2" href="https://lp.ceremore.com/page/urgent_apply-estimate">
+												<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-estimate-btn.png?2" alt="" loading="lazy">
+											</a>
+										</div>
+										<div>
+											<a id="sp_urgent_n2" href="https://lp.ceremore.com/page/urgent_apply">
+												<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-inquiry-btn.png?2" alt="" loading="lazy">
+											</a>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div style="position: absolute;background-color: #fff;width: 86%;top: 40px;padding: 6.7rem 9% 6.7rem 5%;font-size: 3.5rem;line-height: 5.5rem;">
-								セレモアは、すべての方に安心してご利用いただくために、新型コロナウイルスの対策を行っております。
-								<br>
-								<br>
-								コロナ禍でもお葬儀は可能です。
-								<br>
-								セレモアでは十分な感染対策を行っておりますので、安心してご利用ください。
-							</div>
-							<div style="position: absolute;background-color: #fff;width: 92%;bottom: 95px;padding: 3rem 4%;font-size: 3.5rem;line-height: 5.5rem;">
-								お葬儀は大切な方との最後のお別れの場となります。
-								<br>
-								セレモアではご家族のご意向に合わせて、心からお手伝いをさせていただきます。どうぞ、どのようなことでもご遠慮なくお申しつけください。
 							</div>
 						</div>
 					</div>
 					<script>
-						function showAppCorona() {
-							document.getElementById('app_top_corona').style.display = 'block';
+						function showKazoku1() {
+							document.getElementById('pop_kazoku1').style.display = 'block';
 						}
-						function closeAppCorona() {
-							document.getElementById('app_top_corona').style.display = 'none';
+						function closeKazoku1() {
+							document.getElementById('pop_kazoku1').style.display = 'none';
 						}
 					</script>
-				</div>
-				<!-- ここから上SP版コロナ -->
 
-			</section>
-		</div>
+
+					<div class="flex gap_1">
+						<div class="wrapper_content">
+							<a id="app_ichinichi_open" href="javascript:void(0);" onclick="showIchinichi();">
+								<div class= "green_color_border border_1 content_2 overflow_hidden">
+									<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/saidan.png" alt="祭壇" loading="lazy">
+									<div class="text_align_center wrapper_info">
+										<p class="sp_emphasis_word_2 text_bold mincho">一日葬</p>
+										<div class="price_wrapper">
+											<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
+										</div>
+									</div>
+								</div>
+							</a>
+							<div class="popup_block" id="pop_ichinichi">
+								<div class="popup_image_wrapper" style="height: 90%; margin-top: 5%; overflow-y: auto;">
+									<div style="position: relative;">
+										<div id="close_ichinichi" onclick="closeIchinichi();"></div>
+										<img class="popup_image" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/popup-ichinichiso-sp.png?44" alt="一日葬" loading="lazy">
+										<div id="sp_section_contact3">
+											<div class="sup-txt">ただいまお電話繋がります</div>
+											<div>
+												<a id="sp_tel_n3" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
+													<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-tel-btn.png?2" alt="24時間365日対応" loading="lazy">
+													<!-- <span class="phone-w"></span> -->
+												</a>
+											</div>
+											<div class="urgent flex">
+												<div>
+													<a id="sp_estimate_n3" href="https://lp.ceremore.com/page/urgent_apply-estimate">
+														<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-estimate-btn.png?2" alt="" loading="lazy">
+													</a>
+												</div>
+												<div>
+													<a id="sp_urgent_n3" href="https://lp.ceremore.com/page/urgent_apply">
+														<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-inquiry-btn.png?2" alt="" loading="lazy">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<script>
+								function showIchinichi() {
+									document.getElementById('pop_ichinichi').style.display = 'block';
+								}
+								function closeIchinichi() {
+									document.getElementById('pop_ichinichi').style.display = 'none';
+								}
+							</script>
+						</div>
+						<div class="wrapper_content">
+							<a id="app_kazoku2_open" href="javascript:void(0);" onclick="showKazoku2();">
+								<div class= "blue_color_border border_1 content_3 overflow_hidden">
+									<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/sanretu.jpg" alt="参列" loading="lazy">
+									<div class="text_align_center wrapper_info">
+										<p class="sp_emphasis_word_2 text_bold mincho">一般葬</p>
+										<div class="price_wrapper">
+											<img src="../lp2-temp/images/motchan/price_2.png" alt="金額" loading="lazy">
+										</div>
+									</div>
+								</div>
+							</a>
+							<div class="popup_block" id="pop_kazoku2">
+								<div class="popup_image_wrapper" style="height: 90%; margin-top: 5%; overflow-y: auto;">
+									<div style="position: relative;">
+										<div id="close_kazoku2" onclick="closeKazoku2();"></div>
+										<img class="popup_image" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/popup-ippanso-sp.png?44" alt="家族葬２" loading="lazy">
+										<div id="sp_section_contact4">
+											<div class="sup-txt">ただいまお電話繋がります</div>
+											<div>
+												<a id="sp_tel_n4" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
+													<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-tel-btn.png?2" alt="24時間365日対応" loading="lazy">
+													<!-- <span class="phone-w"></span> -->
+												</a>
+											</div>
+											<div class="urgent flex">
+												<div>
+													<a id="sp_estimate_n4" href="https://lp.ceremore.com/page/urgent_apply-estimate">
+														<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-estimate-btn.png?2" alt="" loading="lazy">
+													</a>
+												</div>
+												<div>
+													<a id="sp_urgent_n4" href="https://lp.ceremore.com/page/urgent_apply">
+														<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/fv-inquiry-btn.png?2" alt="" loading="lazy">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<script>
+								function showKazoku2() {
+									document.getElementById('pop_kazoku2').style.display = 'block';
+								}
+								function closeKazoku2() {
+									document.getElementById('pop_kazoku2').style.display = 'none';
+								}
+							</script>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- 橋本記載終了 上部の家族葬SP版（FV）-->
+
+
+			<!-- ここから下橋本修正　SPコロナ -->
+			<div>
+				<a href="javascript:void(0);" onclick="showAppCorona();">
+					<div class="wrapper_text wrapper_heading">
+						<div class="sp_corona_button text_align_center">
+							<p>セレモアは万全のコロナ対策を行っております</p>
+						</div>
+					</div>
+				</a>
+				<div class="popup_block2" id="app_top_corona" style="display:none;">
+					<div class="popup_image_wrapper" style="padding:40px 0;">
+						<img id="app_close_corona" src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/close_button.png?44" alt="閉じる" onclick="closeAppCorona();" style="position: absolute; width: 60px; top: 15px; right: -5%; z-index: 2;" loading="lazy">
+						<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/pop_up_corona.png?44" alt="セレモアのコロナウイルス対策" loading="lazy">
+						<div id="app_corona_footer">
+							<div id="app_corona_close_button" onclick="closeAppCorona();">
+								閉じる
+							</div>
+						</div>
+						<div style="position: absolute;background-color: #fff;width: 86%;top: 40px;padding: 6.7rem 9% 6.7rem 5%;font-size: 3.5rem;line-height: 5.5rem;">
+							セレモアは、すべての方に安心してご利用いただくために、新型コロナウイルスの対策を行っております。
+							<br>
+							<br>
+							コロナ禍でもお葬儀は可能です。
+							<br>
+							セレモアでは十分な感染対策を行っておりますので、安心してご利用ください。
+						</div>
+						<div style="position: absolute;background-color: #fff;width: 92%;bottom: 95px;padding: 3rem 4%;font-size: 3.5rem;line-height: 5.5rem;">
+							お葬儀は大切な方との最後のお別れの場となります。
+							<br>
+							セレモアではご家族のご意向に合わせて、心からお手伝いをさせていただきます。どうぞ、どのようなことでもご遠慮なくお申しつけください。
+						</div>
+					</div>
+				</div>
+				<script>
+					function showAppCorona() {
+						document.getElementById('app_top_corona').style.display = 'block';
+					}
+					function closeAppCorona() {
+						document.getElementById('app_top_corona').style.display = 'none';
+					}
+				</script>
+			</div>
+			<!-- ここから上SP版コロナ -->
+		</section>
 	</div>
 
 
@@ -2006,7 +602,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- ここから葬儀＝サービスエリア、家族葬など、相談 -->
 	<div id="section_sougi">
 		<div class="wrapper" id="pc2">
-			<div class="inner2_sub">
 				<section style="position:relative;">
 
 
@@ -2020,6 +615,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<p class="appeal_text ">ご安置場所のご相談も承ります</p>
 								</div>
 								<img class="img_prefecture" src="../lp2-temp/images/motchan/prefecture.png" alt="関東圏" loading="lazy">
+							</div>
+							<div class="sougizyou_img">
+								<img class="img" src="../lp2-temp/images/motchan/sougizyou.jpg" alt="葬儀場" loading="lazy"/>
 							</div>
 						</div>
 						<!-- ここまで編集 -->
@@ -2134,7 +732,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 					</div>
 				</section>
-			</div>
 		</div>
 		<div class="wrapper" id="app2">
 			<div class="inner_sub">
@@ -2151,6 +748,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 								<img class="img_prefecture" src="../lp2-temp/images/motchan/prefecture.png" alt="関東圏" loading="lazy">
 							</div>
+							<div class="sougizyou_img">
+								<img class="img" src="../lp2-temp/images/motchan/sougizyou.jpg" alt="葬儀場" loading="lazy"/>
+							</div>
+							<!-- <div class="wrapper_sougizyou_img">
+								<img class="sougizyou_img_sp_1" src="../lp2-temp/images/motchan/sougizyou.jpg" alt="葬儀場" loading="lazy"/>
+							</div>
+							<div class="wrapper_sougizyou_img">
+								<img class="sougizyou_img_sp_2" src="../lp2-temp/images/motchan/sougizyou.jpg" alt="葬儀場" loading="lazy"/>
+							</div> -->
 						</div>
 					</div>
 
@@ -2284,7 +890,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- ここから下は写真（前の変更していないもの）、PC電話２個目 -->
 	<div id="section_sougi">
 		<div class="wrapper" id="pc2">
-			<div class="inner2_sub">
 				<section style="position:relative;">
 					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/seremoapakku_teiannasi_scrshot2.png" alt="様々なお葬式をご提案します" loading="lazy">
 
@@ -2324,7 +929,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<!-- 電話対応2個目 -->
 
 				</section>
-			</div>
 		</div>
 
 		<div class="wrapper" id="app2">
@@ -2366,125 +970,121 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>
 	
-<!-- ここから下は式場と相談２ -->
+	<!-- ここから下は式場と相談２ -->
 
 	<div id="section_sikijou">
 		<div class="wrapper" id="pc3" style="background-color: white;">
-			<div class="inner2_sub">
-				<section style="position:relative;">
-					
-					<div id="pc_sikijou_list_box">
-						<div id="pc_sikijou_list_title" class="heading_green">
-							お葬儀執行事例
+			<section style="position:relative;">
+				
+				<div id="pc_sikijou_list_box">
+					<div id="pc_sikijou_list_title" class="heading_green">
+						お葬儀執行事例
+					</div>
+					<div class="swiper-container" style="padding-bottom: 30px;">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/horinouchi.jpg?43" alt="式場" loading="lazy">
+								<div class="pc_sikijou_station">東京都杉並区　新高円寺駅</div>
+								<div class="pc_sikijou_name">堀ノ内斎場</div>
+								<div class="pc_sikijou_type pc_sikijou_kazoku">家族葬</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/yoyohata.jpg?43" alt="式場" loading="lazy">
+								<div class="pc_sikijou_station">東京都渋谷区　幡ヶ谷駅</div>
+								<div class="pc_sikijou_name">代々幡斎場</div>
+								<div class="pc_sikijou_type pc_sikijou_kazoku">家族葬</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/kunitachi.jpg?43" alt="式場" loading="lazy">
+								<div class="pc_sikijou_station">東京都国立市　谷保駅</div>
+								<div class="pc_sikijou_name">セレモアガーデン会館国立</div>
+								<div class="pc_sikijou_type pc_sikijou_kazoku">家族葬</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/ochiai.png?44" alt="式場" loading="lazy">
+								<div class="pc_sikijou_station">東京都新宿区　落合駅</div>
+								<div class="pc_sikijou_name">落合斎場</div>
+								<div class="pc_sikijou_type pc_sikijou_ichinichi">一日葬</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/hakuhou.jpg?43" alt="式場" loading="lazy">
+								<div class="pc_sikijou_station">東京都立川市　泉体育館駅</div>
+								<div class="pc_sikijou_name">セレモア立川会館 白峯殿</div>
+								<div class="pc_sikijou_type pc_sikijou_ippan">一般葬</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/midori.jpg?43" alt="式場" loading="lazy">
+								<div class="pc_sikijou_station">東京都世田谷区　千歳烏山駅</div>
+								<div class="pc_sikijou_name">みどり会館</div>
+								<div class="pc_sikijou_type pc_sikijou_ichinichi">一日葬</div>
+							</div>
 						</div>
-						<div class="swiper-container" style="padding-bottom: 30px;">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/horinouchi.jpg?43" alt="式場" loading="lazy">
-									<div class="pc_sikijou_station">東京都杉並区　新高円寺駅</div>
-									<div class="pc_sikijou_name">堀ノ内斎場</div>
-									<div class="pc_sikijou_type pc_sikijou_kazoku">家族葬</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<script>
+					var swiper = new Swiper('#pc_sikijou_list_box .swiper-container', {
+						slidesPerView: 3.01,
+						spaceBetween: 10,
+						pagination: {
+							el: '.swiper-pagination',
+						},
+					});
+				</script>
+
+				<div id="pc3_section_5_sikijou_ichiran">
+					<a id="pc3_sikijou_ichiran_open" class="flex" href="javascript:void(0);" onclick="showPc3SikijouIchiran();">
+						<p class="pc_sikizyou_catalog">一覧を見る</p>
+						<div class="pc_wrapper_right_button">
+							<img class="right_button" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/right_button.png" alt="ボタン" loading="lazy">
+						</div>
+					</a>
+					<div class="popup_block2" id="pop_pc3_sikijou_ichiran">
+						<div id="pc3_sikijou_ichiran_parent" class="popup_image_wrapper2">
+							<div id="pc3_sikijou_ichiran_box">
+								<div id="pc3_sikijou_ichiran_body">
+									<img class="popup_image" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/pop_sikijou_ichiran2.png?44" loading="lazy">
 								</div>
-								<div class="swiper-slide">
-									<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/yoyohata.jpg?43" alt="式場" loading="lazy">
-									<div class="pc_sikijou_station">東京都渋谷区　幡ヶ谷駅</div>
-									<div class="pc_sikijou_name">代々幡斎場</div>
-									<div class="pc_sikijou_type pc_sikijou_kazoku">家族葬</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/kunitachi.jpg?43" alt="式場" loading="lazy">
-									<div class="pc_sikijou_station">東京都国立市　谷保駅</div>
-									<div class="pc_sikijou_name">セレモアガーデン会館国立</div>
-									<div class="pc_sikijou_type pc_sikijou_kazoku">家族葬</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/ochiai.png?44" alt="式場" loading="lazy">
-									<div class="pc_sikijou_station">東京都新宿区　落合駅</div>
-									<div class="pc_sikijou_name">落合斎場</div>
-									<div class="pc_sikijou_type pc_sikijou_ichinichi">一日葬</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/hakuhou.jpg?43" alt="式場" loading="lazy">
-									<div class="pc_sikijou_station">東京都立川市　泉体育館駅</div>
-									<div class="pc_sikijou_name">セレモア立川会館 白峯殿</div>
-									<div class="pc_sikijou_type pc_sikijou_ippan">一般葬</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/sikijou/midori.jpg?43" alt="式場" loading="lazy">
-									<div class="pc_sikijou_station">東京都世田谷区　千歳烏山駅</div>
-									<div class="pc_sikijou_name">みどり会館</div>
-									<div class="pc_sikijou_type pc_sikijou_ichinichi">一日葬</div>
+								<div id="pc3_sikijou_ichiran_footer">
+									<div id="pc3_sikijou_ichiran_close2" onclick="closePcSikijouIchiran();">閉じる</div>
 								</div>
 							</div>
-							<div class="swiper-pagination"></div>
 						</div>
 					</div>
 					<script>
-						var swiper = new Swiper('#pc_sikijou_list_box .swiper-container', {
-							slidesPerView: 3.01,
-							spaceBetween: 10,
-							pagination: {
-								el: '.swiper-pagination',
-							},
-						});
+						function showPc3SikijouIchiran() {
+							document.getElementById('pop_pc3_sikijou_ichiran').style.display = 'block';
+						}
+						function closePcSikijouIchiran() {
+							document.getElementById('pop_pc3_sikijou_ichiran').style.display = 'none';
+						}
 					</script>
-	
-					<div id="pc3_section_5_sikijou_ichiran">
-						<a id="pc3_sikijou_ichiran_open" class="flex" href="javascript:void(0);" onclick="showPc3SikijouIchiran();">
-							<p class="pc_sikizyou_catalog">一覧を見る</p>
-							<div class="pc_wrapper_right_button">
-								<img class="right_button" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/right_button.png" alt="ボタン" loading="lazy">
-							</div>
-						</a>
-						<div class="popup_block2" id="pop_pc3_sikijou_ichiran">
-							<div id="pc3_sikijou_ichiran_parent" class="popup_image_wrapper2">
-								<div id="pc3_sikijou_ichiran_box">
-									<div id="pc3_sikijou_ichiran_body">
-										<img class="popup_image" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/pop_sikijou_ichiran2.png?44" loading="lazy">
-									</div>
-									<div id="pc3_sikijou_ichiran_footer">
-										<div id="pc3_sikijou_ichiran_close2" onclick="closePcSikijouIchiran();">閉じる</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<script>
-							function showPc3SikijouIchiran() {
-								document.getElementById('pop_pc3_sikijou_ichiran').style.display = 'block';
-							}
-							function closePcSikijouIchiran() {
-								document.getElementById('pop_pc3_sikijou_ichiran').style.display = 'none';
-							}
-						</script>
+				</div>
+
+				<!-- ここから編集 見積もり相談２-->
+				<div class="wrapper_text text_align_center wrapper_estimate">
+					<div class="green_background_text">
+						<p>ご希望の地域・葬儀場で承ります</p>
 					</div>
-
-					<!-- ここから編集 見積もり相談２-->
-					<div class="wrapper_text text_align_center wrapper_estimate">
-						<div class="green_background_text">
-							<p>ご希望の地域・葬儀場で承ります</p>
+					<div class="flex justyify_content_flex_end">
+						<p class="back_slash">/</p>
+						<p class="koe text_align_center">まずはお気軽に<br>ご相談下さい</p>
+						<p class="slash" >/</p>
+						<div class="wrapper_guide">
+							<img class="guide" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/em01021.png" alt="案内人" loading="lazy">
 						</div>
-						<div class="flex justyify_content_flex_end">
-							<p class="back_slash">/</p>
-							<p class="koe text_align_center">まずはお気軽に<br>ご相談下さい</p>
-							<p class="slash" >/</p>
-							<div class="wrapper_guide">
-								<img class="guide" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/em01021.png" alt="案内人" loading="lazy">
-							</div>
-						</div>						
-							<a id="pc_estimate_n1" href="https://lp.ceremore.com/page/urgent_apply-estimate">
-								<p class="estimate_consul_2 text_align_center ">見積相談はこちら</p>
-							</a>							
-						</div>
-					</div>  
-					<!-- ここまで編集 -->
+					</div>						
+						<a id="pc_estimate_n1" href="https://lp.ceremore.com/page/urgent_apply-estimate">
+							<p class="estimate_consul_2 text_align_center ">見積相談はこちら</p>
+						</a>							
+					</div>
+				</div>  
+				<!-- ここまで編集 -->
 
 
-				</section>
-			</div>
-
-
-
+			</section>
 		</div>
+
 		<div class="wrapper" id="app3" style="background-color: white;">
 			<div class="inner_sub">
 				<section style="position:relative;">
@@ -2600,21 +1200,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<div class="wrapper" id="pc4">
 		<div class="inner2">
 			<section>
@@ -2636,7 +1221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				<!-- ②ここから -->
 				<div class="pc_reason_2">
-					官公庁・法人契約<br>２,５００団体<br>個人会員２８万人
+					官公庁・法人契約<br>２,５００団体<br>個人会員２９万人
 				</div>
 				<div class="pc_reason_2_2">
 					東京紀尾井町本社／紀尾井町ビル 6F
@@ -2646,7 +1231,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="pc_reason_2_3">
 					2,500 団体の官公庁・企業・団体などと福利厚生のご契約をさせていただいております。
 					<br>
-					東京紀尾井町本社では、企業・団体の社員、職員の皆様をはじめ、28 万人を超えるファミリーライフクラブ会員様に向けた仏事・葬儀のセミナーを開催しております。
+					東京紀尾井町本社では、企業・団体の社員、職員の皆様をはじめ、29 万人を超えるファミリーライフクラブ会員様に向けた仏事・葬儀のセミナーを開催しております。
 				</div>
 				<!-- ③ここから -->
 				<div class="pc_reason_3">
@@ -2775,7 +1360,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="selected-reasons-sp selected-reasons-sp-2">
 					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update-2.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy">
 					<div class="sp_reason sp_reason_2">
-						官公庁・法人契約<br>２,５００団体<br>個人会員２８万人
+						官公庁・法人契約<br>２,５００団体<br>個人会員２９万人
 					</div>
 					<div class="sp_reason sp_reason_2_2">
 						東京紀尾井町本社／紀尾井町ビル 6F
@@ -2785,7 +1370,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="sp_reason sp_reason_2_3">
 						2,500 団体の官公庁・企業・団体などと福利厚生のご契約をさせていただいております。
 						<br>
-						東京紀尾井町本社では、企業・団体の社員、職員の皆様をはじめ、28 万人を超えるファミリーライフクラブ会員様に向けた仏事・葬儀のセミナーを開催しております。
+						東京紀尾井町本社では、企業・団体の社員、職員の皆様をはじめ、29 万人を超えるファミリーライフクラブ会員様に向けた仏事・葬儀のセミナーを開催しております。
 					</div>
 				</div>
 
@@ -2896,7 +1481,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<a id="pc_tel_dialog_button" href="tel:0120430430"></a>
 		</div>
 	</div>
-	
+</div>
 	<script>
 		function showPcTelDialog() {
 			document.getElementById('pc_tel_dialog').style.display = 'block';

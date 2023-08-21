@@ -1392,3 +1392,1409 @@ img {
 #app_tel_8 img {
 	display: inline;
 }
+
+
+/* 以下index.htmlに記載されていたもの */
+
+html {
+	font-size: 1vw;
+	margin:0;
+	padding:0;
+}
+
+@media screen and (min-width:1500px) {
+	html {
+		font-size: 15.3px;
+	}
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+  padding: 2px 0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C1C1C1;
+  border-radius: 5px;
+}
+
+.hide {
+	display: none;
+}
+
+.popup_block {
+	display:none;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	z-index:100;
+	width:580px;
+	overflow-y:auto;
+	background-color:#000000aa;
+}
+
+.popup_block2 {
+	display:none;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	z-index:100;
+	width:100%;
+	overflow-y:auto;
+	background-color:#000000aa;
+}
+
+@media screen and (max-width:580px) {
+	.popup_block {
+		width:100%;
+	}
+}
+
+@media screen and (max-width:1300px) {
+	.popup_block2 {
+		width:100%;
+	}
+}
+
+.popup_image_wrapper {
+	position:relative;
+	width:95%;
+	margin:0 auto;
+}
+
+.popup_image_wrapper2 {
+	position:relative;
+	width:320px;
+	margin:0 auto;
+}
+
+@media screen and (max-width:640px) {
+	.popup_image_wrapper2 {
+		width:50%;
+	}
+}
+
+#section_1_button a {
+	position:absolute;
+	display:block;
+	width:38%;
+	height:19%;
+	bottom:10%;
+	right:3%;
+}
+
+#section_5_ichinichi a {
+	position: absolute;
+    display: block;
+    width: 100%;
+    height: 17%;
+    bottom: 53.4%;
+}
+
+#section3_5_ichinichi a {
+	position: absolute;
+    display: block;
+    width: 25%;
+    height: 2.7%;
+    bottom: 24.9%;
+    right: 11%;
+}
+
+#close_ichinichi {
+	position:absolute;
+	width:20%;
+	height: 4%;
+    top: 0%;
+	right:0%;
+}
+
+#close3_ichinichi {
+	position:absolute;
+	width:20%;
+	height: 5%;
+    top: 1%;
+	right:1%;
+}
+
+#section_5_kazoku1 a {
+	position: absolute;
+    display: block;
+    width: 100%;
+    height: 17%;
+    bottom: 71.5%;
+    right: 0;
+}
+
+#section3_5_kazoku1 a {
+	position: absolute;
+    display: block;
+    width: 25%;
+    height: 2.7%;
+    bottom: 37.7%;
+    right: 11%;
+}
+
+#close_kazoku1 {
+	position:absolute;
+	width:20%;
+	height: 4%;
+    top: 0%;
+	right:0%;
+}
+
+#close3_kazoku1 {
+	position:absolute;
+	width:20%;
+	height: 5%;
+    top: 1%;
+	right:1%;
+}
+
+#section_5_kazoku2 a {
+	position: absolute;
+    display: block;
+    width: 100%;
+    height: 16%;
+    bottom: 36%;
+}
+
+#section3_5_kazoku2 a {
+	position: absolute;
+    display: block;
+    width: 25%;
+    height: 2.7%;
+    bottom: 12%;
+    right: 11%;
+}
+
+#close_kazoku2 {
+	position:absolute;
+	width:20%;
+	height: 3%;
+    top: 0%;
+	right:0%;
+}
+
+#close3_kazoku2 {
+	position:absolute;
+	width:20%;
+	height: 5%;
+    top: 1%;
+	right:1%;
+}
+
+#section_5_ippan a {
+	position:absolute;
+	display:block;
+	width:50%;
+	height:22%;
+	bottom:42%;
+	right:0;
+}
+
+#close_ippan {
+	position:absolute;
+	width:20%;
+	height:10%;
+	top:7%;
+	right:1%;
+}
+
+#section_5_form a {
+	position:absolute;
+	display:block;
+	width:100%;
+	height:4%;
+	bottom:2%;
+}
+
+#section_5_call a {
+	position:absolute;
+	display:block;
+	width:100%;
+	height:4%;
+	bottom:7%;
+}
+
+#call_0203 {
+	position:absolute;
+	display:block;
+	width:100%;
+	height: 5%;
+    bottom: 6%;
+}
+
+#link_0203 {
+	position:absolute;
+	display:block;
+	width:100%;
+	height: 4%;
+    bottom: 1%;
+}
+
+#section_6_call a {
+	position:absolute;
+	display:block;
+	width:100%;
+	height:17%;
+	bottom:2%;
+}
+
+.popup_block .popup_image {
+	position:static;
+	width:100%;
+}
+
+#pc_section_1_button a {
+	position:absolute;
+	display:block;
+	width:35%;
+	height:18%;
+	bottom:10%;
+	right:2%;
+}
+
+#pc_section_6_form a {
+	position:absolute;
+	display:block;
+	width:60%;
+	height:7%;
+	bottom:2%;
+	left:20%;
+}
+
+#pc_section_6_call a {
+	position:absolute;
+	display:block;
+	width:54%;
+	height:7%;
+	bottom:9%;
+	right:23%;
+}
+
+#pc_section_7_call a {
+	position:absolute;
+	display:block;
+	width:40%;
+	height:11%;
+	bottom:15%;
+	right:6%;
+}
+
+#pc_section_5_ichinichi a {
+	position: absolute;
+    display: block;
+    width: 32%;
+	height: 33%;
+    top: 13%;
+    left: 34%;
+    z-index: 3;
+}
+
+#pc3_section_5_ichinichi a {
+	position: absolute;
+    display: block;
+    width: 24%;
+    height: 30%;
+    top: 53%;
+    left: 38%;
+    z-index: 3;
+}
+
+#close_pc_ichinichi, #close_pc3_ichinichi {
+    position: absolute;
+    width: 10%;
+    height: 2.5%;
+    top: 0%;
+    right: 0%;
+}
+
+#pc_section_5_kazoku1 a {
+	position: absolute;
+    display: block;
+    width: 32%;
+	height: 33%;
+    top: 13%;
+    left: 1%;
+    z-index: 3;
+}
+
+#pc3_section_5_kazoku1 a {
+	position: absolute;
+    display: block;
+    width: 24%;
+    height: 30%;
+    top: 53%;
+    left: 13%;
+    z-index: 3;
+}
+
+#close_pc_kazoku1, #close_pc3_kazoku1 {
+    position: absolute;
+    width: 10%;
+    height: 2.5%;
+    top: 0%;
+    right: 0%;
+}
+
+#pc_section_5_kazoku2 a {
+	position: absolute;
+    display: block;
+    width: 32%;
+	height: 33%;
+    top: 13%;
+    left: 67%;
+    z-index: 3;
+}
+
+#pc3_section_5_kazoku2 a {
+	position: absolute;
+    display: block;
+    width: 24%;
+    height: 30%;
+    top: 53%;
+    left: 63%;
+    z-index: 3;
+}
+
+#pc3_section_5_sikijou_ichiran {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+#pc3_section_5_sikijou_ichiran a {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #FFFFFF;
+	background-color: #CD671E;
+	width: 30%;
+	padding: 10px 15px;
+	box-shadow: 0px 4px #2D0B06;
+	border-radius: 8px;
+}
+
+#pc3_section_5_sikijou_ichiran a img {
+	margin: auto 0 auto auto;
+}
+
+#pc_sikijou_list_box {
+	/* background-color: #f0eee5; */
+    padding: 10px 10px;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+}
+
+
+/* 橋本変更 */
+#app_sikijou_list_box {
+    /* margin: 10px auto; */
+    padding: 20px 5px;
+    width: calc(100% - 10px);
+    border-radius: 10px;
+}
+
+#pc_sikijou_list_title {
+	font-size: clamp(25px, 4.5vw, 48px);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#app_sikijou_list_title {
+	font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#pc_sikijou_list_box .swiper-slide {
+	background-color: white;
+	padding-bottom: 25px;
+    border-radius: 18px;
+    box-sizing: border-box;
+	box-shadow: 1px 1px rgb(231, 231, 231);
+}
+
+#app_sikijou_list_box .swiper-slide {
+	background-color: white;
+	padding-bottom: 10px;
+    border-radius: 7px;
+	border: 0.5px solid #d1d1d1;
+	box-sizing: border-box;
+	box-shadow: 1px 1px rgb(231, 231, 231);
+}
+
+
+#pc_sikijou_list_box .swiper-slide img {
+	border-radius: 18px 18px 0 0;
+}
+
+#app_sikijou_list_box .swiper-slide img {
+	border-radius: 7px 7px 0 0;
+}
+
+#pc_sikijou_list_box .pc_sikijou_station {
+	text-align: center;
+    font-size: 2.2rem;
+    padding: 10px 0 0;
+}
+
+#app_sikijou_list_box .app_sikijou_station {
+	text-align: center;
+    font-size: 3.7rem;
+    padding: 10px 0 0;
+}
+
+#pc_sikijou_list_box .pc_sikijou_name {
+	text-align: center;
+    font-size: 2.57rem;
+    font-weight: bold;
+}
+
+#app_sikijou_list_box .app_sikijou_name {
+	text-align: center;
+    font-size: 3.7rem;
+    font-weight: bold;
+}
+
+#pc_sikijou_list_box .pc_sikijou_type {
+	text-align: center;
+    width: 70%;
+    margin: 5px auto;
+    padding: 3px 0;
+    font-size: 2.8rem;
+    color: white;
+    border-radius: 5px;
+}
+
+#app_sikijou_list_box .app_sikijou_type {
+	text-align: center;
+    width: 70%;
+    margin: 5px auto;
+    padding: 3px 0;
+    font-size: 4.2rem;
+    color: white;
+    border-radius: 5px;
+}
+
+#pc_sikijou_list_box .pc_sikijou_ichinichi {
+	background-color: #4A9550;
+}
+
+#pc_sikijou_list_box .pc_sikijou_ippan {
+	background-color: #216E7F;
+}
+
+#pc_sikijou_list_box .pc_sikijou_kazoku {
+	background-color: #A62364;
+}
+
+#app_sikijou_list_box .app_sikijou_ichinichi {
+	background-color: #4A9550;
+}
+
+#app_sikijou_list_box .app_sikijou_ippan {
+	background-color: #216E7F;
+}
+
+#app_sikijou_list_box .app_sikijou_kazoku {
+	background-color: #A62364;
+}
+
+#pc_sikijou_list_box .swiper-pagination {
+	bottom: 0;
+}
+
+#app_sikijou_list_box .swiper-pagination {
+	bottom: 0;
+}
+
+#pc_sikijou_list_box .swiper-pagination-bullet-active {
+	background-color: #CD671E;
+}
+
+#app_sikijou_list_box .swiper-pagination-bullet-active {
+	background-color: #CD671E;
+}
+
+#app3_section_5_sikijou_ichiran {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	padding: 0 0 20px 0;
+}
+
+#app3_section_5_sikijou_ichiran a {
+	padding: 10px 20px;
+    background-color: #CD671E;
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: #FFFFFF;
+	width: 30%;
+	box-shadow: 0px 4px #2D0B06;
+	border-radius: 8px;
+}
+
+
+
+#app3_section_5_sikijou_ichiran a img {
+	/* width:clamp(20px, 5.0vw, 40px);
+	height:clamp(20px, 5.0vw, 40px); */
+
+	margin-left: auto;
+}
+
+#close_pc_kazoku2, #close_pc3_kazoku2 {
+    position: absolute;
+    width: 10%;
+    height: 2.5%;
+    top: 0%;
+    right: 0%;
+}
+
+#pc3_sikijou_ichiran_parent {
+	position: relative;
+	width: 95%;
+	max-width: 500px;
+	height: 90%;
+	padding-top: 5%;
+}
+
+#app3_sikijou_ichiran_parent {
+	position: relative;
+	width: 95%;
+	height: 90%;
+	padding-top: 5%;
+}
+
+#pc3_sikijou_ichiran_close1 {
+	position: absolute;
+	z-index: 10;
+	width: 42px;
+    right: 0;
+    top: 26px;
+}
+
+#app3_sikijou_ichiran_close1 {
+	position: absolute;
+	z-index: 10;
+	width: 42px;
+    right: 0;
+    top: 26px;
+}
+
+#pc3_sikijou_ichiran_box {
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#app3_sikijou_ichiran_box {
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#pc3_sikijou_ichiran_body {
+    padding: 8px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 3px solid #22a573;
+    border-radius: 5px 5px 0 0;
+}
+
+#app3_sikijou_ichiran_body {
+    padding: 8px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 3px solid #22a573;
+    border-radius: 5px 5px 0 0;
+}
+
+.app3_sikijou_info_box {
+	display: flex;
+	padding: 2rem 0;
+	border-bottom: 1px solid #dedede;
+}
+
+.app3_sikijou_info_img {
+	width: 50%;
+    height: 23rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 2rem #ccc;
+}
+
+.app3_sikijou_info_img img {
+	position: relative;
+    top: -8rem;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.app3_sikijou_info_text {
+	width: 50%;
+}
+
+.app3_sikijou_info_station {
+	margin-left: 2rem;
+	margin-top: 1rem;
+	font-size: 3.1rem;
+    color: #848484;
+}
+
+.app3_sikijou_info_name {
+	text-align: center;
+	margin: 1rem 0;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #292929;
+}
+
+.app3_sikijou_info_type {
+	width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 3.1rem;
+    color: white;
+}
+
+.app3_sikijou_info_text .app_sikijou_ichinichi {
+	background-color: #22a573;
+}
+
+.app3_sikijou_info_text .app_sikijou_ippan {
+	background-color: #278494;
+}
+
+.app3_sikijou_info_text .app_sikijou_kazoku {
+	background-color: #ba3a78;
+}
+
+#pc3_sikijou_ichiran_footer {
+    width: 100%;
+    background-color: #22a573;
+    border-radius: 0 0 5px 5px;
+}
+
+#app3_sikijou_ichiran_footer {
+    width: 100%;
+    background-color: #22a573;
+    border-radius: 0 0 5px 5px;
+}
+
+#pc3_sikijou_ichiran_close2 {
+	font-size: 24px;
+    font-weight: bold;
+    width: 140px;
+    margin: 12px auto;
+    padding: 3px 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+	cursor: pointer;
+}
+
+#app3_sikijou_ichiran_close2 {
+	font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+    margin: 12px auto;
+    padding: 3px 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#pc_section_5_ippan a, #pc3_section_5_ippan a {
+	position:absolute;
+	display:block;
+	width:21%;
+	height:22%;
+	top:11%;
+	left:74%;
+	z-index: 3;
+}
+
+#close_pc_ippan, #close_pc3_ippan {
+	position:absolute;
+	width:20%;
+	height:10%;
+	top:7%;
+	right:1%;
+}
+
+#pc_top_area {
+	letter-spacing: 0.1em;
+}
+
+
+#pc_top_area span {
+	font-size: 3.4rem;
+	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+	font-weight:bold;
+	color:#bd1313;
+	line-height:2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  #pc_top_area span {
+    color:#bd1313;
+  }
+}
+
+#pc_top_area span::before {
+	left: 0;
+}
+
+#pc_top_area span::after {
+	right: 0;
+}
+
+#pc_top_area2 {
+	letter-spacing: 0.1em;
+	margin-top: 7px;
+}
+
+
+#pc_top_area2 span {
+	font-size: 3.2rem;
+	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+	font-weight:bold;
+	color:#42210B;
+	line-height:4.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  #pc_top_area2 span {
+    color:#42210B;
+  }
+}
+
+#pc_blue_medal {
+	position:absolute;
+	top:39%;
+	left:5%;
+	width:42%;
+}
+
+#pc_section_n1_form a {
+    position: absolute;
+    display: block;
+    width: 16%;
+    height: 7%;
+    top: 2%;
+    right: 4%;
+}
+
+#pc_section_n1_call a {
+	position: absolute;
+    display: block;
+    width: 43%;
+    height: 10%;
+    bottom: 28.5%;
+    left: 8%;
+}
+
+#pc_section_n1_kazokuso a#pc_kazoku1_open {
+    position: absolute;
+    display: block;
+    width: 31%;
+    /* height: 16.5%; */
+    top: 7.5%;
+    right: 6%;
+}
+
+#pc_section_n1_kazokuso_ttl {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#pc_section_n1_kazokuso_ttl span {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    font-size: 230%;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #42210B;
+}
+
+#pc_section_n1_ichinichiso a#pc_ichinichi_open {
+	position: absolute;
+    display: block;
+    width: 31%;
+    /* height: 15.5%; */
+    top: 28%;
+    right: 6%;
+}
+
+#pc_section_n1_ichinichiso_ttl {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#pc_section_n1_ichinichiso_ttl span {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    font-size: 230%;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #42210B;
+}
+
+#pc_section_n1_ippanso a#pc_kazoku2_open {
+    position: absolute;
+    display: block;
+    width: 31%;
+    /* height: 16.5%; */
+    top: 48.5%;
+    right: 6%;
+}
+
+
+
+@media screen and (min-width:860px) {
+	#pc_section_n1_kazokuso a#pc_kazoku1_open {
+		top: 7.5%;
+	}
+	#pc_section_n1_ichinichiso a#pc_ichinichi_open {
+		top: 30%;
+	}
+	#pc_section_n1_ippanso a#pc_kazoku2_open {
+		top: 52%;
+	}
+}
+
+
+#pc_section_n1_ippanso_ttl {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#pc_section_n1_ippanso_ttl span {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    font-size: 230%;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #42210B;
+}
+
+
+#pc_to_corona {
+	/* background-image: url("https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/pc/covid19_btn.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 46%;
+	height: auto; */
+	display: block;
+	margin: 0px auto;
+	max-width: 700px;
+	width: 70%;
+	/* padding-top: 8%;
+	margin: 10px auto; */
+}
+
+#pc_call_0420 {
+	position: absolute;
+    display: block;
+    width: 60%;
+    height: 6%;
+    bottom: 8%;
+    left: 20%;
+}
+
+#pc_link_0420 {
+	position: absolute;
+    display: block;
+    width: 60%;
+    height: 5%;
+    bottom: 2%;
+    left: 19%;
+}
+
+#sp_top_area {
+	position:absolute;
+	top: 2%;
+	/*width:100%;
+	text-align:center;*/
+	letter-spacing: 0.1em;
+}
+
+#sp_top_area span {
+	font-size:7.5rem;
+	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+	font-weight:bold;
+	color:#bd1313;
+	position: relative;
+	display: inline-block;
+	padding: 0 3rem;
+	line-height:10rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  #sp_top_area span {
+    color:#bd1313;
+  }
+}
+
+#sp_top_area span::before {
+	left: 0;
+}
+
+#sp_top_area span::after {
+	right: 0;
+}
+
+#sp_top_area2 {
+	position:absolute;
+	top: 8.5%;
+	width:70%;
+	letter-spacing: 0.1em;
+}
+
+/* 以下橋本修正 */
+#sp_top_area2 span {
+	font-size: 7rem;
+	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+	font-weight:bold;
+	color:#42210B;
+	position: relative;
+	display: inline-block;
+	padding: 0 3rem;
+	line-height:10rem;
+	margin-top: -6rem;
+
+}
+/* 以上橋本修正 */
+
+@media (prefers-color-scheme: dark) {
+  #sp_top_area2 span {
+    color:#42210B;
+  }
+}
+
+#sp_blue_medal {
+	position:absolute;
+	top:37%;
+	left:-5%;
+	width:78%;
+}
+
+#sp_orange_medal {
+	position: absolute;
+    top: 14%;
+    right: 3%;
+    width: 46%;
+}
+
+#sp_section_n1_form a {
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: 6%;
+    top: 9%;
+    right: 3%;
+}
+
+#sp_section_n1_call a {
+    position: absolute;
+    display: block;
+    width: 87%;
+    height: 9%;
+    top: 70%;
+    left: 6%;
+}
+
+#sp_section_n1_form2 a {
+    position: absolute;
+    display: block;
+    width: 88%;
+    height: 7.5%;
+    top: 80.5%;
+    left: 6%;
+}
+
+#top_sougi_links {
+	text-align: center;
+	padding: 1% 0;
+	background: #fff;
+}
+
+#sp_section_n1_kazokuso,
+#sp_section_n1_ichinichiso,
+#sp_section_n1_ippanso {
+	display: inline-block;
+	width: 32%;
+}
+#sp_section_n1_kazokuso a#app_kazoku1_open {
+	/* position: absolute; */
+    display: block;
+    /* width: 30.5%; */
+    /* height: 18%; */
+    top: 47%;
+    left: 2%;
+}
+
+#sp_section_n1_kazokuso_ttl {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#sp_section_n1_kazokuso_ttl span {
+	position: absolute;
+    left: 10%;
+    top: 47%;
+    font-size: 530%;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #42210B;
+}
+
+#sp_section_n1_ichinichiso a#app_ichinichi_open {
+	/* position: absolute; */
+    display: block;
+    /* width: 31%; */
+    /* height: 18%; */
+    top: 47%;
+    left: 34.5%;
+}
+
+#sp_section_n1_ichinichiso_ttl {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#sp_section_n1_ichinichiso_ttl span {
+	position: absolute;
+    left: 10%;
+    top: 47%;
+    font-size: 530%;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #42210B;
+}
+
+#sp_section_n1_ippanso a#app_kazoku2_open {
+	/* position: absolute; */
+    display: block;
+    /* width: 30.5%; */
+    /* height: 18%; */
+    top: 47%;
+    left: 67.5%;
+}
+
+#sp_section_n1_ippanso_ttl {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#sp_section_n1_ippanso_ttl span {
+	position: absolute;
+    left: 10%;
+    top: 47%;
+    font-size: 530%;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #42210B;
+}
+
+#pc_section_n1_form2 a {
+    position: absolute;
+    display: block;
+    width: 43%;
+    height: 11%;
+    bottom: 16.5%;
+    left: 8%;
+}
+
+#pc_corona_footer {
+	background-color: white;
+	padding: 10px 0;
+}
+
+#pc_corona_close_button {
+	background-color: #00b080;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 40%;
+    padding: 7px 0;
+    border-radius: 7px;
+}
+
+#app_to_corona {
+	background-image: url("https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/covid19_btn_sp.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 90%;
+	height: auto;
+	display: block;
+	padding-top: 20%;
+	margin: 10px auto;
+}
+
+#app_corona_footer {
+	background-color: white;
+	padding: 10px 0;
+}
+
+#app_corona_close_button {
+	background-color: #00b080;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 40%;
+    padding: 7px 0;
+    border-radius: 7px;
+}
+
+#pc_middle_area {
+	position:absolute;
+	top:23.8%;
+	right:0;
+	width:52%;
+	text-align:center;
+	font-size:1.9rem;
+	font-weight:bold;
+}
+
+#pc_middle_area_name {
+	font-size:3rem;
+	color:#00b180;
+}
+
+#pc_middle_area2 {
+	position:absolute;
+	top:67.3%;
+	right:5%;
+	width:43%;
+	padding:1rem 0;
+	text-align:center;
+	font-size:2.2rem;
+	font-weight:bold;
+	background-color: #fff;
+}
+
+#sp_middle_area {
+	position:absolute;
+	top:2.9%;
+	width:100%;
+	text-align:center;
+	font-size:4.2rem;
+	font-weight:bold;
+}
+
+#sp_middle_area_name {
+	font-size:7rem;
+	color:#00b180;
+}
+
+#sp_middle_area2 {
+	position:absolute;
+	top:69.3%;
+	width:100%;
+	padding:2rem 0;
+	text-align:center;
+	font-size:5.2rem;
+	font-weight:bold;
+	background-color: #fff;
+}
+
+#pc_n4_1 {
+	position: absolute;
+    display: block;
+    width: 66%;
+    height: 7%;
+    bottom: 2%;
+    left: 17%;
+}
+
+#app_n4_1 {
+	position: absolute;
+    display: block;
+    width: 94%;
+    height: 6%;
+    bottom: 1%;
+    left: 3%;
+}
+
+#pc_n6_1 {
+	position: absolute;
+    display: block;
+    width: 29%;
+    height: 2%;
+    bottom: 47%;
+    left: 66%;
+}
+
+#pc_n6_2 {
+	position: absolute;
+    display: block;
+    width: 28%;
+    height: 2%;
+    bottom: 31%;
+    left: 5%;
+}
+
+#pc_n6_3 {
+	position: absolute;
+    display: block;
+    width: 60%;
+    height: 5%;
+    bottom: 6%;
+    left: 20%;
+}
+
+#pc_n6_4 {
+	position: absolute;
+    display: block;
+    width: 57%;
+    height: 5%;
+    bottom: 1%;
+    left: 22%;
+}
+
+#app_n6_3 {
+	position: absolute;
+    display: block;
+    width: 100%;
+    height: 2%;
+    bottom: 2.7%;
+    left: 0;
+}
+
+#app_n6_4 {
+	position: absolute;
+    display: block;
+    width: 100%;
+    height: 2%;
+    bottom: 0.5%;
+    left: 0;
+}
+
+#pc_tel_dialog {
+	padding-top: 10%;
+}
+
+#pc_tel_dialog_close {
+	position: absolute;
+    width: 11%;
+    top: 3%;
+    right: 5px;
+}
+
+#pc_tel_dialog_button {
+	position: absolute;
+    width: 70%;
+    height: 8%;
+    left: 15%;
+    top: 50%;
+}
+
+#pc_tel_dialog_child {
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+}
+
+@media screen and ( max-width:580px ) {
+	#pc_tel_dialog {
+		padding-top: 20%;
+	}
+
+	#pc_tel_dialog_close {
+		width: 11%;
+		top: 4%;
+		right: 10px;
+	}
+
+	#pc_tel_dialog_button {
+		width: 70%;
+		height: 9%;
+		left: 15%;
+		top: 50%;
+	}
+
+	#pc_tel_dialog_child {
+		width: 100%;
+	}
+}
+
+@media screen and ( min-width:700px ) {
+	#pc_n6_1 {
+		bottom: 46.5%;
+	}
+
+	#pc_n6_2 {
+		bottom: 31%;
+	}
+}
+
+@media screen and ( min-width:1250px ) {
+	#pc_n6_1 {
+		bottom: 46%;
+	}
+
+	#pc_n6_2 {
+		bottom: 30.3%;
+	}
+}
+
+@media screen and ( min-width:1450px ) {
+	#pc_n6_1 {
+		bottom: 45.3%;
+	}
+
+	#pc_n6_2 {
+		bottom: 29.2%;
+	}
+}
+
+#app_tel_dialog_close {
+	position: absolute;
+    width: 11%;
+    top: 13%;
+    right: 10px;
+}
+
+#app_tel_dialog_button {
+	position: absolute;
+    width: 70%;
+    height: 9%;
+    left: 15%;
+    top: 45%;
+}
+
+/* 以上index.htmlに記載されていたもの */

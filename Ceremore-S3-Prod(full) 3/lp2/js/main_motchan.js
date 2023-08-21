@@ -290,6 +290,7 @@ if(urlParam) {
 		}
 	}
 }
+
 var pc_top_area = document.getElementById('pc_top_area');
 var sp_top_area = document.getElementById('sp_top_area');
 var pc_top_area2 = document.getElementById('pc_top_area2');
@@ -300,21 +301,23 @@ if(areaName=='' && saijoName=='') {
 	pc_top_area2.innerHTML = '<span >一度きりのお葬式を<br>確かな品質で</span>';
 	sp_top_area2.innerHTML = '<span>一度きりのお葬式を<br>確かな品質で</span>';
 } else if(areaName != '') {
-	pc_top_area.innerHTML = '<span>' + areaName + '市の家族葬なら</span>';
-	sp_top_area.innerHTML = '<span>' + areaName + '市の家族葬なら</span>';
-	pc_top_area2.innerHTML = '<span style="padding-top: 2%"><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" alt="セレモア" style="display:inline; width:60%; padding-right:2%">へ<br>お任せください</span>';
+	pc_top_area.innerHTML = '<span style="font-size: 3.4rem;">' + areaName + '市<span style="color: #42210B">の家族葬なら</span></span>';
+	sp_top_area.innerHTML = '<span>' + areaName + '市<span style="color: #42210B">の家族葬なら</span></span>';
+	pc_top_area2.innerHTML = '<span style="padding-top: 2%"><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" alt="セレモア" style="display:inline; width:clamp(95px, 15.3vw, 212px);">へ<br>お任せください</span>';
 	sp_top_area2.innerHTML = '<span style="padding-top: 2%"><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" alt="セレモア" style="display:inline; width:70%; padding-right:2%">へ<br>お任せください</span>';
 } else {
 	if(saijoName.length == 6) {
-		pc_top_area.innerHTML = '<span style="font-size:5rem;">' + saijoName + '<span style="font-size:5rem; color:#353535; padding:0;">のお葬式は</span></span>';
-		sp_top_area.innerHTML = '<span style="font-size:7rem;">' + saijoName + '<br><span style="color:#353535; padding:0;">のお葬式は</span></span>';
+		pc_top_area.innerHTML = '<span style="font-size:3.2rem;">' + saijoName + '<span style="font-size:3.2rem; color:#353535; padding:0;">のお葬式は</span></span>';
+		sp_top_area.innerHTML = '<span style="font-size:8rem;">' + saijoName + '<br><span style="color:#353535; padding:0;">のお葬式は</span></span>';
 	} else {
 		pc_top_area.innerHTML = '<span>' + saijoName + '<span style="color:#353535; padding:0;">の</span><span style="color:#353535; padding:0;">お葬式は</span></span>';
 		sp_top_area.innerHTML = '<span>' + saijoName + '<br><span style="color:#353535; padding:0;">のお葬式は</span></span>';
 	}
-	pc_top_area2.innerHTML = '<span style="color:#353535;"><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" alt="セレモア" style="display:inline; width:60%;">に<br>お任せください</span>';
+	pc_top_area2.innerHTML = '<span style="color:#353535;"><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" style="display:inline; width:clamp(95px, 15.3vw, 212px);">に<br>お任せください</span>';
 	sp_top_area2.innerHTML = '<span style="color:#353535;"><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" alt="セレモア" style="display:inline; width:70%;">に<br>お任せください</span>';
 }
+
+
 
 let $img = $('.imgload');
 // パスを取得
