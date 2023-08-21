@@ -1053,24 +1053,24 @@ img {
 	}
 }
 
-
-/* /////ここから橋本作成//// */
-
-
-.pc_top_area {
-	padding-top: 16px;
+.wrapper_pc_top_area {
+	position: absolute;
+	left: 8%;
+	top:18%;
+	width:100%;
 }
 
-.pc_top_area2 {
-	margin-top: 16px;
+
+.pc_top_area_img {
+	display:inline;
+	width:19%;
+	vertical-align: middle;
 }
+
+
 
 
 /* 電話と資料など */
-.margin_top_16px {
-	/* margin-top: 16px; */
-	margin-top: clamp(16px, 4.3vw, 64px);
-}
 
 .pc_tel_button {
 	background-color: #A41E25;
@@ -1535,7 +1535,7 @@ img {
 	right: -1.5px;
 	width: clamp(24px, 4vw, 40px);
 	height: clamp(24px, 4vw, 40px);
-	background-image: url("../../lp2-temp/images/motchan/maskgroup1.png");
+	background-image: url("../../lp2-temp/images/motchan/pink_arrow.png");
 	background-size: contain;
 }
 
@@ -1551,7 +1551,7 @@ img {
 	right: -1.5px;
 	width:  clamp(24px, 4vw, 40px);
 	height:  clamp(24px, 4vw, 40px);
-	background-image: url("../../lp2-temp/images/motchan/maskgroup2.png");
+	background-image: url("../../lp2-temp/images/motchan/green_arrow.png");
 	background-size: contain;
 }
 
@@ -1567,7 +1567,7 @@ img {
 	right: -1.5px;
 	width:  clamp(24px, 4vw, 40px);
 	height:  clamp(24px, 4vw, 40px);
-	background-image: url("../../lp2-temp/images/motchan/maskgroup3.png");
+	background-image: url("../../lp2-temp/images/motchan/blue_arrow.png");
 	background-size: contain;
 }
 
@@ -1579,7 +1579,7 @@ img {
 	width: calc(100% - 16px); 
 }
 .border_medeum {
-	border: 3px solid #025F3A;
+	border: 3px solid #A62364;
 }
 
 
@@ -1595,7 +1595,7 @@ img {
 	right: -1.5px;
 	width: clamp(30px, 9vw, 50px);
 	height: clamp(30px, 9vw, 50px);
-	background-image: url("../../lp2-temp/images/motchan/maskgroup1.png");
+	background-image: url("../../lp2-temp/images/motchan/pink_arrow.png");
 	background-size: contain;
 }
 
@@ -1617,7 +1617,7 @@ img {
 	right: -1.5px;
 	width: clamp(30px, 9vw, 50px);
 	height: clamp(30px, 9vw, 50px);
-	background-image: url("../../lp2-temp/images/motchan/maskgroup2.png");
+	background-image: url("../../lp2-temp/images/motchan/green_arrow.png");
 	background-size: contain;
 }
 
@@ -1634,7 +1634,7 @@ img {
 	right: -1.5px;
 	width: clamp(30px, 9vw, 50px);
 	height: clamp(30px, 9vw, 50px);
-	background-image: url("../../lp2-temp/images/motchan/maskgroup3.png");
+	background-image: url("../../lp2-temp/images/motchan/blue_arrow.png");
 	background-size: contain;
 }
 
@@ -1694,6 +1694,15 @@ img {
 .wrapper_info {
 	padding: 0px 8px 8px 8px;
 }
+
+.price_wrapper {
+	width:95%;
+}
+
+.price_wrapper_2 {
+	width:90%;
+}
+
 /* ここまでPC家族上部 */
 
 /* ここからPCコロナ */
@@ -1975,17 +1984,21 @@ img {
 }
 .wrapper_sikizyou_sentence {
 	padding: 16px;
+	background-color: #F6F2EF;
 }
 .flex_responsive {
 	display: flex;
 	flex-flow: column;
 	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
 }
 
 .prefecture {
 	font-size: clamp(18px, 5.3vw, 28px);
 	padding:5px 5px 16px 5px;
 	font-weight: bold;
+	line-height: 2em;
 }
 
 .emphasis {
@@ -2000,13 +2013,11 @@ img {
 }
 
 .appeal_text {
-	color: #981B21;
+	color: #1B784C;
 	font-size: clamp(18px, 5.3vw, 28px);
 	text-align:center;
 	padding: 10px;
-	background-color: #F5EFD5;
-	border: medium solid #981B21;
-	font-weight: bold;
+	border: medium solid #1B784C;
 }
 
 .img_prefecture {
@@ -2047,23 +2058,27 @@ img {
 		font-size: clamp(28px, 4.2vw, 48px);
 	}
 	.appeal_text {
-		color: #981B21;
+		color: #1B784C;
 		font-size: clamp(16px, 2.7vw, 32px);
 		text-align:center;
 		padding: 8px;
-		background-color: #F5EFD5;
-		border: medium solid #981B21;
+		border: medium solid #1B784C;
 	}
 }
 
 
                 /* ここから家族葬、一日葬、一般葬 */
+/* pc版 */
+.pc_text_1 {
+	font-size: clamp(18px, 2.9vw, 40px);
+}
+
 
 	.wrapper_text {
 		padding: 16px;
 	}
 	.text_img_2 {
-		width: clamp(110px, 19%, 220px);
+		width: clamp(110px, 25%, 220px);
 		vertical-align: middle;
 		padding-right: 8px;
 		padding-bottom: 7px;
@@ -2072,8 +2087,8 @@ img {
 	.text_1 {
 		/* font-size: 14px; */
 		/* font-size: 20px; */
-		font-size: clamp(14px, 2.8vw, 30px);
-		line-height: clamp(24px, 4.8vw, 54px);
+		font-size: clamp(14px, 4.3vw, 24px);
+		/* line-height: clamp(24px, 4.8vw, 54px); */
 	}
 	.middle_text_br {
 		white-space: nowrap;
@@ -2085,7 +2100,7 @@ img {
 	@media screen and (min-width:581px) {
 		/*　画面サイズが580pxより大きい場合はここを読み込む　*/
 		.wrapper_text {
-			padding: 20px 45px 15px;
+			padding: 20px 45px 10px;
 		}
 		.wrapper_text2 {
 			padding: 0px 45px 15px;
@@ -2211,35 +2226,34 @@ img {
 	background-size: contain;
 }
 
+.pink_color_border {
+	border: 2px solid #A62364;
+}
+
 .green_color_border {
-	border: 2px solid #025F3A;
+	border: 2px solid #4A9550;
 }
-.green_color_border_2 {
-	border: 2px solid #025F3A;
-}
-.red_color_border {
-	border: 2px solid #863B3B;
-}
+
 .blue_color_border {
-	border: 2px solid #278191;
+	border: 2px solid #216E7F;
 }
 .green_color_background {
-	background-color: #025F3A;
+	background-color: #A62364;
 }
 .red_color_background {
-	background-color: #863B3B;
+	background-color: #4A9550;
 }
 .blue_color_background {
-	background-color: #278191;
+	background-color: #216E7F;
 }
 .green_color {
-	color: #025F3A;
+	color: #A62364;
 }
 .red_color {
-	color: #863B3B;
+	color: #4A9550;
 }
 .blue_color {
-	color: #278191;
+	color: #216E7F;
 }
 
 .wrapper_pc_card {
@@ -2584,7 +2598,12 @@ img {
 	margin: 16px;
 	position:relative;
 	border-radius: 8px;
+}
+
+.max_width_specify {
+	width:70%;
 	max-width: 400px;
+	margin:16px auto;
 }
 
 @media screen and (min-width:581px) {
@@ -2693,12 +2712,12 @@ img {
 	font-size: clamp(14px, 4.1vw, 42px);
 	position: relative;
 	color: #B34741;
-	line-height: 4.5rem;
+	line-height: 3.5rem;
 }
 
 .back_slash {
 	width: 10%;
-	font-size: 12rem;
+	font-size: 10rem;
 	transform: rotateY(180deg) scale(0.7, 1);
 	text-align:left;
 	color: #B34741;
@@ -2706,7 +2725,7 @@ img {
 
 .slash {
 	width: 10%;
-	font-size: 12rem;
+	font-size: 10rem;
 	text-align:left;
 	color: #B34741;
 	transform: scale(0.7, 1);
@@ -2754,15 +2773,16 @@ img {
 }
 
 .estimate_consul_2 {
+	width: calc(90% - 4rem);
 	background-color: #cd3164;
-	padding: 14px;
+	padding:2rem;
 	color: #f6f6f6;
-	font-size: min(3rem, 27px);
+	font-size: min(5rem, 34px);
 	box-shadow: 0px 4px #6B1818;
-	margin: 0px 76px;
+	margin: 0px auto 2rem;
 	position:relative;
 	border-radius: 8px;
-	max-width: 580px;
+	max-width: 540px;
 }
 .estimate_consul_2::before {
 	content: "";
@@ -2775,6 +2795,7 @@ img {
 	top: -2px;
 	bottom: 0;
 	margin: auto;
+	/* padding:5px 0; */
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -2784,17 +2805,11 @@ img {
 	.estimate_consul_2::before {
 		width: min(9rem, 123px);
 		height: min(4rem, 56px);
-		left: 9%;
+		left: 5%;
 		top: -2px;
 	}
 }
 
-@media screen and (max-width:579px) {
-	.estimate_consul_2 {
-		margin: 0px 26px;
-		font-size: min(4rem, 36px);
-	}
-}
 
 
 
@@ -3044,129 +3059,145 @@ img {
 
 
 
-
-
-
-
-
-
-
-/* SP */
-.reason_1 {
-	position: absolute;width: 62%;top: 8.4%;left: 27%;padding: 2rem 2%;font-size: 5.5rem;font-weight: bold;line-height: 7rem;
+.selected-reasons-sp {
+	position: relative;
 }
 
-.reason_1_2 {
-	position: absolute;width: 78%; top: 15.2%; left: 7%; padding: 2rem 4%; font-size: 3.5rem;	line-height: 4.5rem;
+.sp_reason {
+	position: absolute;
 }
 
-.reason_1_3 {
-	position: absolute; width: 78%; top: 16.5%; left: 7%; padding: 2rem 4%; font-size: 4.2rem; line-height: 6rem;
+.sp_reason_1 {
+	width: 62%;
+	top: 6%;
+	left: 27%;
+	padding: 2rem 2%;
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 7rem;
 }
 
-.reason_2 {
-	position: absolute;	width: 62%;	top: 20.8%;	left: 27%; padding: 2rem 2%; font-size: 5.5rem;font-weight: bold; line-height: 7rem;
+.sp_reason_1_2 {
+	width: 78%;
+	top: 61%;
+	left: 7%;
+	padding: 2rem 4%;
+	font-size: 3.5rem;
+	line-height: 4.5rem;
 }
 
-.reason_2_2 {
-	position: absolute;	width: 78%; top: 27.9%; left: 7%; padding: 2rem 4%;	font-size: 3.5rem; line-height: 4.5rem;
+.sp_reason_1_3 {
+	width: 78%;
+	top: 71%;
+	left: 7%;
+	padding: 2rem 4%;
+	font-size: 4.2rem;
+	line-height: 6rem;
 }
 
-.reason_2_3 {
-	position: absolute; width: 75%;	top: 29%; left: 7%;padding: 2rem 4%; font-size: 4.2rem; line-height: 6rem;
+.sp_reason_2 {
+	width: 62%;
+	top: 5%;
+	left: 27%;
+	padding: 2rem 2%;
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 7rem;
 }
 
-.reason_3 {
-	position: absolute;width: 62%;top: 36.3%;left: 27%;padding: 2rem 2%;font-size: 5.5rem;font-weight: bold;line-height: 9rem;
+.sp_reason_2_2 {
+	width: 78%;
+	top: 52%;
+	left: 7%;
+	padding: 2rem 4%;
+	font-size: 3.5rem;
+	line-height: 4.5rem;
 }
 
-.reason_3_2 {
-	position: absolute;width: 78%;top: 42%;left: 7%;padding: 2rem 4% 0 3%;font-size: 4.2rem;line-height: 6rem;
+.sp_reason_2_3 {
+	width: 75%;
+	top: 60%;
+	left: 7%;
+	padding: 2rem 4%;
+	font-size: 4.2rem;
+	line-height: 6rem;
 }
 
-.reason_4 {
-	position: absolute;width: 62%;top: 57.2%;left: 27%;padding: 2rem 2%;font-size: 5.5rem;font-weight: bold;line-height: 7rem;
+.sp_reason_3 {
+	width: 62%;
+	top: 5%;
+	left: 27%;
+	padding: 2rem 2%;
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 9rem;
 }
 
-.reason_5 {
-	position: absolute;width: 62%;top: 67.2%;left: 27%;padding: 2rem 2%;font-size: 5.5rem;font-weight: bold;line-height: 7rem;
+.sp_reason_3_2 {
+	width: 78%;
+	top: 34%;
+	left: 7%;
+	padding: 2rem 4% 0 3%;
+	font-size: 4.2rem;
+	line-height: 6rem;
 }
 
-.reason_5_1 {
-	position: absolute;width: 78%;top: 72.5%;left: 7%;padding: 2rem 4% 0 3%;font-size: 4.2rem;line-height: 6rem;
+.selected-reasons-sp-3 #app_n6_1 {
+	position: absolute;
+    display: block;
+    width: 100%;
+    height: 10%;
+    top: 85%;
+    left: 0;
 }
 
-@media screen and (min-width:340px) {
-	.reason_3_2 {top: 42.3%;}
-
-	.reason_4 {top: 57.4%;}
-
-	.reason_5 {top: 67.3%;}
-	
-	.reason_5_1 {top: 73%;}
+.sp_reason_4 {
+	width: 62%;
+	top: 7%;
+	left: 27%;
+	padding: 2rem 2%;
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 7rem;
 }
 
-@media screen and (min-width:395px) {
-	.reason_1 {top: 8.4%;}
-	
-	.reason_1_2 {top: 15.4%;}
-	
-	.reason_1_3 {top: 16.7%;}
-	
-	.reason_2 {top: 21.1%;}
-
-	.reason_2_2 {top: 28.2%;}
-	
-	.reason_2_3 {top: 29.4%;}
-	
-	.reason_3 {top: 36.3%;}
-	
-	.reason_3_2 {top: 42.8%;}
-	
-	.reason_4 {top: 57.8%;}
-
-	.reason_5 {top: 67.8%;}
-	
-	.reason_5_1 {top: 73.5%;}
+.selected-reasons-sp-4 #app_n6_2 {
+	position: absolute;
+    display: block;
+    width: 100%;
+    height: 19%;
+    top: 49%;
+    left: 0;
 }
 
-@media screen and (min-width:460px) {
-	
-	.reason_3 {top: 36.4%;}
-	
-	.reason_3_2 {top: 42.7%;}
-	
-	.reason_4 {top: 57.5%;}
-
-	.reason_5 {top: 67.5%;}
-	
-	.reason_5_1 {top: 73.5%;}
+.sp_reason_5 {
+	width: 62%;
+	top: 7%;
+	left: 27%;
+	padding: 2rem 2%;
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 7rem;
 }
 
-@media screen and (min-width:530px) {
-	.reason_1 {top: 8.5%;}
-	
-	.reason_1_2 {top: 15.6%;}
-	
-	.reason_1_3 {top: 16.9%;}
-	
-	.reason_2 {top: 21.2%;}
-	
-	.reason_2_2 {top: 28.4%;}
-	
-	.reason_2_3 {top: 29.6%;}
-	
-	.reason_3 {top: 36.6%;}
-	
-	.reason_3_2 {top: 42.9%;}
-	
-	.reason_4 {top: 57.7%;}
+.sp_reason_5_1 {
+	width: 78%;
+	top: 61%;
+	left: 7%;
+	padding: 2rem 4% 0 3%;
+	font-size: 4.2rem;
+	line-height: 6rem;
+}
 
-	.reason_5 {top: 67.7%;}
-	
-	.reason_5_1 {top: 73.7%;}
+.footer_button_left {
+		width:33%;
+}
+
+.footer_button_middle {
+	width:33%;
 }
 
 
-
-
+.footer_button_right {
+	width:33%;
+}

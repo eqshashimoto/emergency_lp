@@ -7,9 +7,12 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="創業52年・首都圏実績No.1。品質で葬儀社を選ぶならセレモア。24時間365日受付、ご相談無料。お急ぎの方もどうぞ。家族葬・一般葬・一日葬・自宅葬などご希望に合わせて、あらゆるお葬儀、お葬式プランにご対応いたします。">
 	<title>葬儀・葬式なら葬儀会社セレモア</title>
-	<link rel="stylesheet" href="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/css/style_motchan.css?49" />
-	<link rel="stylesheet" href="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/css/swiper.css?43" />
-	<link rel="stylesheet" href="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/css/style_motchan.css?49" />
+	<!-- <link rel="stylesheet" href="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/css/style_motchan.css?49" /> -->
+	 <!-- <link rel="stylesheet" href="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/css/swiper.css?43" /> -->
+	<!-- <link rel="stylesheet" href="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/css/style_motchan.css?49" />  -->
+	<link rel="stylesheet" href="../lp2/css/style_motchan.css" />
+	<link rel="stylesheet" href="../lp2-temp/css/swiper.css?43" />
+	<link rel="stylesheet" href="../lp2-temp/css/style_motchan.css" />
 	<link rel="shortcut icon" href="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/favicon.ico" >
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
 	<script src="https://s.eqswi.com/arise/common/pop.js"></script>
@@ -429,18 +432,17 @@ body {
 
 #pc_sikijou_list_box {
 	/* background-color: #f0eee5; */
-    margin: 10px auto;
-    padding: 20px 40px;
-    width: 85%;
+    padding: 10px 10px;
+    width: calc(100% - 20px);
     border-radius: 10px;
 }
 
 
 /* 橋本変更 */
 #app_sikijou_list_box {
-    margin: 10px auto;
-    padding: 20px 15px;
-    width: 80%;
+    /* margin: 10px auto; */
+    padding: 20px 5px;
+    width: calc(100% - 10px);
     border-radius: 10px;
 }
 
@@ -448,7 +450,7 @@ body {
 	font-size: clamp(25px, 4.5vw, 48px);
     font-weight: bold;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 #app_sikijou_list_title {
@@ -486,25 +488,25 @@ body {
 
 #pc_sikijou_list_box .pc_sikijou_station {
 	text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     padding: 10px 0 0;
 }
 
 #app_sikijou_list_box .app_sikijou_station {
 	text-align: center;
-    font-size: 3rem;
+    font-size: 3.7rem;
     padding: 10px 0 0;
 }
 
 #pc_sikijou_list_box .pc_sikijou_name {
 	text-align: center;
-    font-size: 1.9rem;
+    font-size: 2.57rem;
     font-weight: bold;
 }
 
 #app_sikijou_list_box .app_sikijou_name {
 	text-align: center;
-    font-size: 3rem;
+    font-size: 3.7rem;
     font-weight: bold;
 }
 
@@ -513,7 +515,7 @@ body {
     width: 70%;
     margin: 5px auto;
     padding: 3px 0;
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: white;
     border-radius: 5px;
 }
@@ -523,33 +525,33 @@ body {
     width: 70%;
     margin: 5px auto;
     padding: 3px 0;
-    font-size: 3rem;
+    font-size: 4.2rem;
     color: white;
     border-radius: 5px;
 }
 
 #pc_sikijou_list_box .pc_sikijou_ichinichi {
-	background-color: #863B3B;
+	background-color: #4A9550;
 }
 
 #pc_sikijou_list_box .pc_sikijou_ippan {
-	background-color: #278191;
+	background-color: #216E7F;
 }
 
 #pc_sikijou_list_box .pc_sikijou_kazoku {
-	background-color: #025F3A;
+	background-color: #A62364;
 }
 
 #app_sikijou_list_box .app_sikijou_ichinichi {
-	background-color: #863B3B;
+	background-color: #4A9550;
 }
 
 #app_sikijou_list_box .app_sikijou_ippan {
-	background-color: #278191;
+	background-color: #216E7F;
 }
 
 #app_sikijou_list_box .app_sikijou_kazoku {
-	background-color: #025F3A;
+	background-color: #A62364;
 }
 
 #pc_sikijou_list_box .swiper-pagination {
@@ -561,7 +563,7 @@ body {
 }
 
 #pc_sikijou_list_box .swiper-pagination-bullet-active {
-	background-color: #795548;
+	background-color: #CD671E;
 }
 
 #app_sikijou_list_box .swiper-pagination-bullet-active {
@@ -777,39 +779,17 @@ body {
 }
 
 #pc_top_area {
-	position:absolute;
-	top: 17%;
-	left:3%;
-	/*right:0;
-	width:48%;
-	text-align:center;*/
 	letter-spacing: 0.1em;
+	padding-left: 2rem;
 }
 
-#pc_top_area span {
-	font-size:2.5rem;
-	font-weight:bold;
-	color:#00894e;
-	position: relative;
-	display: inline-block;
-	padding: 0 3rem;
-}
 
 #pc_top_area span {
-	font-size: 3.7rem;
+	font-size: 4rem;
 	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 	font-weight:bold;
 	color:#bd1313;
-	position: relative;
-	display: inline-block;
-	padding: 0 6rem;
 	line-height:2rem;
-}
-
-@media screen and (min-width:1100px) {
-	#pc_top_area span {
-		font-size: 2.8rem;
-	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -827,56 +807,17 @@ body {
 }
 
 #pc_top_area2 {
-	position:absolute;
-	top: 21%;
-	left:3%;
-	width: 50%;
 	letter-spacing: 0.1em;
+	padding-left: 2rem;
 }
 
-#pc_section_contact {
-
-}
-
-
-
-@media screen and ( min-width:780px ) {
-	#pc_top_area {
-		top: 17%;
-	}
-	#pc_top_area2 {
-		top: 23%;
-	}
-	#pc_section_contact {
-		top: 34%;
-	}
-	
-}
-
-/* @media screen and (min-width: 1100px) {
-	#pc_top_area {
-		top: 26%;
-	}
-	#pc_top_area2 {
-		top: 32%;
-	}
-} */
 
 #pc_top_area2 span {
-	font-size: 3.7rem;
+	font-size: 3.2rem;
 	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 	font-weight:bold;
 	color:#42210B;
-	position: relative;
-	display: inline-block;
-	padding: 0 6rem;
 	line-height:4.5rem;
-}
-
-@media screen and (min-width:1100px) {
-	#pc_top_area2 span {
-		font-size: 2.8rem;
-	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1043,7 +984,7 @@ body {
 }
 
 #sp_top_area span {
-	font-size:8rem;
+	font-size:8.5rem;
 	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 	font-weight:bold;
 	color:#bd1313;
@@ -1387,24 +1328,6 @@ body {
     left: 22%;
 }
 
-#app_n6_1 {
-	position: absolute;
-    display: block;
-    width: 100%;
-    height: 2%;
-    bottom: 44.5%;
-    left: 0;
-}
-
-#app_n6_2 {
-	position: absolute;
-    display: block;
-    width: 100%;
-    height: 2%;
-    bottom: 36.7%;
-    left: 0;
-}
-
 #app_n6_3 {
 	position: absolute;
     display: block;
@@ -1446,25 +1369,6 @@ body {
 	position: relative;
 	width: 50%;
 	margin: 0 auto;
-}
-
-@media screen and ( min-width:460px ) {
-	#app_n6_1 {
-		position: absolute;
-		display: block;
-		width: 100%;
-		height: 2%;
-		bottom: 44%;
-		left: 0;
-	}
-	#app_n6_2 {
-		position: absolute;
-		display: block;
-		width: 100%;
-		height: 2%;
-		bottom: 36%;
-		left: 0;
-	}
 }
 
 @media screen and ( max-width:580px ) {
@@ -1534,6 +1438,7 @@ body {
     left: 15%;
     top: 45%;
 }
+
 </style>
 </head>
 <body>	
@@ -1559,8 +1464,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="right-col">
 				<div id="head_link-emergent" class="col">
 					<a id="pc_link_n3" href="javascript:void(0)" onclick="showPcTelDialog();" class="img">
-						<!-- <img class="pc" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/pc_head_emergent_btn.png" alt="お急ぎの方へ">
-						<img class="sp head_emergent_btn" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/sp_head_emergent_btn.png" alt="資料請求・お問い合わせ" loading="lazy"> -->
 						<div class="pc_header_emergent">
 							<div class="header_tel_icon">
 								<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/tel_call_transparent.png" alt="お急ぎの方へ">
@@ -1569,6 +1472,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								お急ぎの方へ
 							</div>
 						</div>
+						<!-- <img class="pc" src="./images/head-emergent-btn.png?2" alt="お急ぎの方へ"> -->
 						<div class="sp_header_emergent">
 							<div class="header_tel_icon">
 								<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/tel_call_transparent.png" alt="お急ぎの方へ">
@@ -1595,45 +1499,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 					<!-- ここから下橋本修正 電話と見積もり 上部PC-->
-					<div id="pc_top_area" ></div>
-					<div id="pc_top_area2" ></div>
-					<div id="pc_section_contact">
-						<div class="sup-txt margin_top_16px"><span class="back_slash_2 padding_left">/</span>ただいまお電話繋がります/</div>
+					<div class="wrapper_pc_top_area">
+						<div id="pc_top_area"></div>
+						<div id="pc_top_area2"></div>
+						<div id="pc_section_contact">
+							<div class="sup-txt"><span class="back_slash_2 padding_left">/</span>ただいまお電話繋がります/</div>
 
-						<a id="pc_tel_n1" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
-							<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2/images/fv-tel-btn.png" alt="24時間365日対応" loading="eager">
-						</a>
-						<div class="urgent flex gap2 padding_top align_items_stretch ">
-							<div class="flex_child">
-								<a id="pc_estimate_n1" href="https://lp.ceremore.com/page/urgent_apply-estimate under_buton">
-									<div class="pc_estimate_consul text_align_center">
-										<p class="line_height ">お見積依頼</p>
-									</div>
-								</a>
-							</div>
-							<div class="flex_child">
-								<a id="pc_urgent_n1" href="https://lp.ceremore.com/page/urgent_apply">
-									<div class="pc_document_request_button text_align_center under_buton">
-										<p class="line_height_3">資料請求<br>お問い合わせ</p>
-									</div>
-								</a>
+							<a id="pc_tel_n1" class="rrt" href="javascript:void(0)" onclick="showPcTelDialog();">
+								<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2/images/fv-tel-btn.png" alt="24時間365日対応" loading="eager">
+							</a>
+							<div class="urgent flex gap2 padding_top align_items_stretch ">
+								<div class="flex_child">
+									<a id="pc_estimate_n1" href="https://lp.ceremore.com/page/urgent_apply-estimate under_buton">
+										<div class="pc_estimate_consul text_align_center">
+											<p class="line_height ">お見積依頼</p>
+										</div>
+									</a>
+								</div>
+								<div class="flex_child">
+									<a id="pc_urgent_n1" href="https://lp.ceremore.com/page/urgent_apply">
+										<div class="pc_document_request_button text_align_center under_buton">
+											<p class="line_height_3">資料請求<br>お問い合わせ</p>
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<!-- ここまで橋本記載　電話と見積もり 上部PC-->
+					<!-- ここまで電話と見積もり 上部PC-->
 
 					<!-- ここから下家族葬PC上部2/6 -->
 					<div id="pc_section_n1_kazokuso">
 						<a id="pc_kazoku1_open" href="javascript:void(0);" onclick="showPcKazoku1();">
-								<div class="green_color_border border_1  overflow_hidden content_2_1 border_width_medium">
+								<div class="pink_color_border border_1  overflow_hidden content_2_1 border_width_medium">
 									<div class="flex">
 										<div class="img_size ">
-											<img class="img_cut_diagoally overflow_hidden" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/kazoku_pc.jpg" alt="家族葬" loading="eager">
+											<img class="img_cut_diagoally overflow_hidden" src="../lp2-temp/images/motchan/kazoku_pc.jpg" alt="家族葬" loading="eager">
 										</div>
 										<div class="background_white">
 											<p class="pc_emphasis_word_2 mincho">家族葬</p>
-											<p class="pc_price_2">398,000<span class="pc_yen_2">円〜</span></p>
-											<p class="pc_price_2 pc_tax_included_2"><span class="font_weight_normal">(</span><span class="pc_yen_3">税込</span>437,800<span class="pc_yen_3">円〜</span><span class="font_weight_normal">)</span></p>
+											<div class="price_wrapper_2">
+												<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1677,15 +1584,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div id="pc_section_n1_ichinichiso">
 						<a id="pc_ichinichi_open" href="javascript:void(0);" onclick="showPcIchinichi();">
-							<div class="red_color_border border_1 overflow_hidden content_2_2 border_width_medium">
+							<div class="green_color_border border_1 overflow_hidden content_2_2 border_width_medium">
 								<div class="flex">
 									<div class="img_size">
 										<img class="img_cut_diagoally" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ichiniti_pc.png" alt="一日葬" loading="eager">
 									</div>
 									<div class="background_white">
 										<p class="pc_emphasis_word_2 mincho">一日葬</p>
-										<p class="pc_price_2">398,000<span class="pc_yen_2">円〜</span></p>
-										<p class="pc_price_2 pc_tax_included_2"><span class="font_weight_normal">(</span><span class="pc_yen_3">税込</span>437,800<span class="pc_yen_3">円〜</span><span class="font_weight_normal">)</span></p>
+										<div class="price_wrapper_2">
+											<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1736,8 +1644,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</div>
 									<div class="background_white">
 										<p class="pc_emphasis_word_2 mincho">一般葬</p>
-										<p class="pc_price_2">542,000<span class="pc_yen_2">円〜</span></p>
-										<p class="pc_price_2 pc_tax_included_2"><span class="font_weight_normal">(</span><span class="pc_yen_3">税込</span>596,200<span class="pc_yen_3">円〜</span><span class="font_weight_normal">)</span></p>
+										<div class="price_wrapper_2">
+											<img src="../lp2-temp/images/motchan/price_2.png" alt="金額" loading="lazy">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1824,7 +1733,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						}
 					</script>
 				</div>
-
 				<!-- 以上橋本修正　PCコロナ対策 -->
 
 			</section>
@@ -1884,13 +1792,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class=" border_1 content_1 overflow_hidden border_medeum">
 								<div class="flex">
 									<div class="family_img">
-										<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/kazoku_sp.jpg" alt="家族葬" loading="eager">
+										<img src="../lp2-temp/images/motchan/kazoku_sp.jpg" alt="家族葬" loading="eager">
 									</div>
 									<div class="flex_box_2 ">
 										<p class="sp_emphasis_word_2 text_bold text_align_center mincho">家族葬</p>
-										<div class="sp_explanation_3">ご家族や親しい友人を中心とした少人数でのお葬儀プラン。参加者の安全を考慮したお葬儀をご提案します。</div>
-										<p class="sp_price_2 text_align_center">398,000<span class="sp_yen_2">円〜</span></p>
-										<p class="sp_price_2 sp_tax_included_2 text_align_center"><span class="font_weight_normal">(</span><span class="sp_yen_2">税込</span>437,800<span class="sp_yen_2">円〜</span><span class="font_weight_normal">)</span></p>
+										<div class="sp_explanation_3">ご家族や親しい友人を中心としたお葬儀プラン。比較的少人数で行われゆっくりと故人様とのお別れができます。</div>
+										<!-- <div class="sp_explanation_3">ご家族や親しい友人を中心とした少人数でのお葬儀プラン。参加者の安全を考慮したお葬儀をご提案します。</div> -->
+										<div class="price_wrapper_2">
+											<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1937,12 +1847,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="flex gap_1">
 							<div class="wrapper_content">
 								<a id="app_ichinichi_open" href="javascript:void(0);" onclick="showIchinichi();">
-									<div class= "red_color_border border_1 content_2 overflow_hidden">
+									<div class= "green_color_border border_1 content_2 overflow_hidden">
 										<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/saidan.png" alt="祭壇" loading="lazy">
 										<div class="text_align_center wrapper_info">
 											<p class="sp_emphasis_word_2 text_bold mincho">一日葬</p>
-											<p class="sp_price_2">398,000<span class="sp_yen_2">円〜</span></p>
-											<p class="sp_price_2 sp_tax_included_2"><span class="font_weight_normal">(</span><span class="sp_yen_2">税込</span>437,800<span class="sp_yen_2">円〜</span><span class="font_weight_normal">)</span></p>
+											<div class="price_wrapper">
+												<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
+											</div>
 										</div>
 									</div>
 								</a>
@@ -1990,8 +1901,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/sanretu.jpg" alt="参列" loading="lazy">
 										<div class="text_align_center wrapper_info">
 											<p class="sp_emphasis_word_2 text_bold mincho">一般葬</p>
-											<p class="sp_price_2">542,000<span class="sp_yen_2">円〜</span></p>
-											<p class="sp_price_2 sp_tax_included_2"><span class="font_weight_normal">(</span><span class="sp_yen_2">税込</span>596,200<span class="sp_yen_2">円〜</span><span class="font_weight_normal">)</span></p>
+											<div class="price_wrapper">
+												<img src="../lp2-temp/images/motchan/price_2.png" alt="金額" loading="lazy">
+											</div>
 										</div>
 									</div>
 								</a>
@@ -2107,7 +2019,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<p class="prefecture ">東京都・埼玉県・神奈川県・千葉県・山梨県に<span class="emphasis text_green text_bold">1000</span><span class="text_green text_bold">ヶ所</span>以上のご紹介式場がございます。</p>
 									<p class="appeal_text ">ご安置場所のご相談も承ります</p>
 								</div>
-								<img class="img_prefecture" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/prefecture.png" alt="関東圏" loading="lazy">
+								<img class="img_prefecture" src="../lp2-temp/images/motchan/prefecture.png" alt="関東圏" loading="lazy">
 							</div>
 						</div>
 						<!-- ここまで編集 -->
@@ -2118,14 +2030,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="wrapper_heading">
 							<h2 class="heading_green">様々なお葬式をご提案します</h2>
 							<div class="wrapper_text text_align_center">
-								<p class="text_1"><img class='text_img_2 inline_block' src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/seremoa.png" alt="家族葬" loading="lazy">では、『家族葬』や<br class="middle_text_br_sp">『一般葬』など、<br class="middle_text_br_pc">お客様のご意向や<br class="middle_text_br_sp">ご予算に合わせて明確な費用で承ります。</p>
+								<p class="pc_text_1"><img class='text_img_2 inline_block' src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/seremoa.png" alt="家族葬" loading="lazy">では、『家族葬』や<br class="middle_text_br_sp">『一般葬』など、<br class="middle_text_br_pc">お客様のご意向や<br class="middle_text_br_sp">ご予算に合わせて明確な費用で承ります。</p>
 							</div>
 						</div>
 						<div class="wrapper_pc_cards">
 							<div class="flex justify_content_center card_gap inline_block">
 								<div class="wrapper_pc_card " >
 									<a id="pc_kazoku1_open" href="javascript:void(0);" onclick="showPcKazoku1();">
-										<div class="pc_card text_align_center green_color_border">
+										<div class="pc_card text_align_center pink_color_border">
 											<div class="card_heading_box green_color_background">
 												<h3 class="pc_card_heading">ご家族でのお見送り</h3>
 											</div>
@@ -2133,8 +2045,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												<p class="pc_emphasis_word green_color">家族葬</p>
 												<img class='card_img' src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/kazokusou.jpg" alt="家族葬" loading="lazy">
 												<p class="pc_explanation">必要なものだけを揃えたパック葬</p>
-												<p class="pc_price">398,000<span class="pc_yen">円〜</span></p>
-												<p class="pc_tax_included"><span class="font_weight_normal">(</span><span class="pc_yen">税込</span>437,800<span class="pc_yen">円〜</span><span class="font_weight_normal">)</span></p>
+												<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
 												<p class="pc_explanation_2">１０名〜３０名程度におすすめ</span></p>
 											</div>
 											<div class="card_bottom_box green_color_background ">
@@ -2147,7 +2058,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 								<div class="wrapper_pc_card text_align_center" >
 									<a id="pc_ichinichi_open" href="javascript:void(0);" onclick="showPcIchinichi();">
-										<div class="pc_card text_align_center red_color_border">
+										<div class="pc_card text_align_center green_color_border">
 											<div class="card_heading_box red_color_background">
 												<h3 class="pc_card_heading">一日でできるお見送り</h3>
 											</div>
@@ -2155,8 +2066,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												<p class="pc_emphasis_word red_color">一日葬</p>
 												<img class='card_img' src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/itinitisou.jpg" alt="一日葬" loading="lazy">
 												<p class="pc_explanation">必要なものだけを揃えたパック葬</p>
-												<p class="pc_price">398,000<span class="pc_yen">円〜</span></p>
-												<p class="pc_tax_included"><span class="font_weight_normal">(</span><span class="pc_yen">税込</span>437,800<span class="pc_yen">円〜</span><span class="font_weight_normal">)</span></p>
+												<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
 												<p class="pc_explanation_2">１０名〜３０名程度におすすめ</span></p>
 											</div>
 											<div class="card_bottom_box red_color_background ">
@@ -2176,8 +2086,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												<p class="pc_emphasis_word blue_color">一般葬</p>
 												<img class='card_img' src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ippansou.jpg" alt="一般葬" loading="lazy">
 												<p class="pc_explanation">必要なものだけを揃えたパック葬</p>
-												<p class="pc_price">542,000<span class="pc_yen">円〜</span></p>
-												<p class="pc_tax_included"><span class="font_weight_normal">(</span><span class="pc_yen">税込</span>596,200<span class="pc_yen">円〜</span><span class="font_weight_normal">)</span></p>
+												<img src="../lp2-temp/images/motchan/price_2.png" alt="金額" loading="lazy">
 												<p class="pc_explanation_2">３０名〜におすすめ</span></p>
 											</div>
 											<div class="card_bottom_box blue_color_background ">
@@ -2204,7 +2113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<img class="inverted_triangle" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/inverted_triangle.png" alt="逆三角" loading="lazy">
 								<ol>
 									<li><img class="ellipse1 inline_block" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ellipse1.png" alt="楕円" loading="lazy">あまり時間がなく急いでいる</li>
-									<li><img class="ellipse1 inline_block" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ellipse1.png" alt="楕円" loading="lazy">故人の宗派に合わせて行いたい</li>
+									<li><img class="ellipse1 inline_block" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ellipse1.png" alt="楕円" loading="lazy">故人様の宗教に合わせて行いたい</li>
 									<li><img class="ellipse1 inline_block" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ellipse1.png" alt="楕円" loading="lazy">とりあえずどのくらいの費用がかかるか知りたい</li>					
 								</ol>
 							</div>
@@ -2237,17 +2146,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="wrapper_sikizyou_sentence">
 							<div class="flex_responsive">
 								<div>
-									<p class="prefecture ">東京都・埼玉県・神奈川県・千葉県・山梨県に<span class="emphasis text_green text_bold">1000</span><span class="text_green text_bold">ヶ所</span>以上のご紹介式場がございます。</p>
+									<p class="prefecture ">東京都・埼玉県・神奈川県・<br>千葉県・山梨県に<span class="emphasis text_green text_bold">1000</span><span class="text_green text_bold">ヶ所</span><br>以上のご紹介式場がございます。</p>
 									<p class="appeal_text ">ご安置場所のご相談も承ります</p>
 								</div>
-								<img class="img_prefecture" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/prefecture.png" alt="関東圏" loading="lazy">
+								<img class="img_prefecture" src="../lp2-temp/images/motchan/prefecture.png" alt="関東圏" loading="lazy">
 							</div>
 						</div>
 					</div>
 
 						<!-- ここまでサービスエリア -->
-					<br>
-					<br>
 					<br>
 
 
@@ -2261,7 +2168,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 
 					<div class="wrapper_sp_card">
-						<div class=" card sp_card text_align_center green_color_border">
+						<div class=" card sp_card text_align_center pink_color_border">
 							<a id="app_kazoku1_open" href="javascript:void(0);" onclick="showKazoku1();">
 								<div class="card_heading_box green_color_background">
 									<h3 class="sp_card_heading">ご家族でのお見送り</h3>
@@ -2272,8 +2179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<div class="flex_box">
 											<p class="sp_emphasis_word green_color">家族葬</p>
 											<div class="sp_explanation">必要なものだけを揃えたパック葬</div>
-											<p class="sp_price">398,000<span class="sp_yen">円〜</span></p>
-											<p class="sp_price sp_tax_included"><span class="font_weight_normal">(</span><span class="sp_yen">税込</span>437,800<span class="sp_yen">円〜</span><span class="font_weight_normal">)</span></p>
+											<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
 										</div>
 									</div>
 									<p class="sp_explanation_2 text_bold">１０名〜３０名程度におすすめ</span></p>
@@ -2285,7 +2191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 						
 
-						<div class="card sp_card text_align_center red_color_border">
+						<div class="card sp_card text_align_center green_color_border">
 							<a id="app_ichinichi_open" href="javascript:void(0);" onclick="showIchinichi();">
 								<div class="card_heading_box red_color_background">
 									<h3 class="sp_card_heading">一日でできるお葬式</h3>
@@ -2296,8 +2202,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<div class="flex_box">
 											<p class="sp_emphasis_word red_color">一日葬</p>
 											<div class="sp_explanation">必要なものだけを揃えたパック葬</div>
-											<p class="sp_price">398,000<span class="sp_yen">円〜</span></p>
-											<p class="sp_price sp_tax_included"><span class="font_weight_normal">(</span><span class="sp_yen">税込</span>437,800<span class="sp_yen">円〜</span><span class="font_weight_normal">)</span></p>
+											<img src="../lp2-temp/images/motchan/price_1.png" alt="金額" loading="lazy">
 										</div>
 									</div>
 									<p class="sp_explanation_2 text_bold">１０名〜３０名程度におすすめ</span></p>
@@ -2319,8 +2224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<div class="flex_box">
 											<p class="sp_emphasis_word blue_color">一般葬</p>
 											<div class="sp_explanation">必要なものだけを揃えたパック葬</div>
-											<p class="sp_price">542,000<span class="sp_yen">円〜</span></p>
-											<p class="sp_price sp_tax_included"><span class="font_weight_normal">(</span><span class="sp_yen">税込</span>596,200<span class="sp_yen">円〜</span><span class="font_weight_normal">)</span></p>
+											<img src="../lp2-temp/images/motchan/price_2.png" alt="金額" loading="lazy">
 										</div>
 									</div>
 									<p class="sp_explanation_2 text_bold">３０名〜におすすめ</span></p>
@@ -2335,9 +2239,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<!-- ここまで中部家族SP -->
 
 					<br>
-					<br>
-					<br>
-
 
 						<!-- ここから編集、お気軽にご相談ください、見積もり相談１SP -->
 					<div class="wrapper_heading">
@@ -2347,7 +2248,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<img class="inverted_triangle" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/inverted_triangle.png" alt="逆三角" loading="lazy">
 							<ol>
 								<li><img class="ellipse1 inline_block" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ellipse1.png" alt="楕円" loading="lazy">あまり時間がなく急いでいる</li>
-								<li><img class="ellipse1 inline_block" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ellipse1.png" alt="楕円" loading="lazy">故人の宗派に合わせて行いたい</li>
+								<!-- <li><img class="ellipse1 inline_block" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ellipse1.png" alt="楕円" loading="lazy">故人の宗派に合わせて行いたい</li> -->
+								<li><img class="ellipse1 inline_block" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ellipse1.png" alt="楕円" loading="lazy">故人様の宗教に合わせて行いたい</li>
 								<li><img class="ellipse1 inline_block" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/ellipse1.png" alt="楕円" loading="lazy">とりあえずどのくらいの費用がかかるか知りたい</li>					
 							</ol>
 						</div>
@@ -2362,7 +2264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<p class="flex_box_consul_text">お客様のご要望に応じたお見積りを事前にご提示しますので、お気軽にご相談ください。</p>
 							</div>
 							<a id="pc_estimate_n1" href="https://lp.ceremore.com/page/urgent_apply-estimate">
-								<p class="estimate_consul text_align_center ">見積相談はこちら</p>
+								<p class="estimate_consul text_align_center max_width_specify">見積相談はこちら</p>
 							</a>
 						</div>
 					</div>
@@ -2520,7 +2422,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<script>
 						var swiper = new Swiper('#pc_sikijou_list_box .swiper-container', {
 							slidesPerView: 3.01,
-							spaceBetween: 30,
+							spaceBetween: 10,
 							pagination: {
 								el: '.swiper-pagination',
 							},
@@ -2568,10 +2470,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="wrapper_guide">
 								<img class="guide" src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2-temp/images/motchan/em01021.png" alt="案内人" loading="lazy">
 							</div>
+						</div>						
+							<a id="pc_estimate_n1" href="https://lp.ceremore.com/page/urgent_apply-estimate">
+								<p class="estimate_consul_2 text_align_center ">見積相談はこちら</p>
+							</a>							
 						</div>
-						<a id="pc_estimate_n1" href="https://lp.ceremore.com/page/urgent_apply-estimate">
-							<p class="estimate_consul_2 text_align_center ">見積相談はこちら</p>
-						</a>
 					</div>  
 					<!-- ここまで編集 -->
 
@@ -2635,7 +2538,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<script>
 						var swiper = new Swiper('#app_sikijou_list_box .swiper-container', {
 							slidesPerView: 2.01,
-							spaceBetween: 10,
+							spaceBetween: 5,
 							pagination: {
 								el: '.swiper-pagination',
 							},
@@ -2848,64 +2751,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/app5_2.png?44" alt="こんな業者には注意" loading="lazy">
 			</section>
 			<section style="position:relative;">
-				<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy">
-				<!-- ①ここから -->
-				<div class="reason_1">
-					家族葬から４万人規模の社葬・公葬実績あらゆるお葬儀に対応
+				<!-- <img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy"> -->
+
+				<div class="selected-reasons-sp selected-reasons-sp-header">
+					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update-header.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy">
 				</div>
-				<div  class="reason_1_2"style="">
-					立川本社／立川会館白峯殿
-					<br>
-					第一式場 (180 席) 第二式場 (24 席) P180 台
+
+				<div class="selected-reasons-sp selected-reasons-sp-1">
+					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update-1.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy">
+					<div class="sp_reason sp_reason_1">
+						家族葬から４万人規模の社葬・公葬実績あらゆるお葬儀に対応
+					</div>
+					<div class="sp_reason sp_reason_1_2">
+						立川本社／立川会館白峯殿
+						<br>
+						第一式場 (180 席) 第二式場 (24 席) P180 台
+					</div>
+					<div class="sp_reason sp_reason_1_3">
+						家族葬・一般葬から大規模な社葬・合同葬・お別れ会・公葬の実績に基づいた豊富な経験と品質であらゆるお葬儀に対応いたします。
+					</div>
 				</div>
-				<div  class="reason_1_3"style="">
-					家族葬・一般葬から大規模な社葬・合同葬・お別れ会・公葬の実績に基づいた豊富な経験と品質であらゆるお葬儀に対応いたします。
+
+				<div class="selected-reasons-sp selected-reasons-sp-2">
+					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update-2.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy">
+					<div class="sp_reason sp_reason_2">
+						官公庁・法人契約<br>２,５００団体<br>個人会員２８万人
+					</div>
+					<div class="sp_reason sp_reason_2_2">
+						東京紀尾井町本社／紀尾井町ビル 6F
+						<br>
+						セミナー会場 70 席 常設
+					</div>
+					<div class="sp_reason sp_reason_2_3">
+						2,500 団体の官公庁・企業・団体などと福利厚生のご契約をさせていただいております。
+						<br>
+						東京紀尾井町本社では、企業・団体の社員、職員の皆様をはじめ、28 万人を超えるファミリーライフクラブ会員様に向けた仏事・葬儀のセミナーを開催しております。
+					</div>
 				</div>
-				<!-- ②ここから -->
-				<div  class="reason_2" style="">
-					官公庁・法人契約<br>２,５００団体<br>個人会員２８万人
-				</div>
-				<div  class="reason_2_2" style="">
-					東京紀尾井町本社／紀尾井町ビル 6F
-					<br>
-					セミナー会場 70 席 常設
-				</div>
-				<div  class="reason_2_3" style="">
-					2,500 団体の官公庁・企業・団体などと福利厚生のご契約をさせていただいております。
-					<br>
-					東京紀尾井町本社では、企業・団体の社員、職員の皆様をはじめ、28 万人を超えるファミリーライフクラブ会員様に向けた仏事・葬儀のセミナーを開催しております。
-				</div>
-				<!-- ③ここから -->
-				<div  class="reason_3" style="">
-					直接のご相談窓口
-				</div>
-				<div  class="reason_3_2" style="">
-					お葬儀は人生最後の大切な儀式です。
-					<br>
-					後悔しないために、事前のご相談がご安心です。
-					<br>
-					百貨店・駅ビル・大型ショッピングセンターなどに無料でご相談を承る窓口
-				</div>
-				<!-- ④ここから -->
-				<div  class="reason_4" style="">
-					24 時間 365 日
-					<br>
-					迅速な対応
-				</div>
-				<!-- ⑤ここから -->
-				<div  class="reason_5" style="">
-					お葬儀後の
-					<br>
-					総合サポート
-				</div>
-				<div  class="reason_5_1" style="">
-					お葬儀後のお仏壇・お位牌の準備、ご法事の手配から、各種諸手続き（年金・相続・遺品整理など）、初めての方にも親切・丁寧に、各専門アドバイザーがトータルサポートいたします。
-				</div>
-				<div>
+
+				<div class="selected-reasons-sp selected-reasons-sp-3">
+					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update-3.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy">
+					<div class="sp_reason sp_reason_3">
+						直接のご相談窓口
+					</div>
+					<div class="sp_reason sp_reason_3_2">
+						お葬儀は人生最後の大切な儀式です。
+						<br>
+						後悔しないために、事前のご相談がご安心です。
+						<br>
+						百貨店・駅ビル・大型ショッピングセンターなどに無料でご相談を承る窓口
+					</div>
 					<a id="app_n6_1" href="tel:0120820300"></a>
 				</div>
-				<div>
+
+				<div class="selected-reasons-sp selected-reasons-sp-4">
+					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update-4.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy">
+					<div class="sp_reason sp_reason_4">
+						24 時間 365 日
+						<br>
+						迅速な対応
+					</div>
 					<a id="app_n6_2" href="javascript:void(0)" onclick="showAppTelDialog();"></a>
+				</div>
+
+				<div class="selected-reasons-sp selected-reasons-sp-5">
+					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update-5.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy">
+					<div class="sp_reason sp_reason_5">
+						お葬儀後の
+						<br>
+						総合サポート
+					</div>
+					<div class="sp_reason sp_reason_5_1">
+						お葬儀後のお仏壇・お位牌の準備、ご法事の手配から、各種諸手続き（年金・相続・遺品整理など）、初めての方にも親切・丁寧に、各専門アドバイザーがトータルサポートいたします。
+					</div>
+				</div>
+
+				<div class="selected-reasons-sp selected-reasons-sp-6">
+					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/selected-reasons-sp-update-6.png?2" alt="セレモアが選ばれる６つの理由" loading="lazy">
 				</div>
 
 
@@ -2955,10 +2877,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/float-tel-sp.png?2" alt="ご相談はお電話でも承ります" loading="lazy">
 					<!-- <span class="phone-w"></span> -->
 				</a>
-				<a id="app_link_4" href="https://lp.ceremore.com/page/urgent_apply-estimate">
+				<a id="app_link_4" class="" href="https://lp.ceremore.com/page/urgent_apply-estimate">
 					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/float-estimate-sp.png?2" alt="見積もり依頼" loading="lazy">
 				</a>
-				<a id="app_link_3" href="https://lp.ceremore.com/page/urgent_apply">
+				<a id="app_link_3" class="" href="https://lp.ceremore.com/page/urgent_apply">
 					<img src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/images/float-inquiry-sp.png?2" alt="資料請求　お問い合わせ" loading="lazy">
 				</a>
 			</div>
@@ -3013,7 +2935,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		}
 	</script>
 	
-	<script src="https://s3.ap-northeast-1.amazonaws.com/test-ceremore.eqs/mocchan/lp2/js/main_motchan.js" charset="UTF-8"></script>
+	<script src="js/main_motchan.js" charset="UTF-8"></script>
 
 	<script>
 		window.addEventListener('load', function() {

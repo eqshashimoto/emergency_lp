@@ -295,9 +295,9 @@ var sp_top_area = document.getElementById('sp_top_area');
 var pc_top_area2 = document.getElementById('pc_top_area2');
 var sp_top_area2 = document.getElementById('sp_top_area2');
 if(areaName=='' && saijoName=='') {
-	pc_top_area.innerHTML = '<span><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" alt="セレモア" style="display:inline; width:clamp(108px, 18vw, 189px);">の家族葬</span>';
-	sp_top_area.innerHTML = '<span><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" alt="セレモア" style="display:inline; width:clamp(108px, 18vw, 189px);">の家族葬</span>';
-	pc_top_area2.innerHTML = '<span style="padding-top: 2%" >一度きりのお葬式を<br>確かな品質で</span>';
+	pc_top_area.innerHTML = '<span><img class="pc_top_area_img" src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" alt="セレモア" >の家族葬</span>';
+	sp_top_area.innerHTML = '<span><img src="https://s3-ap-northeast-1.amazonaws.com/ceremore.eqs/lp2-temp/images/ceremore_logo.svg" alt="セレモア" style="display:inline; width:clamp(108px, 33.75vw, 200px);">の家族葬</span>';
+	pc_top_area2.innerHTML = '<span >一度きりのお葬式を<br>確かな品質で</span>';
 	sp_top_area2.innerHTML = '<span>一度きりのお葬式を<br>確かな品質で</span>';
 } else if(areaName != '') {
 	pc_top_area.innerHTML = '<span>' + areaName + '市の家族葬なら</span>';
