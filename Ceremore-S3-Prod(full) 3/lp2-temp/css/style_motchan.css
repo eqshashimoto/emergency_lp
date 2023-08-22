@@ -3251,8 +3251,8 @@ img {
 	object-position: 50% 82%;
 }
 
-_:lang(x)+_:-webkit-full-screen-document, #header {
+/* _:lang(x)+_:-webkit-full-screen-document, #header {
 		height: 4.5em;
-	}
+	} */
   
 /* 以上20230821 */
