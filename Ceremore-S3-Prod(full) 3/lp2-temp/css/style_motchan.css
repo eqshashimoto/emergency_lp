@@ -3203,23 +3203,26 @@ img {
 }
 
 /* 以下20230821 */
-.sougizyou_img {
+
+.service_area__wapper_sougizyou_img--flex {
+	display: flex;
 	margin-top: 2em;
+	justify-content: center;
+	gap: 10px;
+	@media screen and (min-width:580px) {
+		gap: 20px;
+	}
 }
 
-.wrapper_sougizyou_img {
-	width:100%;
-	object-fit: fill;
-	margin-top: 2em;
+.service_area__sougizyou--img {
+	width: 48%;
+	.img {
+		object-fit: cover;
+    	height: 23vw;
+	}
+	.img2 {
+		object-position: 50% 100%;
+	}
 }
 
-.sougizyou_img_sp_1 {
-	object-position: 0 0;
-	width:100%;
-}
-
-.sougizyou_img_sp_2 {
-	width:100%;
-	object-position: 0 100%;
-}
 /* 以上20230821 */
