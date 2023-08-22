@@ -61,6 +61,7 @@ img {
 	display: flex;
 	border: 1px solid #A41E25;
 	border-radius: 5px;
+	width: 100%;
 }
 
 .sp_header_emergent {
@@ -3217,7 +3218,10 @@ img {
 	justify-content: space-around;
 	/* gap: 10px; */
 	margin: 2em auto 0;
-	@media screen and (min-width:580px) {
+}
+
+@media screen and (min-width:580px) {
+	.service_area__wapper_sougizyou_img--flex {
 		/* gap: 20px; */
 		width: 80%;
 	}
@@ -3225,17 +3229,30 @@ img {
 
 .service_area__sougizyou--img {
 	width: 48%;
-	.img {
-		object-fit: cover;
-		height: min(21vw, 330px);
-		/* height: 23vw; */
-		@media screen and (min-width:580px) {
-			height: min(16.5vw, 270px);
-		}
-	}
-	.img2 {
-		object-position: 50% 82%;
+}
+
+.service_area__sougizyou--img .img {
+	object-fit: cover;
+	height: 21vw ;
+	max-height: 330px;
+	/* height: 23vw; */
+}
+
+@media screen and (min-width:580px) {
+	.service_area__sougizyou--img .img {
+		height: min( 0px);
+		height: 16.5vw;
+		max-height: 270px;
 	}
 }
 
+
+.img2 {
+	object-position: 50% 82%;
+}
+
+_:lang(x)+_:-webkit-full-screen-document, #header {
+		height: 4.5em;
+	}
+  
 /* 以上20230821 */
