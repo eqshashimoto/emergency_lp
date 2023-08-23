@@ -1797,7 +1797,7 @@ body {
 }
 
 
-/* 橋本変更 */
+/* 変更 */
 #app_sikijou_list_box {
     /* margin: 10px auto; */
     padding: 20px 5px;
@@ -2373,7 +2373,7 @@ body {
 	letter-spacing: 0.1em;
 }
 
-/* 以下橋本修正 */
+/* 以下修正 */
 #sp_top_area2 span {
 	font-size: 7rem;
 	font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
@@ -2386,7 +2386,7 @@ body {
 	margin-top: -6rem;
 
 }
-/* 以上橋本修正 */
+/* 以上修正 */
 
 @media (prefers-color-scheme: dark) {
   #sp_top_area2 span {
