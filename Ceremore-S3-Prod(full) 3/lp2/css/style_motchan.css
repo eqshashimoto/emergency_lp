@@ -327,7 +327,7 @@ img {
 #sp_section_contact2,
 #sp_section_contact3 {
 	position: absolute;
-	bottom: 2%;
+	bottom: 13rem;
 	width: 90%;
 	padding: 0 5%;
 }
@@ -335,9 +335,11 @@ img {
 @media screen and (min-width: 581px) {
 	#pc_section_contact2,
 	#pc_section_contact3,
-	#pc_section_contact4,
 	#sp_section_contact2,
 	#sp_section_contact3 {
+		bottom: 2.7%;
+	}
+	#pc_section_contact4 {
 		bottom: 2.2%;
 	}
 }
@@ -345,7 +347,7 @@ img {
 #sp_section_contact4,
 #sp_section_contact5 {
 	position: absolute;
-	bottom: 2%;
+	bottom: 11rem;
 	width: 90%;
 	padding: 0 5%;
 }
@@ -392,8 +394,8 @@ img {
 	letter-spacing: 1.2;
 	text-align: center;
 	color: #CC1C24;
-	text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff,
-	0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
+	/* text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff,
+	0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff; */
 }
 
 #pc_section_contact5 .sup-txt,

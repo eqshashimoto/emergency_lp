@@ -3255,4 +3255,13 @@ img {
 		height: 4.5em;
 	} */
   
+	.corona__popup--undertext {
+		position: absolute; width: auto ;bottom: 150px ; padding: 10px 18px;font-size: 12px;line-height: 21px;
+	}
+
+@media screen and (max-width:610px) {
+	.corona__popup--undertext {
+		bottom: 130px;
+	}
+}
 /* 以上20230821 */
